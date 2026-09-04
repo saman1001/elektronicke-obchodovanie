@@ -1,0 +1,112 @@
+site_name: Elektronické obchodovanie
+site_description: Predmet Elektronické obchodovanie pre študentov programu Elektronický obchod a manažment (FPEDAS UNIZA).
+site_author: Juraj Fabuš
+site_url: https://eo.fabus.eu/
+repo_url: https://github.com/saman1001/elektronicke-obchodovanie
+repo_name: elektronicke-obchodovanie
+# Odkaz na súkromie je absolútny — copyright HTML sa vkladá na každú stránku
+# (aj v podpriečinkoch), relatívna cesta by sa tam rozbila
+copyright: "© 2026 Elektronické obchodovanie · Žilinská univerzita v Žiline · <a href='https://eo.fabus.eu/ochrana-sukromia.html'>Ochrana súkromia</a>"
+docs_dir: docs
+# false = generuje blok-8.html (nie blok-8/index.html), aby sa HTML dalo otvoriť aj dvojklikom (file://)
+use_directory_urls: false
+
+theme:
+  name: material
+  language: sk
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Prepnúť na tmavý režim
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Prepnúť na svetlý režim
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/copy-lokalne.js
+  # Analytika: self-hosted Umami (bez cookies, bez consent banneru) — viď umami.js
+  - javascripts/umami.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  # Spojená stránka celého webu na print_page.html — slúži na PDF archív semestra (Ctrl+P alebo headless Chrome)
+  - print-site:
+      add_to_navigation: false
+      add_cover_page: true
+      enumerate_headings: false
+      add_print_site_banner: false
+
+nav:
+  - Úvod: index.md
+  - "Časť 1 — Firma a infraštruktúra":
+      - Prehľad: 01-firma-a-infrastruktura/index.md
+      - "Blok 1 — Firma a produkt": 01-firma-a-infrastruktura/blok-1-firma-a-produkt.md
+      - "Blok 2 — Pripojenie do internetu": 01-firma-a-infrastruktura/blok-2-pripojenie-do-internetu.md
+      - "Blok 3 — Hosting a platforma": 01-firma-a-infrastruktura/blok-3-hosting-a-platforma.md
+  - "Časť 2 — Stavba e-shopu":
+      - Prehľad: 02-stavba-eshopu/index.md
+      - "Blok 4 — Základ e-shopu": 02-stavba-eshopu/blok-4-zaklad-eshopu.md
+      - "Blok 5 — Produkty": 02-stavba-eshopu/blok-5-produkty.md
+      - "Blok 6 — Košík, doprava a platby": 02-stavba-eshopu/blok-6-kosik-doprava-platby.md
+      - "Blok 7 — Povinné stránky e-shopu": 02-stavba-eshopu/blok-7-povinne-stranky.md
+  - "Časť 3 — Reklama":
+      - Prehľad: 03-reklama/index.md
+      - "Blok 8 — Bannery": 03-reklama/blok-8-bannery.md
+      - "Blok 9 — Reklama a meranie": 03-reklama/blok-9-reklama-a-meranie.md
+  - "Záver":
+      - "Blok 10 — Odovzdanie projektu": 04-zaver/blok-10-odovzdanie.md
+      - "Bloky 11–12 — Obhajoby": 04-zaver/blok-11-12-obhajoby.md
+  - "Znalostná báza":
+      - Prehľad: znalostna-baza/index.md
+      - "Semestrálny projekt a hodnotenie": znalostna-baza/semestralny-projekt.md
+      - "Tabuľka 10 poskytovateľov": znalostna-baza/tabulka-10-poskytovatelov.md
+      - "Internet, doména a DNS": znalostna-baza/internet-domena-dns.md
+      - "AI v predmete": znalostna-baza/ai-v-predmete.md
+      - "WordPress a WooCommerce": znalostna-baza/wordpress-woocommerce.md
+      - "Webnode": znalostna-baza/webnode.md
+      - "Offline kópia webu (HTTrack)": znalostna-baza/httrack-offline-kopia.md

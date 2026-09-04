@@ -1,0 +1,355 @@
+/* ============================================================
+   Predmet „Elektronické obchodovanie" — petrolejová + koralová.
+   Skopírované 1:1 z tvorba_webstranok (style guide: tvorba_webstranok/style_predmety.md).
+   Hĺbku tvoria okraje, nie tiene a gradienty.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&display=swap");
+
+/* ---------- tokeny: svetlý režim ---------- */
+:root,
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #0E5A6B;
+  --md-primary-fg-color--light: #E7F0F1;
+  --md-primary-fg-color--dark: #0B4654;
+  --md-primary-bg-color: #FFFFFF;
+  --md-accent-fg-color: #E4572E;
+  --md-default-bg-color: #FAF8F5;
+  --md-default-fg-color: #16282E;
+  --md-typeset-a-color: #0E5A6B;
+
+  --tw-surface: #FFFFFF;
+  --tw-border: #E7E1D8;
+  --tw-ink: #16282E;
+  --tw-muted: #5A6B70;
+  --tw-accent: #E4572E;
+  --tw-accent-soft: #FBE9E1;
+  --tw-primary-soft: #E7F0F1;
+  --tw-table-head: #F5F1EA;
+  --tw-inline-code-bg: #F0EBE2;
+  --tw-check: #2E7D4F;
+
+  --tw-note-bg: #EEF5F6;    --tw-note-border: #CBDEE3;    --tw-note-icon: #0E5A6B;
+  --tw-tip-bg: #F1F8F3;     --tw-tip-border: #C7E0CF;     --tw-tip-icon: #2E7D4F;
+  --tw-warn-bg: #FBF3E7;    --tw-warn-border: #EBD9C3;    --tw-warn-icon: #B4530A;
+  --tw-example-bg: #F3EFFA; --tw-example-border: #DDD3EE; --tw-example-icon: #6B4FA0;
+}
+
+/* ---------- tokeny: tmavý režim ---------- */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #146275;
+  --md-primary-fg-color--light: #12333A;
+  --md-primary-fg-color--dark: #0B4654;
+  --md-primary-bg-color: #FFFFFF;
+  --md-accent-fg-color: #FF6B47;
+  --md-default-bg-color: #0C171A;
+  --md-default-fg-color: #E9EFEC;
+  --md-typeset-a-color: #5BBECE;
+
+  --tw-surface: #12242A;
+  --tw-border: #23393F;
+  --tw-ink: #E9EFEC;
+  --tw-muted: #9BB0AC;
+  --tw-accent: #FF6B47;
+  --tw-accent-soft: #3A241D;
+  --tw-primary-soft: #12333A;
+  --tw-table-head: #142930;
+  --tw-inline-code-bg: #1B3238;
+  --tw-check: #4FBF7F;
+
+  --tw-note-bg: #0F272C;    --tw-note-border: #1C3D45;    --tw-note-icon: #5BBECE;
+  --tw-tip-bg: #12281C;     --tw-tip-border: #24503A;     --tw-tip-icon: #4FBF7F;
+  --tw-warn-bg: #2E2013;    --tw-warn-border: #4A3418;    --tw-warn-icon: #E8A25C;
+  --tw-example-bg: #241F33; --tw-example-border: #3A3153; --tw-example-icon: #B39DDB;
+}
+
+/* ---------- typografia ---------- */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: "Bricolage Grotesque", var(--md-text-font-family, sans-serif);
+  color: var(--md-default-fg-color);
+}
+.md-typeset h1 { font-weight: 800; letter-spacing: -0.02em; }
+.md-typeset h2 { font-weight: 700; }
+.md-typeset h3, .md-typeset h4 { font-weight: 700; }
+
+/* ---------- horná lišta ---------- */
+.md-header {
+  background-color: var(--tw-surface);
+  color: var(--tw-ink);
+  border-bottom: 1px solid var(--tw-border);
+  box-shadow: none;
+}
+.md-header__title { font-weight: 600; }
+.md-header__button.md-logo :is(img, svg) { height: 1.3rem; }
+.md-search__form {
+  background-color: var(--md-default-bg-color);
+  border: 1px solid var(--tw-border);
+  border-radius: 10px;
+}
+.md-search__input { color: var(--tw-ink); }
+.md-search__input::placeholder,
+.md-search__icon { color: var(--tw-muted); }
+[data-md-toggle="search"]:checked ~ .md-header .md-search__form {
+  background-color: var(--tw-surface);
+  border-radius: 10px 10px 0 0;
+}
+
+/* ---------- ľavá navigácia ---------- */
+.md-nav__link--active,
+.md-nav__link--active .md-nav__link {
+  color: var(--md-typeset-a-color);
+  font-weight: 600;
+}
+.md-nav__item--section > .md-nav__link {
+  text-transform: uppercase;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: var(--tw-muted);
+}
+
+/* ---------- admonition boxy ---------- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 1px;
+  border-radius: 12px;
+  box-shadow: none;
+  font-size: 0.68rem;
+}
+.md-typeset .admonition > .admonition-title,
+.md-typeset details > summary {
+  background-color: transparent;
+  font-weight: 700;
+}
+
+.md-typeset .admonition.note, .md-typeset details.note {
+  background-color: var(--tw-note-bg); border-color: var(--tw-note-border);
+}
+.md-typeset .note > .admonition-title::before,
+.md-typeset details.note > summary::before { background-color: var(--tw-note-icon); }
+
+.md-typeset .admonition.tip, .md-typeset details.tip {
+  background-color: var(--tw-tip-bg); border-color: var(--tw-tip-border);
+}
+.md-typeset .tip > .admonition-title::before,
+.md-typeset details.tip > summary::before { background-color: var(--tw-tip-icon); }
+
+.md-typeset .admonition.warning, .md-typeset details.warning {
+  background-color: var(--tw-warn-bg); border-color: var(--tw-warn-border);
+}
+.md-typeset .warning > .admonition-title::before,
+.md-typeset details.warning > summary::before { background-color: var(--tw-warn-icon); }
+
+.md-typeset .admonition.example, .md-typeset details.example {
+  background-color: var(--tw-example-bg); border-color: var(--tw-example-border);
+}
+.md-typeset .example > .admonition-title::before,
+.md-typeset details.example > summary::before { background-color: var(--tw-example-icon); }
+
+/* ---------- kód: prompty tmavé v oboch režimoch ---------- */
+.md-typeset code {
+  background-color: var(--tw-inline-code-bg);
+  border-radius: 5px;
+}
+.md-typeset pre > code {
+  background-color: #10262C;
+  color: #DCE8E4;
+  border-radius: 12px;
+  padding: 0.75em 1em;
+}
+.md-typeset pre > code:hover ~ .md-clipboard,
+.md-clipboard { color: #7FA8B0; }
+.md-clipboard:hover { color: #DCE8E4; }
+.md-typeset pre { position: relative; }
+.md-clipboard.tw-copied { color: #4FBF7F; }
+
+/* ---------- tabuľky ---------- */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--tw-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: none;
+}
+.md-typeset table:not([class]) th {
+  background-color: var(--tw-table-head);
+  color: var(--md-default-fg-color);
+  font-weight: 600;
+}
+.md-typeset table:not([class]) td { border-top: 1px solid var(--tw-border); }
+
+/* ---------- checklisty ---------- */
+.md-typeset [type="checkbox"] + .task-list-indicator::before {
+  background-color: var(--tw-muted);
+}
+.md-typeset [type="checkbox"]:checked + .task-list-indicator::before {
+  background-color: var(--md-primary-fg-color);
+}
+[data-md-color-scheme="slate"] .md-typeset [type="checkbox"]:checked + .task-list-indicator::before {
+  background-color: #5BBECE;
+}
+
+/* ---------- tlačidlá ---------- */
+.md-typeset .md-button {
+  border-radius: 12px;
+  border: 1px solid var(--tw-border);
+  background-color: var(--tw-surface);
+  color: var(--tw-ink);
+  font-weight: 600;
+}
+.md-typeset .md-button--primary {
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: #FFFFFF;
+}
+.md-typeset .md-button:hover {
+  border-color: var(--md-primary-fg-color);
+  background-color: var(--tw-primary-soft);
+  color: var(--md-primary-fg-color);
+}
+.md-typeset .md-button--primary:hover {
+  background-color: var(--md-primary-fg-color--dark);
+  color: #FFFFFF;
+}
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary {
+  background-color: #FF6B47;
+  border-color: #FF6B47;
+  color: #10191B;
+}
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary:hover {
+  background-color: #FF8A66;
+  color: #10191B;
+}
+
+/* ---------- grid karty (úvod, prehľady) ---------- */
+.md-typeset .grid.cards > :is(ul, ol) > li,
+.md-typeset .grid > .card {
+  border: 1px solid var(--tw-border);
+  border-radius: 16px;
+  background-color: var(--tw-surface);
+  box-shadow: none;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+.md-typeset .grid.cards > :is(ul, ol) > li:hover,
+.md-typeset .grid > .card:hover {
+  border-color: var(--tw-border);
+  box-shadow: 0 4px 14px rgba(22, 40, 46, 0.08);
+}
+
+/* ---------- pätička ---------- */
+.md-footer,
+.md-footer-meta {
+  background-color: var(--tw-surface);
+  color: var(--tw-muted);
+}
+.md-footer { border-top: 1px solid var(--tw-border); }
+.md-footer__link { color: var(--tw-ink); }
+.md-footer__direction { color: var(--tw-muted); }
+.md-footer__title { color: var(--tw-ink); }
+.md-footer-meta .md-copyright { color: var(--tw-muted); }
+/* Material dáva © riadku biele písmo (ráta s tmavou pätičkou) — naša pätička je svetlá.
+   Selektory s .md-footer-meta.md-typeset kvôli špecificite Materialových pravidiel. */
+.md-copyright__highlight { color: var(--tw-muted); }
+.md-footer-meta.md-typeset .md-copyright__highlight a { color: var(--md-typeset-a-color); }
+.md-footer-meta.md-typeset .md-copyright__highlight a:hover { color: var(--md-accent-fg-color); }
+
+/* ============================================================
+   Úvodná stránka — hero, kroky, zručnosti
+   ============================================================ */
+.tw-hero {
+  text-align: center;
+  padding: 2.2rem 0 0.6rem;
+}
+.tw-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--tw-surface);
+  border: 1px solid var(--tw-border);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--md-primary-fg-color);
+}
+[data-md-color-scheme="slate"] .tw-hero-badge { color: #5BBECE; }
+.tw-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--tw-accent);
+  display: inline-block;
+}
+.tw-hero h1 {
+  font-size: 52px;
+  line-height: 1.12;
+  letter-spacing: -0.5px;
+  margin: 24px auto 0;
+  max-width: 760px;
+}
+.tw-hero .tw-accent { color: var(--tw-accent); }
+.tw-hero-lead {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--tw-muted);
+  max-width: 620px;
+  margin: 18px auto 0;
+}
+.tw-hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.tw-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin: 40px 0 8px;
+  flex-wrap: wrap;
+}
+.tw-step { display: flex; align-items: center; gap: 11px; text-align: left; }
+.tw-step-num {
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--tw-accent);
+  background: var(--tw-accent-soft);
+  border-radius: 8px;
+  padding: 5px 8px;
+}
+.tw-step-title { font-weight: 600; font-size: 15px; line-height: 1.3; color: var(--tw-ink); }
+.tw-step-sub { font-size: 13px; color: var(--tw-muted); line-height: 1.4; }
+.tw-step-arrow { color: var(--tw-muted); font-size: 17px; opacity: 0.6; }
+
+/* zoznam „čo budeš vedieť" s fajkami */
+.tw-skills ul { list-style: none; padding-left: 0; }
+.tw-skills ul > li {
+  margin-left: 0;
+  padding-left: 1.7em;
+  position: relative;
+}
+.tw-skills ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.28em;
+  width: 1.05em;
+  height: 1.05em;
+  background-color: var(--tw-check);
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>') no-repeat center / contain;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>') no-repeat center / contain;
+}
+
+@media screen and (max-width: 44em) {
+  .tw-hero h1 { font-size: 34px; }
+  .tw-hero-lead { font-size: 16px; }
+  .tw-steps { flex-direction: column; align-items: center; gap: 12px; }
+  .tw-step-arrow { display: none; }
+}
