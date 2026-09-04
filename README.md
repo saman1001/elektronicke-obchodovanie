@@ -37,11 +37,33 @@ Potom otvor `http://127.0.0.1:8000` v prehliadači. Pri každej zmene `.md` súb
 ## Ako materiál vydať online
 
 Web beží na GitHub Pages s vlastnou doménou **https://eo.fabus.eu** (súbor `docs/CNAME`).
+Nasadenie je automatické: každý push do vetvy `main` spustí workflow `.github/workflows/deploy.yml`,
+ktorý web zostaví (`mkdocs build --strict`) a nahrá do vetvy `gh-pages`. Do pár minút je zmena online;
+priebeh vidíš v záložke **Actions** na GitHube. Ak build zlyhá (typicky rozbitý odkaz), web ostane
+v poslednej funkčnej verzii a pri commite svieti červený krížik.
+
+Ručné nasadenie z PC (záloha, keď workflow nejde):
 
 ```bash
 python -m mkdocs gh-deploy --force   # build + nasadenie na GitHub Pages (vetva gh-pages)
 mkdocs build                          # len lokálny build do site/ (dá sa otvoriť dvojklikom)
 ```
+
+## Ako prispievať (pre spoluautorov)
+
+Python ani MkDocs netreba — stačí GitHub v prehliadači:
+
+1. Otvor súbor v `docs/` na GitHube a klikni na ceruzku (**Edit**).
+2. Uprav text a potvrď **Commit changes** priamo do `main`.
+3. Workflow web nasadí sám; o pár minút skontroluj výsledok na https://eo.fabus.eu.
+
+Kde čo je:
+
+- **Nástroje AI:** `docs/znalostna-baza/ai-v-predmete.md` (sekcia „Zadarmo") a box **„AI v tomto bloku"**
+  v každom bloku (`docs/0*/blok-*.md`) — tam patrí konkrétny nástroj a prompt pre daný krok.
+- **Boxy a záložky** používajú syntax Material for MkDocs (`!!! tip "Nadpis"`, `=== "WooCommerce"`);
+  najjednoduchšie je skopírovať existujúci box a prepísať obsah.
+- **Novú stránku** pridaj do `nav:` v `mkdocs.yml`, inak sa nezobrazí v menu.
 
 ## PDF archív semestra
 

@@ -7,13 +7,13 @@ hide:
 
 <div class="tw-hero" markdown>
 
-<h1>Od nápadu na firmu po <span class="tw-accent">funkčný e-shop</span> — za jeden semester.</h1>
+<h1>Od nápadu na predaj produktu alebo služby po <span class="tw-accent">funkčný e-shop</span> — za jeden semester.</h1>
 
 <p class="tw-hero-lead">Vyberieš si firmu, nájdeš jej pripojenie a hosting, postavíš e-shop s košíkom, spravíš mu reklamu a celý projekt obhájiš. Všetko na nástrojoch, ktoré sú zadarmo — a pri každom kroku uvidíš, ako a za koľko sa to robí v praxi.</p>
 
 <div class="tw-hero-cta">
   <a class="md-button md-button--primary" href="01-firma-a-infrastruktura/blok-1-firma-a-produkt.html">Začni blokom 1 →</a>
-  <a class="md-button" href="znalostna-baza/semestralny-projekt.html">Semestrálny projekt a hodnotenie</a>
+  <a class="md-button" href="znalostna-baza/index.html">Znalostná báza</a>
 </div>
 
 <div class="tw-steps">
@@ -73,7 +73,7 @@ hide:
 </div>
 
 !!! note "Dve skupiny, jeden web"
-    Študenti katedry stavajú e-shop na **WordPress + WooCommerce**, ostatní na platforme **Webnode**. Všetko okrem samotného nástroja je spoločné. V blokoch 3–7 nájdeš záložky **WooCommerce** a **Webnode** — vyber si tú, ktorá patrí tvojej skupine.
+    Študenti Katedry spojov stavajú e-shop na **WordPress + WooCommerce**, ostatní na platforme **Webnode**. Všetko okrem samotného nástroja je spoločné. V blokoch 3–7 nájdeš záložky **WooCommerce** a **Webnode** — vyber si tú, ktorá patrí tvojej skupine.
 
 !!! tip "Všetko zadarmo"
     Nič, čo na predmete použiješ, nestojí peniaze — ani hosting, ani platforma, ani nástroje na bannery. Zároveň v každom bloku nájdeš box **„Ako je to v praxi"**: koľko to stojí firmy a čo za to dostanú navyše. Aby si vedel, za čo sa v e-commerce platí, aj keď ty platiť nebudeš.
