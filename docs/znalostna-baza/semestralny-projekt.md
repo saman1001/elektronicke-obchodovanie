@@ -43,7 +43,7 @@ Referát prechádza **kontrolou plagiátov**. Text od AI, ktorý vydáš za vlas
 | Rozsah (5–10 strán) | 2 | blok 10 |
 | Zdroje literatúry | 2 | priebežne, každá kapitola |
 | Spracovanie (úprava, obrázky, čitateľnosť) | 2 | blok 10 |
-| Dochádzka | 5 | každé cvičenie |
+| Aktívna účasť | 5 | každé cvičenie |
 | Obhajoba | 7 | bloky 11–12 |
 | Hodnotenie spolužiakmi | 6 | bloky 11–12 |
 | **Spolu** | **40** | |

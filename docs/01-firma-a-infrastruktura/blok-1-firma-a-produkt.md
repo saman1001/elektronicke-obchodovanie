@@ -30,7 +30,7 @@ Firma môže byť **reálna** (rodinný podnik, brigáda, známy, ktorý predáv
 - má **úzky sortiment** — do 10 produktov (dôvod nižšie),
 - vieš povedať, **kto** u nej nakúpi a prečo práve online.
 
-**Príklady:** lokálna pražiareň kávy, remeselný med, ručne šité tašky, tréningové plány (PDF), náhradné diely na jeden typ bicykla, hobby elektronika, knihy jedného autora, darčekové balíčky.
+**Príklady:** lokálna pražiareň kávy, remeselný med, ručne šité tašky, tréningové plány (PDF), náhradné diely na jeden typ bicykla, hobby elektronika, knihy jedného autora, darčekové balíčky — alebo pokojne aj šupiny z drakov. Je jedno, **čo** predávaš; podstatný je **proces**, ktorým e-shop postavíš — firma, pripojenie, hosting, košík, reklama.
 
 **Čomu sa vyhni:** marketplace so stovkami predajcov, „nová Alza", požičovňa (rezervačný systém nie je košík), služby bez pevnej ceny (tetovanie na mieru).
 

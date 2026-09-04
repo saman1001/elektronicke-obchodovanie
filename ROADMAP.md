@@ -6,6 +6,7 @@ Checklist funkcií projektu — čo je hotové a čo čaká. Bez dátumov (hist�
 
 - [x] Štruktúra dráhy: 12 blokov v 4 častiach podľa osnovy semestrálneho projektu
 - [x] Úvodná stránka s dráhou predmetu (hero, kroky, karty častí, zoznam zručností)
+- [x] Komiksová infografika dráhy predmetu na úvodnej stránke
 - [x] Časť 1 — Firma a infraštruktúra, bloky 1–3 (firma a sortiment, tabuľka 10 poskytovateľov pripojenia, tabuľka 10 hostingov so záložkami WooCommerce/Webnode)
 - [x] Časť 2 — Stavba e-shopu, bloky 4–7 (základ e-shopu, produkty, košík s dopravou a platbami, povinné stránky; záložky WooCommerce/Webnode)
 - [x] Časť 3 — Reklama, bloky 8–9 (bannery a výmena reklamy, ďalšia forma reklamy a meranie)
@@ -30,10 +31,12 @@ Checklist funkcií projektu — čo je hotové a čo čaká. Bez dátumov (hist�
 ## Nasadenie
 
 - [x] Verejný GitHub repozitár (interné súbory mimo repa)
-- [x] GitHub Pages (`mkdocs gh-deploy`)
+- [x] GitHub Pages (vetva `gh-pages`)
+- [x] Automatické nasadenie cez GitHub Actions pri pushi do `main` (strict build)
 - [x] Súbor `docs/CNAME` pre doménu eo.fabus.eu
 - [x] DNS záznam eo.fabus.eu
 - [x] HTTPS na vlastnej doméne (vynútené)
+- [x] Návod pre spoluautorov v README (úprava cez GitHub bez lokálnej inštalácie)
 
 ## Pre vyučujúceho
 

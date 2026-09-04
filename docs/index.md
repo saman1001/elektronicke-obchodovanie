@@ -28,6 +28,8 @@ hide:
 
 </div>
 
+![Od nápadu k e-shopu za jeden semester — komiks v piatich krokoch: vyber firmu a produkt, nájdi pripojenie a hosting, postav e-shop s košíkom, sprav mu reklamu, odovzdaj projekt a obháj ho](img/eshop-za-jeden-semester.jpg){ style="border-radius: 12px; margin-top: 8px;" loading=lazy }
+
 ## Ako je predmet rozdelený
 
 <div class="grid cards" markdown>
