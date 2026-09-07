@@ -289,7 +289,7 @@ Alt text: „Ľavá časť: popis produktu píše sa pre konkrétneho zákazník
 4. Export PNG, optimalizácia do 600 kB, uloženie do `docs/img/infografiky/`.
 5. Po vytvorení plátna sem agent vloží odkaz na artefakt, aby sa dali infografiky neskôr upravovať:
 
-Plátno Claude Design: (vloží agent po etape E0)
+Plátno Claude Design: https://claude.ai/code/artifact/8bebbb59-1f76-4465-a8ed-c674d859416a (8 artboardov: 6 infografík a 2 mockupy webu, vytvorené 7. 9. 2026)
 
 ## 7. Čomu sa vyhnúť
 
