@@ -11,7 +11,7 @@ Desať týždňov práce leží v e-shope, v Moodle a v tvojom dokumente. Dnes t
 
 ## Krok 1 — Referát 📄
 
-Dokument projektu z bloku 1 má už väčšinu kapitol. Teraz z neho urob referát na **5–10 strán** (bez príloh). Prejdi ho kapitolu po kapitole a v každej over tri veci: **rozhodnutie** (čo si vybral), **zdôvodnenie** (prečo, podľa akých kritérií) a **dôkaz** (tabuľka, snímka obrazovky, odkaz).
+Dokument projektu z bloku 1 má už väčšinu kapitol. Teraz z neho urob referát na **5–10 strán** (bez príloh). Ako vyzerá hotový referát, ukazuje [vzorový projekt](../znalostna-baza/sablony.md). Prejdi ho kapitolu po kapitole a v každej over tri veci: **rozhodnutie** (čo si vybral), **zdôvodnenie** (prečo, podľa akých kritérií) a **dôkaz** (tabuľka, snímka obrazovky, odkaz).
 
 | Kapitola | Čo tam musí byť | Kritérium |
 |---|---|---|

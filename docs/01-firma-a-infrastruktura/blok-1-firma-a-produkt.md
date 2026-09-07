@@ -86,7 +86,7 @@ Vytvor dokument **„Semestrálny projekt — [názov firmy]"** (Word alebo Goog
 6. Záver
 7. Zdroje
 
-Do prvej kapitoly prepíš krok 2 a krok 3. Čo sa hodnotí a za koľko bodov: [Semestrálny projekt a hodnotenie](../znalostna-baza/semestralny-projekt.md).
+Do prvej kapitoly prepíš krok 2 a krok 3. Čo sa hodnotí a za koľko bodov: [Semestrálny projekt a hodnotenie](../znalostna-baza/semestralny-projekt.md). Použi šablónu [Dokument projektu](../sablony/EO-dokument-projektu.docx), má už všetky kapitoly a návod, čo do nich patrí; ako vyzerá hotový projekt, ukazuje [vzorový projekt](../znalostna-baza/sablony.md).
 
 ## ✅ Výstup bloku
 

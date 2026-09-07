@@ -15,8 +15,8 @@ Checklist funkcií projektu — čo je hotové a čo čaká. Bez dátumov (hist�
 - [x] Box „Ako je to v praxi" (náklady a výhody platených riešení) v každom bloku
 - [x] Znalostná báza — 7 stránok (semestrálny projekt a hodnotenie, tabuľka 10 poskytovateľov, internet a DNS, AI v predmete, WordPress a WooCommerce, Webnode, offline kópia webu)
 - [x] Hodnotenie 40 b a pravidlá odovzdávania (na webe)
-- [ ] Šablóny na stiahnutie (Excel tabuľka poskytovateľov, protokol testu nákupu, formulár na odstúpenie)
-- [ ] Vzorový príklad jednej firmy naprieč blokmi
+- [x] Šablóny na stiahnutie (dokument projektu, Excel tabuľka poskytovateľov, protokol testu nákupu, formulár na odstúpenie, hodnotenie spolužiakov)
+- [x] Vzorový príklad jednej firmy naprieč blokmi (Kávová pražiareň Zrnko: vzorový referát, tabuľka a protokol)
 
 ## Web
 

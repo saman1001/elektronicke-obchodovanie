@@ -48,7 +48,7 @@ Typy pripojenia, na ktoré narazíš:
 
 ## Krok 3 — Vyplň tabuľku a prepočítaj cenu 📊
 
-Tabuľku rob v **Exceli** (tak sa odovzdáva). Jeden riadok = jeden poskytovateľ:
+Tabuľku rob v **Exceli** (tak sa odovzdáva), najlepšie v šablóne [Tabuľka 10 poskytovateľov](../sablony/EO-tabulka-10-poskytovatelov.xlsx), kde cenu do tabuľky počíta vzorec. Jeden riadok = jeden poskytovateľ:
 
 | Poskytovateľ | Typ | Download / Upload (Mbit/s) | Mesačne (€) | Pripojenie (€) | Viazanosť (mes.) | FUP / limit | **Cena do tabuľky (€/mes.)** | Recenzie, skúsenosť | Zdroj |
 |---|---|---|---|---|---|---|---|---|---|

@@ -77,7 +77,7 @@ V administrácii otvor **objednávku** (WooCommerce → Objednávky; Webnode E-s
 
 ## Krok 5 — Test nákupu spolužiakom 🧪
 
-Vymeň si adresu e-shopu so spolužiakom. Každý nakúpi u druhého a **vyplní protokol** — zapisuje, nie opravuje:
+Vymeň si adresu e-shopu so spolužiakom. Každý nakúpi u druhého a **vyplní protokol** (šablóna [Protokol testu nákupu](../sablony/EO-protokol-testu-nakupu.docx)) — zapisuje, nie opravuje:
 
 | # | Kontrola | Funguje? | Poznámka |
 |---|---|---|---|

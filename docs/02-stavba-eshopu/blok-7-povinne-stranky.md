@@ -29,7 +29,7 @@ Tvoj e-shop je školský projekt, takže texty nikoho nezaväzujú. Napíšeš i
 
 Neopisuj podmienky konkurencie — sú chránené autorským právom a navyše platia pre inú firmu. Napíš vlastné podľa štruktúry z tabuľky. Použi svoje rozhodnutia z bloku 6 (doprava, platby, lehoty dodania) a údaje firmy z bloku 1. Pri fiktívnej firme: **IČO a účet zjavne vzorové** (napr. IČO 00 000 000) a v úvode jedna veta, že ide o študentský projekt.
 
-Priprav aj **formulár na odstúpenie od zmluvy** — jednoduchý dokument (meno, číslo objednávky, dátum, „odstupujem od zmluvy"), ktorý si zákazník stiahne alebo skopíruje.
+Priprav aj **formulár na odstúpenie od zmluvy** — jednoduchý dokument (meno, číslo objednávky, dátum, „odstupujem od zmluvy"), ktorý si zákazník stiahne alebo skopíruje. Vzor: [Formulár na odstúpenie od zmluvy](../sablony/EO-formular-odstupenie-od-zmluvy.docx), doplň doň údaje firmy.
 
 !!! tip "AI v tomto bloku"
     **Čo jej zveriť:** koncept obchodných podmienok a stránky o ochrane osobných údajov z tvojich údajov. Je to presne typ textu, kde AI ušetrí najviac času — a kde je najnebezpečnejšia.
