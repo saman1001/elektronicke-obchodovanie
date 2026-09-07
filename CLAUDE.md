@@ -6,13 +6,14 @@ Web predmetu Elektronické obchodovanie (MkDocs Material, GitHub Pages, https://
 
 Zadanie redizajnu je v troch dokumentoch. Prečítaj ich pred akoukoľvek zmenou šablón, CSS alebo obsahu blokov:
 
-- `navrhy/redesign/PRD.md` — čo sa má urobiť, rozsah, etapy, akceptačné kritériá.
-- `navrhy/redesign/VISION.md` — ako to má vyzerať, tokeny, komponenty, špecifikácia šiestich infografík.
-- `navrhy/redesign/AGENTS.md` — pravidlá práce v repozitári: jazyk, čo sa nesmie meniť, konvencie súborov, commity, overovanie.
+- `navrhy/redesign/PRD.md`: čo sa má urobiť, rozsah, etapy, akceptačné kritériá.
+- `navrhy/redesign/VISION.md`: ako to má vyzerať, tokeny, komponenty, špecifikácia šiestich infografík.
+- `navrhy/redesign/AGENTS.md`: pravidlá práce v repozitári: jazyk, čo sa nesmie meniť, konvencie súborov, commity, overovanie.
 
 ## Pravidlá v skratke
 
 - Odpovedaj po slovensky. Obsah webu, komentáre v kóde a commit správy sú slovenské, identifikátory anglické alebo s prefixom `tw-`.
+- Nový text bez typických znakov písania AI: žiadne pomlčky ako oddeľovač viet, trojice prídavných mien, rečnícke otázky ani prázdne prívlastky. Zoznam s výnimkami je v `navrhy/redesign/AGENTS.md`, kapitola 7.
 - Nemeň text existujúcich stránok mimo miest uvedených v PRD. Nemeň `nav`, názvy súborov, tokeny a fonty.
 - Každá zmena končí `mkdocs build --strict` bez varovaní a vizuálnou kontrolou na desktope aj mobile v oboch režimoch.
 - Nenasadzuj ručne. Nasadenie robí GitHub Actions po pushi do `main`, push len so súhlasom používateľa.

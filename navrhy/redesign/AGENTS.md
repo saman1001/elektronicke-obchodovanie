@@ -72,3 +72,21 @@ docs/
 - Ak Material nedovolí niečo spraviť šablónou (napríklad metadáta cudzích stránok v `nav.pages`), použi náhradné riešenie uvedené v PRD a napíš to do commit správy.
 - Ak build v strict režime zlyhá na starom obsahu, oprav minimum (odkaz, alt text) a uveď to v commite. Nerob pri tom iné úpravy textu.
 - Ak podklad z NotebookLM obsahuje tvrdenie, ktoré nevieš overiť, do infografiky ani textu ho nedávaj.
+
+## 7. Štýl textu: zakázané znaky písania AI
+
+Platí pre každý nový alebo upravený text: obsah stránok, texty v infografikách, popisy kariet, alt texty, hlášky brány, commit správy. Existujúci text sa kvôli tomuto pravidlu neprepisuje.
+
+- **Pomlčka ako oddeľovač viet.** Žiadne „ — ", „ – " ani „--" uprostred vety. Vetu rozdeľ na dve, alebo použi čiarku, dvojbodku či zátvorku. Výnimka: zaužívaný tvar nadpisov „Blok 2 — Pripojenie do internetu" a rozsahy čísel („bloky 4–7", „5–10 strán"), ktoré web už používa.
+- **Kontrastná konštrukcia „nie X, ale Y"** a „nielen X, ale aj Y". Povedz priamo, čo platí.
+- **Trojice.** Žiadne tri prídavné mená za sebou („rýchly, jednoduchý a spoľahlivý"), tri synonymá ani tri príklady tam, kde stačí jeden.
+- **Rečnícke otázky** na začiatku odseku alebo sekcie („Prečo je to dôležité?"). Odsek začína tvrdením.
+- **Úvodné a záverečné výplne**: „V dnešnom digitálnom svete", „Je dôležité poznamenať", „Poďme sa pozrieť", „Na záver", „Zhrnutie:", „Dúfam, že". Ani jedna.
+- **Prázdne prívlastky**: kľúčový, revolučný, unikátny, bezproblémový, robustný, komplexný, inovatívny, moderný ako hodnotenie, efektívny bez čísla.
+- **Tučné prvé slová v každej odrážke** len preto, že sú to odrážky. Tučné písmo je pre pojem, ktorý študent hľadá očami.
+- **Emoji v texte.** Emoji ostávajú len tam, kde ich web už má (nadpisy krokov a sekcií blokov). Do nových odsekov, infografík a kariet sa nepridávajú.
+- **Nadpis s dvojbodkou a heslom namiesto vety** („Výsledok: rýchlejší web.") tam, kde sa dá napísať veta s prísudkom.
+- **Nadmerné istenie**: „môže potenciálne", „v podstate", „do istej miery". Buď to platí, alebo to vynechaj.
+- **Anglické slová so slovenským ekvivalentom**: workflow (postup), feature (funkcia), insight (zistenie). Odborné skratky (DNS, SSL, CTA) a názvy nástrojov ostávajú.
+
+Kontrola pred commitom: prehľadaj zmenené súbory na „ — ", „ – ", „--", „nielen", „ale aj" a slová zo zoznamu prívlastkov. Každý nález mimo výnimiek oprav.

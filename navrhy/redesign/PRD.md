@@ -24,7 +24,7 @@ Web https://eo.fabus.eu (MkDocs Material, GitHub Pages) dostane novú vizuálnu 
 2. Na každej stránke bloku študent vidí, kde v dráhe je (časť, číslo bloku, čo bolo pred ním a čo nasleduje).
 3. Pojmy z blokov 2 a 3 (internet, pripojenie, doména, hosting, DNS) a z blokov 4 a 5 (logo, produktový popis, produktové foto) sú vysvetlené aj vizuálne, infografikou v jednotnom štýle predmetu.
 4. Študent má návod, ako si pomocou AI vytvoriť logo a produktové foto.
-5. Web pôsobí ako digitálna učebnica, nie ako technická dokumentácia, a pritom ostáva MkDocs s obsahom v Markdowne.
+5. Web pôsobí ako online kurz k vysokoškolskému predmetu Elektronické obchodovanie, nie ako technická dokumentácia, a pritom ostáva MkDocs s obsahom v Markdowne.
 6. Web je za spoločným heslom pre skupinu študentov.
 
 ## 4. Neciele
@@ -215,10 +215,10 @@ Etapy E0 a E1 sú nezávislé a môžu bežať súbežne. E2 potrebuje E0 (obrá
 
 ## 12. Podklady
 
-- `navrhy/navrh_redizajnu_mkdocs_edukacny_web.md` — pôvodný návrh redizajnu (dashboard, štruktúra cvičenia, brána, čomu sa vyhnúť).
-- `navrhy/infografiky/Sprievodca_svetom_internetu_a_cloudu.png`, `Čo_je_to_vlastne_internet_.mp4` — podklad pre blok 2.
-- `navrhy/infografiky/Základy_domény_a_hostingu.png` — podklad pre blok 3.
-- `navrhy/infografiky/Sprievodca_AI_tvorbou_loga.png`, `ELEKTRONICKE OBCHODOVANIE.md` — podklad pre blok 4 a novú stránku.
-- `navrhy/infografiky/Sprievodca_profesionálnym_copywritingom.png`, `Pokorenie_hory_copywritingu.mp4` — podklad pre blok 5.
-- `docs/znalostna-baza/internet-domena-dns.md` — existujúce vysvetlenie pojmov, s ktorým musia infografiky súhlasiť.
-- `docs/stylesheets/extra.css` — tokeny a existujúce komponenty.
+- `navrhy/navrh_redizajnu_mkdocs_edukacny_web.md`: pôvodný návrh redizajnu (dashboard, štruktúra cvičenia, brána, čomu sa vyhnúť).
+- `navrhy/infografiky/Sprievodca_svetom_internetu_a_cloudu.png`, `Čo_je_to_vlastne_internet_.mp4`: podklad pre blok 2.
+- `navrhy/infografiky/Základy_domény_a_hostingu.png`: podklad pre blok 3.
+- `navrhy/infografiky/Sprievodca_AI_tvorbou_loga.png`, `ELEKTRONICKE OBCHODOVANIE.md`: podklad pre blok 4 a novú stránku.
+- `navrhy/infografiky/Sprievodca_profesionálnym_copywritingom.png`, `Pokorenie_hory_copywritingu.mp4`: podklad pre blok 5.
+- `docs/znalostna-baza/internet-domena-dns.md`: existujúce vysvetlenie pojmov, s ktorým musia infografiky súhlasiť.
+- `docs/stylesheets/extra.css`: tokeny a existujúce komponenty.

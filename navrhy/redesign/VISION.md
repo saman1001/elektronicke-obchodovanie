@@ -4,7 +4,7 @@ Dopĺňa [PRD.md](PRD.md). Tento dokument hovorí, ako má web a infografiky vyz
 
 ## 1. Smer v jednej vete
 
-Moderná digitálna učebnica: veľa vzduchu, výrazná typografická hierarchia, veľké čísla blokov, karty s okrajmi namiesto tieňov, jeden akcent (koralová) na pozadí petrolejovej. Web má na prvý pohľad pôsobiť ako vzdelávacia platforma, nie ako dokumentácia knižnice.
+Online kurz k vysokoškolskému predmetu Elektronické obchodovanie: veľa vzduchu, výrazná typografická hierarchia, veľké čísla blokov, karty s okrajmi namiesto tieňov, jeden akcent (koralová) na pozadí petrolejovej. Web má na prvý pohľad pôsobiť ako kurz, ktorým študent prechádza blok po bloku, nie ako dokumentácia knižnice.
 
 ## 2. Princípy
 
@@ -299,3 +299,4 @@ Plátno Claude Design: (vloží agent po etape E0)
 - Animácie, ktoré posúvajú obsah pri čítaní, automatické karusely, parallax.
 - Anglické nadpisy, marketingové frázy („revolučný", „unikátny").
 - Skryté informácie za hover (na mobile neexistuje). Tooltip je doplnok, nie jediný nosič informácie.
+- Typické znaky textu písaného AI: pomlčky ako oddeľovač viet, trojice prídavných mien, rečnícke otázky, prázdne prívlastky. Úplný zoznam s výnimkami je v AGENTS.md, kapitola 7. Platí aj pre texty v infografikách.
