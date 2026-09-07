@@ -100,7 +100,7 @@ Nová voliteľná sekcia **„Pozri si najprv"** hneď za sekciou „Čo sa nau�
 
 ### F3 Infografiky
 
-Šesť infografík vytvorených v Claude Design v jednotnom štýle podľa [VISION.md](VISION.md), časť „Infografiky". Exportujú sa ako PNG šírky 2400 px (pomer 16 : 9) do `docs/img/infografiky/`:
+Osem infografík vytvorených v Claude Design v jednotnom štýle podľa [VISION.md](VISION.md), časť „Infografiky". Exportujú sa ako PNG šírky 2400 px (pomer 16 : 9) do `docs/img/infografiky/`:
 
 | Súbor | Blok | Obsah |
 |---|---|---|
@@ -108,8 +108,10 @@ Nová voliteľná sekcia **„Pozri si najprv"** hneď za sekciou „Čo sa nau�
 | `02-pripojenie-a-rychlost.png` | 2 | typy pripojenia, Mbit/s, upload vs. download, odporúčaná rýchlosť podľa činnosti firmy |
 | `03-dom-eshopu.png` | 3 | hosting = pozemok, doména = adresa, e-shop = obsah, anatómia domény, subdoména na free hostingu |
 | `03-domena-a-hosting-prepojenie.png` | 3 | DNS ako telefónny zoznam, NS a A záznamy, SSL a HTTPS, kto je za čo zodpovedný |
-| `04-logo-pomocou-ai.png` | 4 | 5 druhov loga, anatómia promptu, váha slov zľava doprava, favicon test |
+| `04-logo-druhy-a-prompt.png` | 4 | 5 druhov loga s príkladmi značiek, anatómia promptu (subjekt, štýl, farby, technické parametre, negatívny prompt), váha slov zľava doprava, limit dĺžky promptu |
+| `04-logo-nastroje-a-kontrola.png` | 4 | škálovateľnosť loga (favicon test), reverzné inžinierstvo, prehľad bezplatných nástrojov |
 | `05-popis-a-foto-produktu.png` | 5 | štruktúra popisu (pre koho, čo rieši, parametre, balenie), tri revízie textu, štruktúra promptu na produktové foto s príkladom |
+| `05-copywriting.png` | 5 | štyri fázy copywritingu: strategický základ, texty pre web a e-shop, tvorba a plánovanie obsahu, distribúcia a revízia |
 
 Každá infografika sa vloží do bloku ako obrázok s alt textom (obsahový súhrn, nie „infografika"), triedou `infografika` a odkazom na plnú veľkosť. Pod ňou je jedna veta, čo si z nej odniesť. Podklady z NotebookLM sa nekopírujú: texty sa píšu nanovo po slovensky, bez brandingu nástrojov, bez log skutočných firiem, bez preklepov z podkladov. Príklad domény je `mojeshop.sk` ako v bloku 3.
 
@@ -142,8 +144,8 @@ Stránka má rovnaké boxy ako bloky: „AI v tomto bloku" s hotovým promptom a
 
 - **Blok 2**: sekcia „Pozri si najprv" s infografikami `02-ako-cestuju-data.png` a `02-pripojenie-a-rychlost.png`. Odkaz na stránku „Internet, doména a DNS" v Znalostnej báze ostáva.
 - **Blok 3**: sekcia „Pozri si najprv" s `03-dom-eshopu.png`; infografika `03-domena-a-hosting-prepojenie.png` v kroku 1 pri pojmoch DNS a SSL.
-- **Blok 4, krok 2 (logo)**: odrážka „Logo" sa rozšíri o druhú možnosť: vygenerovať logo pomocou AI podľa novej stránky Znalostnej bázy. Vloží sa `04-logo-pomocou-ai.png`. Pravidlo „Žiadne stiahnuté logo z internetu" ostáva.
-- **Blok 5, krok 1 (podklady, fotky)**: odrážka „vygenerované AI" dostane odkaz na novú stránku (časť Produktové foto). **Blok 5, krok 4 (popis)**: doplní sa odsek o tom, pre koho sa píše (persona z bloku 1) a o troch revíziách textu (jazyková, štylistická, typografická). Vloží sa `05-popis-a-foto-produktu.png`.
+- **Blok 4, krok 2 (logo)**: odrážka „Logo" sa rozšíri o druhú možnosť: vygenerovať logo pomocou AI podľa novej stránky Znalostnej bázy. Vloží sa `04-logo-druhy-a-prompt.png`; `04-logo-nastroje-a-kontrola.png` ide na novú stránku Znalostnej bázy. Pravidlo „Žiadne stiahnuté logo z internetu" ostáva.
+- **Blok 5, krok 1 (podklady, fotky)**: odrážka „vygenerované AI" dostane odkaz na novú stránku (časť Produktové foto). **Blok 5, krok 4 (popis)**: doplní sa odsek o tom, pre koho sa píše (persona z bloku 1) a o troch revíziách textu (jazyková, štylistická, typografická). Vloží sa `05-popis-a-foto-produktu.png` a pri popise aj `05-copywriting.png`.
 - **Znalostná báza, „Internet, doména a DNS"**: infografiky z blokov 2 a 3 sa sem pridajú tiež, pri príslušných pojmoch.
 - **Všetky bloky**: front matter `blok` a `cast`, triedy `{ .krok }` na nadpisoch krokov, triedy `ai` a `prax` na admonition boxoch.
 
@@ -182,7 +184,7 @@ Stránka má rovnaké boxy ako bloky: „AI v tomto bloku" s hotovým promptom a
 
 | Etapa | Obsah | Výstup |
 |---|---|---|
-| E0 Infografiky | 6 artboardov v Claude Design podľa VISION.md, export PNG, optimalizácia | `docs/img/infografiky/*.png`, odkaz na plátno vo VISION.md |
+| E0 Infografiky | 8 artboardov v Claude Design podľa VISION.md, export PNG, optimalizácia | `docs/img/infografiky/*.png`, odkaz na plátno vo VISION.md |
 | E1 Vizuálna vrstva | `overrides/`, CSS komponentov, dashboard, hlavička bloku, front matter blokov, triedy `krok`, `ai`, `prax`, workflow paths | nový vzhľad bez zmeny obsahu |
 | E2 Obsah | stránka „Logo a produktové foto pomocou AI", úpravy blokov 2 až 5 a Znalostnej bázy, vloženie infografík | doplnený obsah |
 | E3 Brána | `gate.js`, prekrytie v `main.html`, konfigurácia, README | funkčná brána |
@@ -195,7 +197,7 @@ Etapy E0 a E1 sú nezávislé a môžu bežať súbežne. E2 potrebuje E0 (obrá
 1. `mkdocs build --strict` prejde bez varovaní lokálne aj v GitHub Actions.
 2. Úvodná stránka zobrazuje dráhu 12 blokov a 4 karty častí, každý bod a každá karta vedie na správnu stránku. Overené klikom na všetkých 12 bodov.
 3. Každá z 11 stránok blokov má hlavičku so správnym číslom, časťou a odkazmi na susedné bloky. Blok 1 nemá odkaz späť, obhajoby nemajú odkaz ďalej.
-4. Šesť infografík je na svojich miestach, majú alt text, odkaz na plnú veľkosť a každá je do 600 kB.
+4. Osem infografík je na svojich miestach, majú alt text, odkaz na plnú veľkosť a každá je do 600 kB.
 5. Stránka „Logo a produktové foto pomocou AI" pokrýva všetkých 10 bodov o logu a 3 body o fote, je v `nav` aj v tabuľke Znalostnej bázy, blok 4 a blok 5 na ňu odkazujú.
 6. Brána: bez hesla sa obsah nezobrazí ani nepreblikne, zlé heslo vypíše hlášku, správne heslo pustí ďalej a po obnovení stránky sa nepýta znova. Stránka ochrany súkromia je bez brány. `gate_enabled: false` bránu vypne. Heslo v repozitári nie je.
 7. Svetlý aj tmavý režim bez nečitateľných miest (kontrola dashboardu, bloku 3, novej stránky, prekrytia brány).
@@ -207,7 +209,7 @@ Etapy E0 a E1 sú nezávislé a môžu bežať súbežne. E2 potrebuje E0 (obrá
 ## 11. Riziká a rozhodnutia
 
 - **Brána nie je bezpečnosť.** Rozhodnuté: stačí, cieľ je odradiť náhodných návštevníkov a vyhľadávače. Ak by bola potrebná skutočná ochrana, cesta je Cloudflare Pages + Access (mimo tohto PRD).
-- **Presnosť podkladov z NotebookLM.** Infografika o copywritingu obsahuje preklepy a zmiešané témy (e-mailing, sociálne siete), infografika o doméne používa skutočnú značku. Rozhodnuté: podklady sú inšpirácia pre štruktúru, texty sa píšu nanovo a overujú podľa existujúcich stránok Znalostnej bázy. Fakty, ktoré nie sú v existujúcom obsahu (dátumy, rýchlosti), si agent overí a uvedie zdroj v commite alebo ich vynechá.
+- **Presnosť podkladov z NotebookLM.** Infografika o copywritingu obsahuje preklepy a zmiešané témy (e-mailing, sociálne siete), infografika o doméne používa skutočnú značku. Rozhodnuté: podklady sú inšpirácia pre štruktúru, texty sa píšu nanovo a overujú podľa existujúcich stránok Znalostnej bázy. Výnimka schválená 7. 9. 2026: infografika Dom e-shopu používa ilustráciu domu z podkladu aj s tabuľou www.upgates.sk. Fakty, ktoré nie sú v existujúcom obsahu (dátumy, rýchlosti), si agent overí a uvedie zdroj v commite alebo ich vynechá.
 - **Bezplatné AI modely sa menia.** Prehľad na novej stránke má dátum a kritériá výberu, nie odporúčanie jedného nástroja.
 - **Style guide je zdieľaný so sesterským predmetom** (`tvorbawww.fabus.eu`). Tokeny sa nemenia; nové komponenty sú navyše a dajú sa preniesť.
 - **Metadáta v `nav.pages`.** MkDocs načíta front matter všetkých stránok pred renderovaním, takže šablóna má prístup k `page.meta` cudzích stránok. Ak by to v použitej verzii neplatilo, náhradné riešenie je statický zoznam blokov v `extra.bloky` v `mkdocs.yml`.

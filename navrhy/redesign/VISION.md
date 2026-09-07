@@ -156,7 +156,7 @@ Celá obrazovka v pozadí `--md-default-bg-color`, v strede karta 360 px: názov
 - **Rozsah textu:** najviac 120 slov na infografiku. Každý blok obsahu má nadpis do 5 slov a popis do 25 slov. Čo sa nezmestí, patrí do textu stránky, nie do obrázka.
 - **Jazyk:** slovenčina, tykanie ako na webe, žiadne anglické nadpisy okrem ustálených skratiek (DNS, IP, TCP, HTTPS, CTA).
 - **Značky:** žiadne logá skutočných firiem ani nástrojov, žiadny vodoznak generátora. Príklad domény `mojeshop.sk`, príklad firmy „Kávová pražiareň" (zhodné s príkladmi v blokoch). V pravom dolnom rohu drobný text `eo.fabus.eu` v `#5A6B70`.
-- **Konzistencia:** všetkých 6 artboardov na jednom plátne v Claude Design, spoločné komponenty (nadpisová lišta, blok obsahu, ikona v krúžku) sa kopírujú, nie kreslia nanovo.
+- **Konzistencia:** všetkých 8 artboardov na jednom plátne v Claude Design, spoločné komponenty (nadpisová lišta, blok obsahu, ikona v krúžku) sa kopírujú, nie kreslia nanovo.
 - **Tmavý režim webu:** infografiky ostávajú svetlé; na webe majú okraj 1 px `--tw-border`, aby na tmavom pozadí nesplývali s okolím. Netreba tmavú verziu.
 - **Prístupnosť:** informácia nikdy nie je len vo farbe (vždy aj text alebo ikona). Kontrast textu na bielej aspoň 4,5 : 1.
 
@@ -209,7 +209,7 @@ Súbor `03-dom-eshopu.png`. Otázka: čo je hosting, doména a e-shop a ako spol
 Rozloženie: vľavo veľká ilustrácia domu v troch vrstvách s popiskami, vpravo dva bloky.
 
 1. Nadpis: „Hosting, doména a e-shop: tri veci, ktoré potrebuješ".
-2. Ilustrácia (líniová, petrolejová, bez perspektívy 3D, izometria nie je potrebná): pozemok so servermi dole, dom v strede, tabuľka s adresou na dome.
+2. Ilustrácia: dom na bloku serverov z podkladu NotebookLM (`Základy_domény_a_hostingu.png`), orezaná bez popiskov, v bielom boxe s okrajom. Schválená výnimka z pravidla o vlastných líniových ilustráciách; tabuľa na dome nesie www.upgates.sk z podkladu.
    - Dole: „HOSTING = pozemok a základy. Server, kde ležia súbory a databáza. Beží 24/7."
    - Stred: „E-SHOP = dom. WooCommerce alebo Webnode, produkty, košík, stránky."
    - Tabuľka na dome: „DOMÉNA = adresa. mojeshop.sk. Kupuje sa zvlášť, hosting ju len používa."
@@ -238,29 +238,42 @@ Rozloženie: nadpis, horný tok v 3 krokoch, dole dva bloky.
 
 Alt text: „Prepojenie domény a hostingu: registrátor, DNS záznamy NS a A, server hostingu. Dve cesty nastavenia, oneskorenie do 24 hodín, prečo e-shop potrebuje SSL certifikát a kto je za čo zodpovedný."
 
-### 6.6 Artboard 5: Logo pomocou AI (blok 4)
+### 6.6 Artboard 5: Logo pomocou AI, druhy loga a prompt (blok 4)
 
-Súbor `04-logo-pomocou-ai.png`. Otázka: ako napísať prompt, z ktorého vznikne použiteľné logo.
+Súbor `04-logo-druhy-a-prompt.png`. Otázka: aké druhy loga existujú a ako napísať prompt, z ktorého vznikne použiteľné logo.
 
-Rozloženie: nadpis, horný pás 5 druhov loga, stred anatómia promptu, dole dva bloky.
+Rozloženie: nadpis, horný pás 5 druhov loga, stred anatómia promptu, dole dva boxy.
 
-1. Nadpis: „Logo pomocou AI: od promptu k identite".
-2. Horný pás „5 druhov loga" s vlastnými ukážkami pre fiktívnu Kávovú pražiareň (nie skutočné značky):
-   - Wordmark: názov firmy vo výraznom písme
-   - Lettermark: iniciály KP
-   - Symbol: samostatná ikona zrnka
-   - Emblém: názov vnútri tvaru
-   - Kombinácia: symbol + názov, koralový štítok „odporúčané pre e-shop"
-3. Stred „Anatómia promptu" ako 5 dielov spojených plusom, každý s ikonou a príkladom pod ním:
-   - Subjekt: „logo pre kávovú pražiareň, zrnko kávy"
-   - Štýl a médium: „minimalistické, plochý vektor"
-   - Kompozícia: „symbol nad názvom, vycentrované"
-   - Farby a osvetlenie: „dve farby, tmavohnedá a krémová, bez tieňov"
-   - Technické parametre: „biele pozadie, bez textu v obrázku, štvorec"
-4. Ľavý dolný blok „Váha slov zľava doprava" s váhami: „Model dáva najväčší význam začiatku promptu. Najdôležitejšie slovo je prvé."
-5. Pravý dolný blok „Favicon test": to isté logo v 256 px a 32 px vedľa seba. „Ak je čitateľné ako favicon, je dobré aj na billboard. Ak nie, zjednoduš."
+1. Nadpis: „Logo pomocou AI: druhy loga a prompt“.
+2. Horný pás „5 druhov loga“. Každá karta má schematický náčrt (nie skutočné logo), jednu vetu a príklady skutočných značiek ako text:
+   - Wordmark: názov firmy vo výraznom písme. Napr. Google, Coca-Cola.
+   - Lettermark: iniciály namiesto celého názvu. Napr. HBO, IBM, 3M.
+   - Symbol: samostatná ikona bez textu. Napr. Apple, Nike.
+   - Emblém: názov vnútri tvaru, štítu alebo kruhu. Napr. Starbucks, Harley-Davidson.
+   - Kombinácia: symbol a názov, fungujú spolu aj zvlášť. Napr. Adidas, Lacoste. Koralový štítok „odporúčané pre e-shop“.
+   Logá skutočných značiek sa nekreslia (autorské práva), uvádzajú sa len názvy.
+3. Stred „Anatómia promptu“ ako 5 dielov spojených plusom, každý s ikonou, krátkym vysvetlením a príkladom:
+   - Subjekt: druh loga a čo zobrazuje (názov firmy, maskot alebo predmet). „kombinované logo pre Kávovú pražiareň, kávové zrnko“
+   - Štýl a médium: „minimalistické, plochý vektor“
+   - Farby: „dve farby, tmavohnedá a krémová“
+   - Technické parametre (doladenie na konci): „biele pozadie, štvorec, vysoké rozlíšenie“
+   - Negatívny prompt (čo v obrázku nechceš): „no 3D effect, no shadows, no text“
+   Kompozícia sa pri logu vynecháva, patrí k produktovej fotografii.
+4. Ľavý dolný box „Váha slov zľava doprava“: váhy s ťažším závažím vľavo (miska nižšie, koralová) a ľahším vpravo. „Model dáva najväčší význam začiatku promptu. Najdôležitejšie slovo je prvé, doladenie a zákazy na koniec.“
+5. Pravý dolný box „Limit dĺžky promptu“: „Do 30 až 40 slov. Dlhý prompt model rozptýli a dôležité slová stratia váhu. Jedna vlastnosť za slovo, bez opisných viet.“
 
-Alt text: „Päť druhov loga (wordmark, lettermark, symbol, emblém, kombinácia), anatómia promptu pre AI v piatich častiach s príkladom pre kávovú pražiareň, pravidlo váhy slov zľava doprava a favicon test čitateľnosti."
+Alt text: „Päť druhov loga (wordmark, lettermark, symbol, emblém, kombinácia) s príkladmi značiek, anatómia promptu pre AI v piatich častiach vrátane negatívneho promptu, pravidlo váhy slov zľava doprava a limit dĺžky promptu.“
+
+### 6.6b Artboard 5b: Logo pomocou AI, nástroje a kontrola (blok 4, Znalostná báza)
+
+Súbor `04-logo-nastroje-a-kontrola.png`. Otázka: ako overiť, že logo obstojí, ako sa učiť z cudzích promptov a v čom logo generovať zadarmo.
+
+1. Nadpis: „Logo pomocou AI: nástroje a kontrola“.
+2. Ľavý horný box „Škálovateľnosť loga“, podtitul „Favicon test“: to isté logo v 256 px a 32 px. „Logo musí fungovať od favicony po billboard. Zmenši ho na 32 × 32 px: ak je stále rozpoznateľné, obstojí všade. Ak nie, uber detaily.“
+3. Pravý horný box „Reverzné inžinierstvo“ s ikonou oka: nahraj logo, ktoré sa ti páči, a nechaj si ho opísať ako prompt (v Midjourney príkaz /describe, v chate „opíš tento obrázok ako prompt“). Z výsledku sa nauč slovník: štýl, médium, farby. Koralová veta: „Cudziu značku nekopíruj.“
+4. Dolný box „Bezplatné nástroje na generovanie loga“: tabuľka Nástroj, V čom je silný, Bezplatne, Pozor na. Päť riadkov: Ideogram, Recraft, Microsoft Designer, Adobe Firefly, Stable Diffusion. Poznámka s dátumom: „Stav k septembru 2026. Limity a licencie sa menia, over si aktuálne podmienky.“
+
+Alt text: „Favicon test škálovateľnosti loga, reverzné inžinierstvo promptu z existujúceho loga a tabuľka piatich bezplatných nástrojov na generovanie loga s ich silnými stránkami a obmedzeniami.“
 
 ### 6.7 Artboard 6: Popis a foto produktu (blok 5)
 
@@ -281,15 +294,30 @@ Rozloženie: nadpis, ľavá polovica popis, pravá polovica foto, zvislý deliac
 
 Alt text: „Ľavá časť: popis produktu píše sa pre konkrétneho zákazníka, odpovedá na štyri otázky a prechádza tromi revíziami. Pravá časť: prompt na produktové foto má päť častí, vzorový prompt a pravidlá jednotného katalógu."
 
+### 6.7b Artboard 6b: Copywriting (blok 5)
+
+Súbor `05-copywriting.png`. Otázka: v akých fázach vznikajú texty e-shopu.
+
+Rozloženie: nadpis a perex vľavo hore, stúpajúca bodkovaná cesta so 4 stanicami a koralovou vlajkou na vrchole vpravo hore, pod ňou 4 karty fáz.
+
+1. Nadpis: „Copywriting: od stratégie po revíziu“. Perex: „Texty e-shopu vznikajú v štyroch fázach. Každý text prejde na konci tromi revíziami.“
+2. Karty fáz, každá s číslom, názvom a tromi položkami s ikonou:
+   - 1. Strategický základ: Persony a cieľové skupiny (pre koho píšeš), Styleguide (tón, tykanie, zakázané slová), Analýza obsahu webu (čo chýba a čo je slabé).
+   - 2. Texty pre web a e-shop: UX copy a microcopy (tlačidlá, menu, chybové hlášky), Title a description (prvý dojem vo vyhľadávači), Produktové popisky (tvrdé aj mäkké fakty).
+   - 3. Tvorba a plánovanie obsahu: Publikačný plán (témy, kanály, sezónnosť), Synopsa článku (zadanie pre autora), Blogy a linkbuilding (články, na ktoré odkazujú iní).
+   - 4. Distribúcia a revízia: E-mailing (predmet 30 až 65 znakov, preheader do 50), Posty na sociálne siete (vizuál, hashtagy, pravidelnosť), Tri revízie (jazyková, štylistická, typografická).
+
+Alt text: „Štyri fázy copywritingu ako cesta na vrchol: strategický základ, texty pre web a e-shop, tvorba a plánovanie obsahu, distribúcia a revízia, každá s tromi krokmi.“
+
 ### 6.8 Postup v Claude Design
 
-1. Jedno plátno „Infografiky EO", 6 artboardov 1920 × 1080 v poradí vyššie.
+1. Jedno plátno „Infografiky EO", 8 artboardov 1920 × 1080 v poradí vyššie, plus 2 mockupy webu.
 2. Najprv artboard 3 (dom e-shopu), ktorý nastaví štýl ikon a blokov. Po schválení sa jeho komponenty prenesú do ostatných.
 3. Každý artboard skontrolovať podľa 6.1: počet slov, jeden koralový prvok, žiadne značky, `eo.fabus.eu` v rohu.
 4. Export PNG, optimalizácia do 600 kB, uloženie do `docs/img/infografiky/`.
 5. Po vytvorení plátna sem agent vloží odkaz na artefakt, aby sa dali infografiky neskôr upravovať:
 
-Plátno Claude Design: https://claude.ai/code/artifact/8bebbb59-1f76-4465-a8ed-c674d859416a (8 artboardov: 6 infografík a 2 mockupy webu, vytvorené 7. 9. 2026)
+Plátno Claude Design: https://claude.ai/code/artifact/8bebbb59-1f76-4465-a8ed-c674d859416a (10 artboardov: 8 infografík a 2 mockupy webu, vytvorené 7. 9. 2026)
 
 ## 7. Čomu sa vyhnúť
 
