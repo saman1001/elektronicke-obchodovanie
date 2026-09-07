@@ -319,6 +319,8 @@ Alt text: „Štyri fázy copywritingu ako cesta na vrchol: strategický základ
 
 Plátno Claude Design: https://claude.ai/code/artifact/8bebbb59-1f76-4465-a8ed-c674d859416a (10 artboardov: 8 infografík a 2 mockupy webu, vytvorené 7. 9. 2026)
 
+Dizajnový systém v Claude Design: projekt „Elektronické obchodovanie (eo.fabus.eu)“, id `21da31b1-98b3-4b66-823e-1cda16ea7661`, nahraný 7. 9. 2026. Obsahuje `tokens.css`, `README.md` s pravidlami štýlu, náhľady (farby, typografia, komponenty webu, dráha blokov, ikony, vzor infografiky) a referenčné PNG všetkých 10 artboardov. Pri ručnej práci v Claude Design si ho pripoj k projektu, aby výstupy držali štýl predmetu. Aktualizuje sa nástrojom DesignSync po `/design-login`.
+
 ## 7. Čomu sa vyhnúť
 
 - Ilustrácie vo fotorealistickom alebo 3D štýle, generované obrázky ľudí.
