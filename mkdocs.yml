@@ -13,7 +13,9 @@ use_directory_urls: false
 
 theme:
   name: material
+  custom_dir: overrides
   language: sk
+  logo: img/logo-eo.png
   features:
     - navigation.instant
     - navigation.tracking
@@ -46,9 +48,13 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  # komponenty redizajnu (dashboard, dráha, hlavička bloku, sekcie bloku)
+  - stylesheets/komponenty.css
 
 extra_javascript:
   - javascripts/copy-lokalne.js
+  # fade-in sekcií dashboardu pri scrollovaní
+  - javascripts/animacie.js
   # Analytika: self-hosted Umami (bez cookies, bez consent banneru) — viď umami.js
   - javascripts/umami.js
 
@@ -71,6 +77,35 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+
+# Dráha blokov a vizuál sekcií bloku sa skladajú pri builde z metadát stránok (viď hooks/eo_bloky.py)
+hooks:
+  - hooks/eo_bloky.py
+
+# Štyri časti predmetu pre dashboard a hlavičku bloku. Bloky sa priraďujú podľa front matter
+# blok a cast na stránkach blokov, takže nový blok stačí pridať do nav s týmito metadátami.
+extra:
+  casti:
+    - cislo: 1
+      nazov: Firma a infraštruktúra
+      popis: Vyberieš si firmu a sortiment, nájdeš jej pripojenie do internetu a hosting pre e-shop. Naučíš sa metódu, ktorou sa vyberá akýkoľvek poskytovateľ.
+      ikona: budova
+      url: 01-firma-a-infrastruktura/index.md
+    - cislo: 2
+      nazov: Stavba e-shopu
+      popis: Založíš e-shop, naplníš ho produktmi, rozbehneš košík s dopravou a platbami a doplníš stránky, ktoré e-shop musí mať zo zákona.
+      ikona: kosik
+      url: 02-stavba-eshopu/index.md
+    - cislo: 3
+      nazov: Reklama
+      popis: Vyrobíš bannery, vymeníš si reklamu so spolužiakom a vyskúšaš ďalšiu formu internetovej reklamy aj jej meranie.
+      ikona: megafon
+      url: 03-reklama/index.md
+    - cislo: 4
+      nazov: Záver
+      popis: Referát, offline kópia e-shopu, prezentácia a obhajoba pred spolužiakmi, ktorí ťa aj hodnotia.
+      ikona: vlajka
+      url: 04-zaver/blok-10-odovzdanie.md
 
 plugins:
   - search

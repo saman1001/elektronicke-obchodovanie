@@ -1,3 +1,9 @@
+---
+blok: 9
+cast: 3
+ikony: [megafon, px-terc, px-nastroje, px-graf]
+---
+
 # Blok 9 — Reklama a meranie
 
 Banner je jedna forma. Skutočný e-shop kombinuje viaceré — a vyberá ich podľa toho, **kde je jeho zákazník**. V tomto bloku si vyberieš **ďalšiu formu internetovej reklamy**, ktorá sa hodí práve pre tvoju firmu, a vytvoríš ju. A naučíš sa to, bez čoho je každá reklama len pocit: **merať**, koľko ľudí prišlo, odkiaľ a čo urobili.

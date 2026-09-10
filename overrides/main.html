@@ -1,0 +1,10 @@
+{#- Rozšírenie base.html Materialu: nad obsahom stránok s metadátom blok sa vykreslí
+    hlavička bloku (časť, pozícia v dráhe, susedné bloky). Dáta dodáva hooks/eo_bloky.py. -#}
+{% extends "base.html" %}
+
+{% block content %}
+  {% if page.meta.blok %}
+    {% include "partials/eo-blok-hlavicka.html" %}
+  {% endif %}
+  {{ super() }}
+{% endblock %}

@@ -1,3 +1,9 @@
+---
+blok: 10
+cast: 4
+ikony: [px-dokument, px-lupa, dokument-schvaleny, talar, px-vlajka]
+---
+
 # Blok 10 — Odovzdanie projektu
 
 Desať týždňov práce leží v e-shope, v Moodle a v tvojom dokumente. Dnes to poskladáš do troch vecí, ktoré sa odovzdávajú: **referát**, **prezentácia** a **offline kópia e-shopu**. Nie je to písanie „o projekte" — je to dôkaz, že si urobil rozhodnutia a vieš ich zdôvodniť. Presne to sa hodnotí.

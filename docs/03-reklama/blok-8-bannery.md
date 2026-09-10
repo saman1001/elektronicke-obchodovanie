@@ -1,3 +1,9 @@
+---
+blok: 8
+cast: 3
+ikony: [px-pravitko, px-terc, px-nastroje, obnovit]
+---
+
 # Blok 8 — Bannery
 
 E-shop je hotový. Teraz sa o ňom musia dozvedieť ľudia. Prvá forma internetovej reklamy, ktorú vyskúšaš, je najstaršia a stále všadeprítomná: **banner** — obrázok s odkazom na cudzom webe. Vyrobíš dva v rôznych rozmeroch a potom urobíš to, čo malé firmy robia odjakživa: **vymeníš si reklamu so spolužiakom**. Jeho banner pôjde na tvoj e-shop, tvoj na jeho.

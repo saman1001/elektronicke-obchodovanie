@@ -1,3 +1,9 @@
+---
+blok: 4
+cast: 2
+ikony: [px-raketa, px-paleta, px-zamok, px-kontrola]
+---
+
 # Blok 4 — Základ e-shopu
 
 Máš hosting a adresu. Dnes na nej **rozbehneš e-shop** — zatiaľ prázdny, ale živý: so šablónou, názvom, logom, menu a zámkom HTTPS. Znie to ako maličkosť, no práve tu sa rozhoduje, či zvyšok semestra stráviš stavaním obchodu, alebo bojom so systémom. Poriadne založený základ ti ušetrí hodiny.

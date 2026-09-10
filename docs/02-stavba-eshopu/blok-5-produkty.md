@@ -1,3 +1,9 @@
+---
+blok: 5
+cast: 2
+ikony: [px-zoznam, tricko, kosik, pero, paleta, px-kontrola]
+---
+
 # Blok 5 — Produkty
 
 E-shop stojí, ale je prázdny. Dnes doň dáš to, kvôli čomu existuje: **produkty**. Zdá sa to mechanické — názov, cena, fotka — ale práve tu zákazník rozhoduje, či nakúpi. Zlá fotka a popis „kvalitný výrobok" predajú menej než pekná fotka a jedna veta o tom, komu produkt pomôže a ako.

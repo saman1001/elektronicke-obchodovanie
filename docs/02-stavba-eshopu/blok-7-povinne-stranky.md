@@ -1,3 +1,9 @@
+---
+blok: 7
+cast: 2
+ikony: [checklist, dokument, px-zamok, info, mapa]
+---
+
 # Blok 7 — Povinné stránky e-shopu
 
 E-shop predáva, košík funguje. Ale keby dnes prišla kontrola, obchod by neprešiel. Každý e-shop na Slovensku musí mať stránky, ktoré nič nepredávajú, no bez ktorých je **nelegálny**: obchodné podmienky, reklamačný poriadok, informácie o ochrane osobných údajov, údaje o prevádzkovateľovi a informácie o cookies. V tomto bloku ich doplníš — a pochopíš, prečo ich zákon vyžaduje.

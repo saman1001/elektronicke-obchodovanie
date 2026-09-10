@@ -1,3 +1,10 @@
+---
+blok: 11
+blok_do: 12
+cast: 4
+ikony: [talar, megafon, info, checklist]
+---
+
 # Bloky 11–12 — Obhajoby
 
 Posledné dva týždne patria obhajobám. Každý odprezentuje svoj projekt, ukáže e-shop **naživo**, odpovie na otázky vyučujúceho aj spolužiakov — a zároveň **hodnotí ostatných**. Obhajoba je za 7 bodov, hodnotenie spolužiakmi za 6: spolu tretina bodov z projektu. Nie je to formalita na konci, je to skúška toho, či za svojimi rozhodnutiami stojíš.

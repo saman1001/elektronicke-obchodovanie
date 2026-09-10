@@ -1,3 +1,9 @@
+---
+blok: 3
+cast: 1
+ikony: [kniha, px-lupa, checklist, kluc, dokument-schvaleny]
+---
+
 # Blok 3 — Hosting a platforma
 
 Firma je pripojená. Teraz potrebuje miesto, **kde bude e-shop bývať**: server, na ktorom beží, a adresu, na ktorej ho zákazníci nájdu. Tomu sa hovorí hosting — a pri e-shope je to rozhodnutie, s ktorým budeš žiť celý zvyšok semestra. Zlý hosting znamená pomalý web, reklamu cudzej firmy na tvojich stránkach alebo košík, ktorý sa nedá spustiť.

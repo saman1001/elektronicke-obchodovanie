@@ -1,3 +1,7 @@
+---
+cast: 1
+---
+
 # Časť 1 — Firma a infraštruktúra
 
 Prvá časť predmetu. Skôr než začneš e-shop stavať, potrebuješ tri rozhodnutia: **akú firmu** zakladáš a čo bude predávať, **ako bude firma pripojená** do internetu a **kde bude e-shop bývať** — na akom hostingu alebo platforme. Sú to prvé tri časti osnovy semestrálneho projektu.

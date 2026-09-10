@@ -1,0 +1,13 @@
+{#- Dashboard (úvodná stránka). Texty sú v docs/index.md, šablóna na miesto značiek
+    <!-- eo:draha --> a <!-- eo:karty --> vloží dráhu 12 blokov a karty štyroch častí. -#}
+{% extends "main.html" %}
+
+{% block content %}
+  {% set draha %}
+    {% with velkost = "velka" %}{% include "partials/eo-draha.html" %}{% endwith %}
+  {% endset %}
+  {% set karty %}{% include "partials/eo-karty.html" %}{% endset %}
+  <div class="tw-dash">
+    {{ page.content | replace("<!-- eo:draha -->", draha) | replace("<!-- eo:karty -->", karty) }}
+  </div>
+{% endblock %}

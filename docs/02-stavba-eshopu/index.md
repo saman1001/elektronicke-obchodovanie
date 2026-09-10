@@ -1,3 +1,7 @@
+---
+cast: 2
+---
+
 # Časť 2 — Stavba e-shopu
 
 Druhá časť predmetu a jadro semestrálneho projektu: **e-shop, do ktorého sa dá naozaj nakúpiť.** Máš firmu, sortiment a hosting — teraz na ňom postavíš obchod: založíš ho, naplníš produktmi, rozbehneš košík s dopravou a platbami a doplníš stránky, ktoré e-shop musí mať.

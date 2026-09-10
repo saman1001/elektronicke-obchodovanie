@@ -33,6 +33,12 @@
   --tw-tip-bg: #F1F8F3;     --tw-tip-border: #C7E0CF;     --tw-tip-icon: #2E7D4F;
   --tw-warn-bg: #FBF3E7;    --tw-warn-border: #EBD9C3;    --tw-warn-icon: #B4530A;
   --tw-example-bg: #F3EFFA; --tw-example-border: #DDD3EE; --tw-example-icon: #6B4FA0;
+
+  /* farby štyroch častí dráhy (z ikon boxov note, tip, warning, example) a tvary kariet */
+  --tw-cast-1: #0E5A6B; --tw-cast-2: #2E7D4F; --tw-cast-3: #B4530A; --tw-cast-4: #6B4FA0;
+  --tw-on-cast: #FFFFFF;
+  --tw-radius-card: 16px;
+  --tw-radius-pill: 999px;
 }
 
 /* ---------- tokeny: tmavý režim ---------- */
@@ -61,6 +67,11 @@
   --tw-tip-bg: #12281C;     --tw-tip-border: #24503A;     --tw-tip-icon: #4FBF7F;
   --tw-warn-bg: #2E2013;    --tw-warn-border: #4A3418;    --tw-warn-icon: #E8A25C;
   --tw-example-bg: #241F33; --tw-example-border: #3A3153; --tw-example-icon: #B39DDB;
+
+  --tw-cast-1: #5BBECE; --tw-cast-2: #4FBF7F; --tw-cast-3: #E8A25C; --tw-cast-4: #B39DDB;
+  --tw-on-cast: #0C171A;
+  --tw-radius-card: 16px;
+  --tw-radius-pill: 999px;
 }
 
 /* ---------- typografia ---------- */
@@ -254,102 +265,3 @@
 .md-copyright__highlight { color: var(--tw-muted); }
 .md-footer-meta.md-typeset .md-copyright__highlight a { color: var(--md-typeset-a-color); }
 .md-footer-meta.md-typeset .md-copyright__highlight a:hover { color: var(--md-accent-fg-color); }
-
-/* ============================================================
-   Úvodná stránka — hero, kroky, zručnosti
-   ============================================================ */
-.tw-hero {
-  text-align: center;
-  padding: 2.2rem 0 0.6rem;
-}
-.tw-hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  background: var(--tw-surface);
-  border: 1px solid var(--tw-border);
-  border-radius: 999px;
-  padding: 8px 18px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  color: var(--md-primary-fg-color);
-}
-[data-md-color-scheme="slate"] .tw-hero-badge { color: #5BBECE; }
-.tw-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: var(--tw-accent);
-  display: inline-block;
-}
-.tw-hero h1 {
-  font-size: 52px;
-  line-height: 1.12;
-  letter-spacing: -0.5px;
-  margin: 24px auto 0;
-  max-width: 760px;
-}
-.tw-hero .tw-accent { color: var(--tw-accent); }
-.tw-hero-lead {
-  font-size: 18px;
-  line-height: 1.65;
-  color: var(--tw-muted);
-  max-width: 620px;
-  margin: 18px auto 0;
-}
-.tw-hero-cta {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-.tw-steps {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 22px;
-  margin: 40px 0 8px;
-  flex-wrap: wrap;
-}
-.tw-step { display: flex; align-items: center; gap: 11px; text-align: left; }
-.tw-step-num {
-  font-family: var(--md-code-font-family, monospace);
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--tw-accent);
-  background: var(--tw-accent-soft);
-  border-radius: 8px;
-  padding: 5px 8px;
-}
-.tw-step-title { font-weight: 600; font-size: 15px; line-height: 1.3; color: var(--tw-ink); }
-.tw-step-sub { font-size: 13px; color: var(--tw-muted); line-height: 1.4; }
-.tw-step-arrow { color: var(--tw-muted); font-size: 17px; opacity: 0.6; }
-
-/* zoznam „čo budeš vedieť" s fajkami */
-.tw-skills ul { list-style: none; padding-left: 0; }
-.tw-skills ul > li {
-  margin-left: 0;
-  padding-left: 1.7em;
-  position: relative;
-}
-.tw-skills ul > li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.28em;
-  width: 1.05em;
-  height: 1.05em;
-  background-color: var(--tw-check);
-  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>') no-repeat center / contain;
-  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>') no-repeat center / contain;
-}
-
-@media screen and (max-width: 44em) {
-  .tw-hero h1 { font-size: 34px; }
-  .tw-hero-lead { font-size: 16px; }
-  .tw-steps { flex-direction: column; align-items: center; gap: 12px; }
-  .tw-step-arrow { display: none; }
-}

@@ -1,3 +1,7 @@
+---
+cast: 3
+---
+
 # Časť 3 — Reklama
 
 Tretia časť predmetu. E-shop stojí — teraz sa o ňom musia dozvedieť zákazníci. Vyrobíš **bannery**, vymeníš si reklamu so spolužiakom (tvoj banner pôjde na jeho e-shop a jeho na tvoj) a vyskúšaš **ďalšiu formu internetovej reklamy**, ktorá sa hodí práve pre tvoju firmu. A naučíš sa, ako sa reklama **meria** — bez čísel je to len pekný obrázok.

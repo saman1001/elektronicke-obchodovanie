@@ -1,3 +1,9 @@
+---
+blok: 6
+cast: 2
+ikony: [budova, sipka, px-platba, px-email, kosik]
+---
+
 # Blok 6 — Košík, doprava a platby
 
 Toto je blok, po ktorom sa z katalógu stane **obchod**. Zákazník vloží produkt do košíka, vyberie dopravu, zaplatí a dostane potvrdenie — a ty objednávku vidíš v administrácii. Každý z tých krokov je rozhodnutie firmy (koľko stojí doprava? berieme dobierku?) a zároveň nastavenie v systéme. Urobíš oboje.

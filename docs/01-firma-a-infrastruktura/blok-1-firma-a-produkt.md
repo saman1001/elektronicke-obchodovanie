@@ -1,3 +1,9 @@
+---
+blok: 1
+cast: 1
+ikony: [lupa, px-firma, tricko, px-dokument]
+---
+
 # Blok 1 — Firma a produkt
 
 Vitaj na predmete Elektronické obchodovanie! Za semester postavíš **vlastný e-shop** — od výberu firmy cez pripojenie a hosting až po košík, reklamu a obhajobu. Nie je to teória do zásuvky: na konci budeš mať bežiaci obchod, do ktorého sa dá naozaj nakúpiť, a projekt, ktorý obhájiš pred spolužiakmi.

@@ -1,0 +1,19 @@
+{#- Dráha 12 blokov v 4 častiach. Premenné: velkost ("velka" na dashboarde s číslami,
+    "mini" v hlavičke bloku), aktualny_od a aktualny_do (rozsah aktuálneho bloku v hlavičke).
+    Zoznam častí a blokov (eo_casti) dodáva hooks/eo_bloky.py. -#}
+{% set od = aktualny_od | default(0) %}
+{% set do = aktualny_do | default(0) %}
+<nav class="tw-draha tw-draha--{{ velkost }}" aria-label="Dráha predmetu">
+  {% for c in eo_casti %}
+    <div class="tw-draha__cast tw-cast-{{ c.cislo }}">
+      <div class="tw-draha__body">
+        {% for b in c.bloky %}
+          {% set stav = "aktualny" if od <= b.n <= do else ("hotovy" if b.n < od else "buduci") %}
+          <a class="tw-draha__bod tw-draha__bod--{{ stav }}" href="{{ b.url | url }}" title="Blok {{ b.n }}: {{ b.nazov }}"{% if stav == "aktualny" %} aria-current="page"{% endif %}>{% if velkost == "velka" %}{{ b.n }}{% else %}<span class="tw-sr">Blok {{ b.n }}</span>{% endif %}</a>
+          {%- if not loop.last %}<span class="tw-draha__spoj"></span>{% endif %}
+        {% endfor %}
+      </div>
+      {% if velkost == "velka" %}<p class="tw-draha__nazov">{{ c.nazov }}</p>{% endif %}
+    </div>
+  {% endfor %}
+</nav>

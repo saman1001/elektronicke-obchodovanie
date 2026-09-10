@@ -1,0 +1,20 @@
+{#- Karty štyroch častí na dashboarde: číslo, ikona, názov, popis, zoznam blokov a tlačidlo.
+    Dáta (eo_casti) dodáva hooks/eo_bloky.py z extra.casti a metadát blokov. -#}
+<div class="tw-karty">
+  {% for c in eo_casti %}
+    <div class="tw-karta tw-cast-{{ c.cislo }} tw-fade">
+      <div class="tw-karta__hlava">
+        <p class="tw-karta__cislo">{{ "%02d" | format(c.cislo) }}</p>
+        <img class="tw-karta__ikona" src="{{ ("img/ikony/" ~ c.ikona ~ ".png") | url }}" alt="">
+      </div>
+      <p class="tw-karta__nazov">{{ c.nazov }}</p>
+      <p class="tw-karta__popis">{{ c.popis }}</p>
+      <ul class="tw-karta__bloky">
+        {% for b in c.bloky if b.n == b.od %}
+          <li><a href="{{ b.url | url }}"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>{% if b.do > b.od %}Bloky {{ b.od }}–{{ b.do }}{% else %}Blok {{ b.n }}{% endif %}: {{ b.nazov }}</a></li>
+        {% endfor %}
+      </ul>
+      <a class="md-button tw-karta__cta" href="{{ c.url | url }}">Otvoriť časť</a>
+    </div>
+  {% endfor %}
+</div>

@@ -1,3 +1,9 @@
+---
+blok: 2
+cast: 1
+ikony: [px-terc, mapa, platba, dokument-schvaleny]
+---
+
 # Blok 2 — Pripojenie do internetu
 
 Tvoja firma má sídlo. Skôr než bude mať e-shop, potrebuje **pripojenie do internetu** — na vybavovanie objednávok, tlač štítkov, komunikáciu so zákazníkmi. Znie to ako samozrejmosť, ale keď si otvoríš ponuky poskytovateľov, zistíš, že sa nedajú porovnať na prvý pohľad: iná rýchlosť, iná viazanosť, iný pripojovací poplatok, skryté limity.
