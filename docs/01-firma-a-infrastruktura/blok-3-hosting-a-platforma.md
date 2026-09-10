@@ -22,6 +22,10 @@ Metóda je rovnaká ako v bloku 2: **10 možností, jedna tabuľka, kritériá, 
 - Rozpoznať, čo je naozaj zadarmo a kde je háčik.
 - Vybrať hosting podľa kritérií a zaregistrovať sa bezpečne.
 
+## Pozri si teóriu
+
+--8<-- "infografiky/blok-3a.html"
+
 ## Krok 1 — Pojmy, bez ktorých sa nedá vyberať 🧭
 
 Skôr než otvoríš prvú ponuku, ujasni si štyri slová. Podrobne sú v Znalostnej báze → [Internet, doména a DNS](../znalostna-baza/internet-domena-dns.md), tu skratka:
@@ -30,6 +34,8 @@ Skôr než otvoríš prvú ponuku, ujasni si štyri slová. Podrobne sú v Znalo
 - **Doména** — adresa, ktorú zákazník napíše do prehliadača (`mojeshop.sk`). Kupuje sa zvlášť, hosting ju len používa. Na free hostingu dostaneš **subdoménu**: `nazoveshopu.hosting.xy`.
 - **DNS** — telefónny zoznam internetu: prekladá doménu na IP adresu servera.
 - **SSL / HTTPS** — šifrovanie a zámok v prehliadači. Pre e-shop **povinnosť**: bez nej prehliadač zákazníka varuje a nikto ti nezadá adresu ani kartu.
+
+--8<-- "infografiky/blok-3b.html"
 
 ## Krok 2 — Čo presne hľadáš 🔎
 

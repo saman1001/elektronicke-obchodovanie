@@ -55,6 +55,8 @@ extra_javascript:
   - javascripts/copy-lokalne.js
   # fade-in sekcií dashboardu pri scrollovaní
   - javascripts/animacie.js
+  # zväčšenie karty infografiky do prekrytia
+  - javascripts/infografiky.js
   # Analytika: self-hosted Umami (bez cookies, bez consent banneru) — viď umami.js
   - javascripts/umami.js
 
@@ -73,6 +75,10 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
+  # vkladanie HTML kariet infografík zo snippets/ do blokov (--8<-- "infografiky/blok-2.html")
+  - pymdownx.snippets:
+      base_path: [snippets]
+      check_paths: true
   - md_in_html
   - tables
   - toc:
@@ -142,6 +148,7 @@ nav:
       - "Tabuľka 10 poskytovateľov": znalostna-baza/tabulka-10-poskytovatelov.md
       - "Internet, doména a DNS": znalostna-baza/internet-domena-dns.md
       - "AI v predmete": znalostna-baza/ai-v-predmete.md
+      - "Logo a produktové foto pomocou AI": znalostna-baza/ai-logo-a-foto.md
       - "WordPress a WooCommerce": znalostna-baza/wordpress-woocommerce.md
       - "Webnode": znalostna-baza/webnode.md
       - "Offline kópia webu (HTTrack)": znalostna-baza/httrack-offline-kopia.md

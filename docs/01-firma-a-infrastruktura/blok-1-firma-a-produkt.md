@@ -23,6 +23,10 @@ Všetko začína otázkou, **komu ten e-shop patrí a čo predáva**. Toto rozho
 - Zdôvodniť, prečo práve táto oblasť podnikania.
 - Založiť si dokument projektu, ktorý porastie celý semester.
 
+## Pozri si teóriu
+
+--8<-- "infografiky/blok-1.html"
+
 ## Krok 1 — Vyber si firmu 💡
 
 Firma môže byť **reálna** (rodinný podnik, brigáda, známy, ktorý predáva a nemá e-shop) alebo **fiktívna**. Pri reálnej máš výhodu — skutočné produkty, ceny a fotky. Pri fiktívnej máš voľnosť — ale musíš si všetko vymyslieť a držať sa toho.

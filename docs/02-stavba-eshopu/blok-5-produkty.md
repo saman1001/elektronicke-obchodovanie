@@ -17,6 +17,10 @@ Vychádzaš zo sortimentu z bloku 1: **5 až 10 produktov** v **2 až 4 kategór
 - Napísať popis, ktorý predáva — a nechať si ho navrhnúť AI bez toho, aby si predával niečo, čo nemáš.
 - Legálne získať a správne pripraviť fotky.
 
+## Pozri si teóriu
+
+--8<-- "infografiky/blok-5.html"
+
 ## Krok 1 — Podklady najprv, klikanie potom 📋
 
 Najrýchlejšia cesta je pripraviť si všetko v jednej tabuľke (Excel alebo priamo v dokumente projektu) a až potom otvoriť administráciu. Stĺpce:
@@ -29,7 +33,7 @@ Najrýchlejšia cesta je pripraviť si všetko v jednej tabuľke (Excel alebo pr
 
 - **vlastné** — reálna firma, mobil, denné svetlo, jednotné pozadie (biela stena, hárok papiera),
 - **bezplatné fotobanky** — Unsplash, Pexels, Pixabay; pri každej fotke si zapíš zdroj a **over licenciu** (väčšina dovoľuje komerčné použitie bez uvedenia autora, ale nie všetky),
-- **vygenerované AI** — pre fiktívnu firmu úplne v poriadku; v dokumente uveď, že fotky sú generované,
+- **vygenerované AI** — pre fiktívnu firmu úplne v poriadku; v dokumente uveď, že fotky sú generované (postup a vzorový prompt: [Logo a produktové foto pomocou AI](../znalostna-baza/ai-logo-a-foto.md#produktove-foto)),
 - **nikdy z webu konkurencie** ani z Google obrázkov bez licencie — porušenie autorských práv je v praxi najčastejší právny problém malých e-shopov.
 
 ## Krok 2 — Kategórie 🗂️
@@ -74,6 +78,8 @@ Najrýchlejšia cesta je pripraviť si všetko v jednej tabuľke (Excel alebo pr
 ## Krok 4 — Popis, ktorý predáva ✍️
 
 Dobrý popis odpovedá na štyri otázky: **pre koho** to je, **čo rieši** alebo prináša, **aké má parametre** (rozmery, materiál, zloženie, gramáž) a **čo je v balení**. Píš konkrétne — „káva s tónmi čučoriedky a citrusu, praženie na filter" predá viac než „výberová káva najvyššej kvality".
+
+Píšeš pre zákazníka z bloku 1: jeho jazykom a na jeho otázky. Hotový text prejde tromi revíziami: jazykovou (gramatika), štylistickou (krátke vety, bez superlatívov) a typografickou (odrážky, medzery, jednotky). Postup pre texty aj fotky je v Znalostnej báze → [Logo a produktové foto pomocou AI](../znalostna-baza/ai-logo-a-foto.md).
 
 Čo do popisu **nepatrí**: tvrdenia, ktoré nevieš doložiť (zdravotné účinky, „najlepší na trhu"), a informácie, ktoré platia pre celý obchod (doprava, vrátenie) — tie patria na samostatné stránky v blokoch 6 a 7.
 

@@ -44,12 +44,16 @@ Od tohto bloku sa postup delí podľa skupiny: skupina **WooCommerce** inštaluj
 E-shop musí na prvý pohľad vyzerať ako obchod **tvojej** firmy, nie ako šablóna. Stačí málo, ale dôsledne:
 
 - **Názov** v hlavičke a v titulku prehliadača (vo WordPresse Nastavenia → Všeobecné, vo Webnode nastavenia webu).
-- **Logo:** ak firma nemá, vyrob jednoduché textové logo v Canve (zadarmo) — názov, jeden symbol, jedna farba. Žiadne stiahnuté logo z internetu.
+- **Logo:** ak firma nemá, vyrob jednoduché textové logo v Canve (zadarmo) — názov, jeden symbol, jedna farba. Druhá možnosť: vygeneruj si logo pomocou AI podľa návodu [Logo a produktové foto pomocou AI](../znalostna-baza/ai-logo-a-foto.md). Žiadne stiahnuté logo z internetu.
 - **Farby:** jedna hlavná, jedna na tlačidlá (akcent), zvyšok neutrálny. Vo WordPresse Vzhľad → Prispôsobiť (alebo Editor pri blokových témach), vo Webnode v nastaveniach šablóny.
 - **Menu:** Domov · Obchod (alebo Produkty) · O nás · Kontakt. Stránky Doprava a platba a Obchodné podmienky pribudnú v blokoch 6 a 7.
 - **Šablóna (WooCommerce):** predvolená téma alebo *Storefront* stačia. **Nekupuj tému** a neinštaluj tému stiahnutú mimo oficiálneho katalógu WordPressu — býva zavírená.
 
 Vytvor tri stránky s aspoň jedným odsekom textu: **O nás** (kto ste, prečo predávate práve toto — použi text z bloku 1), **Kontakt** (kontaktné údaje firmy, pri fiktívnej fiktívne) a **Domov** s uvítaním a odkazom na obchod.
+
+## Pozri si teóriu
+
+--8<-- "infografiky/blok-4.html"
 
 ## Krok 3 — HTTPS, DPH a základné nastavenia 🔒
 

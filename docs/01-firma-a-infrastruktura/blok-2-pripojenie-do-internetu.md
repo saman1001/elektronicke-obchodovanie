@@ -17,6 +17,10 @@ Práve o tom je tento blok. Naučíš sa **metódu, ktorou sa vyberá akýkoľve
 - Prepočítať rôzne ponuky na **jednu porovnateľnú cenu**.
 - Vybrať a **zdôvodniť** výber tak, aby obstál pred oponentom.
 
+## Pozri si teóriu
+
+--8<-- "infografiky/blok-2.html"
+
 ## Krok 1 — Určte si kritériá skôr, než začneš hľadať 🎯
 
 Najčastejšia chyba: nájsť „najlacnejšie" a potom hľadať dôvody. Poradie je opačné — najprv **čo firma potrebuje**, potom hľadanie. Zamysli sa nad svojou firmou z bloku 1:

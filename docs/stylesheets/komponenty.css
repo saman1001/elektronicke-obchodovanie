@@ -500,3 +500,61 @@ html.js .tw-fade.tw-viditelne { opacity: 1; transform: none; }
   .md-typeset h2.tw-krok { gap: 12px; align-items: flex-start; }
   .md-typeset .tw-krok__ikona { width: 36px; height: 36px; }
 }
+
+/* ---------- infografiky: karty v sekcii Pozri si teóriu a ich zväčšenie ---------- */
+.md-typeset [data-zoom-card] { cursor: zoom-in; transition: border-color 0.15s; }
+.md-typeset [data-zoom-card]:hover,
+.md-typeset [data-zoom-card]:focus-visible { border-color: var(--md-primary-fg-color); outline: none; }
+.md-typeset .tw-teoria li,
+.md-typeset [data-zoom-card] li { margin-left: 0; margin-bottom: 0; }
+.md-typeset .tw-teoria table,
+.md-typeset [data-zoom-card] table { display: table; width: 100%; font-size: inherit; }
+.md-typeset .tw-teoria img,
+.md-typeset [data-zoom-card] img { max-width: 100%; }
+.md-typeset .tw-teoria .tw-teoria-uvod { margin-top: 0; }
+
+.tw-zoom {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 28px 20px;
+  box-sizing: border-box;
+  overflow: auto;
+  background: rgba(22, 40, 46, 0.88);
+  cursor: zoom-out;
+}
+.tw-zoom__karta {
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  padding: 28px 30px;
+  border-radius: var(--tw-radius-card);
+  background: var(--tw-surface);
+  color: var(--tw-ink);
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 0.8rem;
+}
+.tw-zoom__zavriet {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: #FFFFFF;
+  border-radius: var(--tw-radius-pill);
+  padding: 8px 18px;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.tw-zoom__zavriet:hover,
+.tw-zoom__zavriet:focus-visible { background: rgba(255, 255, 255, 0.14); outline: none; }
+body.tw-zoom-otvorene { overflow: hidden; }
+
+/* infografika ako obrázok (Znalostná báza): okraj, aby na tmavom pozadí nesplývala */
+.md-typeset img.tw-infografika { border: 1px solid var(--tw-border); border-radius: 12px; display: block; }
+.md-typeset .tw-infografika-popis { font-size: 0.7rem; color: var(--tw-muted); margin-top: 0.4em; }

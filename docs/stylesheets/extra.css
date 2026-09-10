@@ -37,6 +37,8 @@
   /* farby štyroch častí dráhy (z ikon boxov note, tip, warning, example) a tvary kariet */
   --tw-cast-1: #0E5A6B; --tw-cast-2: #2E7D4F; --tw-cast-3: #B4530A; --tw-cast-4: #6B4FA0;
   --tw-on-cast: #FFFFFF;
+  --tw-code-bg: #10262C;
+  --tw-code-ink: #DCE8E4;
   --tw-radius-card: 16px;
   --tw-radius-pill: 999px;
 }
@@ -70,6 +72,8 @@
 
   --tw-cast-1: #5BBECE; --tw-cast-2: #4FBF7F; --tw-cast-3: #E8A25C; --tw-cast-4: #B39DDB;
   --tw-on-cast: #0C171A;
+  --tw-code-bg: #10262C;
+  --tw-code-ink: #DCE8E4;
   --tw-radius-card: 16px;
   --tw-radius-pill: 999px;
 }
