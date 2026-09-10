@@ -65,7 +65,7 @@ Spoločné pre obe skupiny: hosting musí mať **sprievodcu e-shopom** — cestu
 
 ## Krok 3 — Tabuľka 10 hostingov 📊
 
-Rovnaké pravidlá ako v bloku 2: jeden riadok = jeden hosting, ku každému údaju **zdroj**, čo nevieš zistiť, označ „neuvedené" — nikdy nedopĺňaj odhadom. V šablóne [Tabuľka 10 poskytovateľov](../sablony/EO-tabulka-10-poskytovatelov.xlsx) je na to hárok Hosting.
+Rovnaké pravidlá ako v bloku 2: jeden riadok = jeden hosting, ku každému údaju **zdroj**, čo nevieš zistiť, označ „neuvedené" — nikdy nedopĺňaj odhadom. Použi šablónu [Poskytovatelia freehostingu](../sablony/EO-poskytovatelia-freehostingu.xlsx).
 
 | Hosting / platforma | Naozaj free? (háčik) | Sprievodca e-shopom / inštalátor WP | Subdoména | Disk / limit produktov | Bandwidth, návštevy | Reklama na webe | SSL | Podpora | Registrácia vyžaduje | Zdroj |
 |---|---|---|---|---|---|---|---|---|---|---|

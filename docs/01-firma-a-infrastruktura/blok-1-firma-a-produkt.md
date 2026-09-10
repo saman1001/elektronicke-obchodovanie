@@ -39,7 +39,7 @@ Firma môže byť **reálna** (rodinný podnik, brigáda, známy, ktorý predáv
 
 ## Krok 2 — Identifikácia firmy 🏢
 
-Toto je prvá odovzdávaná časť projektu. Do dokumentu napíš:
+Toto je prvá odovzdávaná časť projektu. Použi šablónu [Identifikácia firmy](../sablony/EO-identifikacia-firmy.docx) a napíš do nej:
 
 | Údaj | Čo sem patrí |
 |---|---|
@@ -86,7 +86,7 @@ Vytvor dokument **„Semestrálny projekt — [názov firmy]"** (Word alebo Goog
 6. Záver
 7. Zdroje
 
-Do prvej kapitoly prepíš krok 2 a krok 3. Čo sa hodnotí a za koľko bodov: [Semestrálny projekt a hodnotenie](../znalostna-baza/semestralny-projekt.md). Použi šablónu [Dokument projektu](../sablony/EO-dokument-projektu.docx), má už všetky kapitoly a návod, čo do nich patrí; ako vyzerá hotový projekt, ukazuje [vzorový projekt](../znalostna-baza/sablony.md).
+Do prvej kapitoly prepíš krok 2 a krok 3. Čo sa hodnotí a za koľko bodov: [Semestrálny projekt a hodnotenie](../znalostna-baza/semestralny-projekt.md).
 
 ## ✅ Výstup bloku
 

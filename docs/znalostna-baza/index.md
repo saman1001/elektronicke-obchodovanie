@@ -11,4 +11,4 @@ Návody a postupy, na ktoré odkazujú jednotlivé bloky. Sem sa môžeš kedyko
 | [WordPress a WooCommerce](wordpress-woocommerce.md) | skupina WooCommerce, bloky 4–7: orientácia v administrácii, pluginy, keď sa niečo pokazí |
 | [Webnode](webnode.md) | skupina Webnode, bloky 4–7: orientácia v editore, limity bezplatného plánu |
 | [Offline kópia webu (HTTrack)](httrack-offline-kopia.md) | blok 10 — ako stiahnuť celý e-shop na disk k odovzdaniu |
-| [Šablóny na stiahnutie](sablony.md) | v bloku 1 pri založení dokumentu a vždy, keď máš niečo odovzdať: dokument projektu, tabuľka poskytovateľov, protokol testu, formulár na odstúpenie, hodnotenie spolužiakov, vzorový projekt |
+| [Šablóny na stiahnutie](sablony.md) | v blokoch 1 až 3: identifikácia firmy, tabuľka poskytovateľov internetu, tabuľka poskytovateľov freehostingu |

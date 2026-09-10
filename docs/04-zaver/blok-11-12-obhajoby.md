@@ -52,7 +52,7 @@ Každému pridelíš **0 až 6 bodov**. Aby boli body férové a rovnaké pre v�
 | **Prezentácia je jasná a v čase?** Rozumel som, čo a prečo, do 7 minút, so živým demom. | 0–1 |
 | **Odpovede na otázky?** Vecné, priznané medzery namiesto vyhýbania. | 0–1 |
 
-Zapisuj si počas každej obhajoby — po desiatich prezentáciách si nespomenieš. Hodnotíš **prácu, nie kamaráta**: rovnaké kritériá pre všetkých, sebe 0 bodov. Tabuľku (priezvisko, body, v poradí prezentovania) odovzdaj v Moodle (zadanie *Hodnotenie spolužiakov*); použi šablónu [Hodnotenie spolužiakov](../sablony/EO-hodnotenie-spoluziakov.xlsx).
+Zapisuj si počas každej obhajoby — po desiatich prezentáciách si nespomenieš. Hodnotíš **prácu, nie kamaráta**: rovnaké kritériá pre všetkých, sebe 0 bodov. Tabuľku (priezvisko, body, v poradí prezentovania) odovzdaj v Moodle (zadanie *Hodnotenie spolužiakov*).
 
 !!! tip "AI v tomto bloku"
     **Čo jej zveriť:** nácvik otázok. Nechaj sa vyskúšať skôr, než ťa vyskúšajú spolužiaci.
