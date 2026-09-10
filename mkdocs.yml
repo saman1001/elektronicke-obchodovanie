@@ -91,6 +91,11 @@ hooks:
 # Štyri časti predmetu pre dashboard a hlavičku bloku. Bloky sa priraďujú podľa front matter
 # blok a cast na stránkach blokov, takže nový blok stačí pridať do nav s týmito metadátami.
 extra:
+  # Brána: spoločné heslo pre študentov, overuje sa v prehliadači (docs/javascripts/gate.js).
+  # gate_hash je SHA-256 hesla (postup v README), heslo samotné sa do repozitára nikdy nepíše.
+  # gate_enabled: false bránu vypne bez mazania kódu.
+  gate_enabled: false
+  gate_hash: ""
   casti:
     - cislo: 1
       nazov: Firma a infraštruktúra

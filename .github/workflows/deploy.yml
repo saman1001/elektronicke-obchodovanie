@@ -11,6 +11,7 @@ on:
       - "mkdocs.yml"
       - "overrides/**"
       - "hooks/**"
+      - "snippets/**"
       - ".github/workflows/deploy.yml"
   workflow_dispatch:
 

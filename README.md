@@ -14,7 +14,8 @@ Predmet je jedna dráha cez 12 blokov (číslo cvičenia = číslo bloku) podľa
 - **Časť 2 — Stavba e-shopu** (`docs/02-stavba-eshopu/`) — bloky 4–7: základ e-shopu, produkty, košík s dopravou a platbami, povinné stránky.
 - **Časť 3 — Reklama** (`docs/03-reklama/`) — bloky 8–9: bannery a výmena reklamy, ďalšia forma reklamy a meranie.
 - **Záver** (`docs/04-zaver/`) — bloky 10–12: odovzdanie projektu, obhajoby a hodnotenie spolužiakov.
-- **Znalostná báza** (`docs/znalostna-baza/`) — návody, na ktoré bloky odkazujú: semestrálny projekt a hodnotenie, metóda tabuľky 10 poskytovateľov, internet a DNS, AI v predmete, WordPress a WooCommerce, Webnode, offline kópia webu.
+- **Znalostná báza** (`docs/znalostna-baza/`) — návody, na ktoré bloky odkazujú: semestrálny projekt a hodnotenie, metóda tabuľky 10 poskytovateľov, internet a DNS, AI v predmete, logo a produktové foto pomocou AI, WordPress a WooCommerce, Webnode, offline kópia webu, šablóny na stiahnutie.
+- **Vizuálna vrstva** — šablóny `overrides/` (dashboard, hlavička bloku, dráha 12 blokov), hook `hooks/eo_bloky.py` (zostaví dráhu z front matter blokov a pri builde obalí sekcie blokov do kariet), štýly `docs/stylesheets/` a karty infografík `snippets/infografiky/` (vkladajú sa do blokov cez `--8<-- "infografiky/blok-2.html"`).
 - **Sylabus cvičení** (`SYLABUS-CVICENIA.md`) — metodická príručka pre vyučujúceho; je mimo `docs/`, takže sa nedostane do webu pre študentov.
 - **Roadmapa** (`ROADMAP.md`) — checklist, čo je hotové a čo čaká.
 - **Stav projektu** (`CURRENT.md`) — interný snapshot stavu pre vývoj; spolu so zadaním (`SPEC.md`) je mimo repozitára.
@@ -64,6 +65,26 @@ Kde čo je:
 - **Boxy a záložky** používajú syntax Material for MkDocs (`!!! tip "Nadpis"`, `=== "WooCommerce"`);
   najjednoduchšie je skopírovať existujúci box a prepísať obsah.
 - **Novú stránku** pridaj do `nav:` v `mkdocs.yml`, inak sa nezobrazí v menu.
+- **Nový blok** dostane na začiatku súboru front matter `blok: N` a `cast: N` (prípadne `ikony: [...]` s názvami
+  ikon z `docs/img/ikony/` pre nadpisy krokov). Dráha na úvodnej stránke a hlavička bloku sa z toho zostavia samy.
+  Sekcie „Čo sa v tomto bloku naučíš", „Pozri si teóriu" a „Výstup bloku" spozná web podľa textu nadpisu,
+  boxy „AI v tomto bloku" a „Ako je to v praxi" podľa titulku.
+
+## Brána s heslom
+
+Web je za spoločným heslom pre skupinu študentov. Heslo sa overuje len v prehliadači (SHA-256 cez
+`crypto.subtle`), v repozitári je iba jeho hash v `mkdocs.yml` (`extra.gate_hash`). Brána odradí
+náhodného návštevníka a vyhľadávače, obsah nechráni: HTML je vo verejnom repozitári.
+
+Zmena hesla na začiatku semestra:
+
+```bash
+printf '%s' 'nove-heslo' | shasum -a 256      # vypíše hash, ten skopíruj do extra.gate_hash
+```
+
+`extra.gate_enabled: false` bránu vypne bez mazania kódu. Stránka ochrany súkromia (front matter
+`gate: false`) a `print_page.html` bránu nemajú. Po správnom hesle si prehliadač zapamätá hash
+v `localStorage` (kľúč `eo-gate`), takže sa pýta znova až po zmene hesla.
 
 ## PDF archív semestra
 

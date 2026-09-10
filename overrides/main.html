@@ -2,6 +2,15 @@
     hlavička bloku (časť, pozícia v dráhe, susedné bloky). Dáta dodáva hooks/eo_bloky.py. -#}
 {% extends "base.html" %}
 
+{#- Brána: meta s hashom hesla a skript v hlavičke, aby obsah nepreblikol. Stránky s front matter
+    gate: false (ochrana súkromia) bránu nemajú; print_page.html vylučuje samotný skript. -#}
+{% block extrahead %}
+  {% if config.extra.gate_enabled and (not page or page.meta.gate is not false) %}
+    <meta name="eo-gate" content="{{ config.extra.gate_hash | d('', true) }}" data-enabled="true" data-logo="{{ 'img/logo-eo.png' | url }}">
+    <script src="{{ 'javascripts/gate.js' | url }}"></script>
+  {% endif %}
+{% endblock %}
+
 {% block content %}
   {% if page.meta.blok %}
     {% include "partials/eo-blok-hlavicka.html" %}

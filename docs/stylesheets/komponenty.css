@@ -558,3 +558,77 @@ body.tw-zoom-otvorene { overflow: hidden; }
 /* infografika ako obrázok (Znalostná báza): okraj, aby na tmavom pozadí nesplývala */
 .md-typeset img.tw-infografika { border: 1px solid var(--tw-border); border-radius: 12px; display: block; }
 .md-typeset .tw-infografika-popis { font-size: 0.7rem; color: var(--tw-muted); margin-top: 0.4em; }
+
+/* ---------- brána (gate.js) ---------- */
+html.eo-brana body > :not(.tw-brana) { visibility: hidden; }
+.tw-brana {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  background: var(--md-default-bg-color);
+  color: var(--tw-ink);
+  font-family: var(--md-text-font-family, sans-serif);
+  visibility: visible;
+}
+.tw-brana__karta {
+  width: 100%;
+  max-width: 360px;
+  box-sizing: border-box;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--tw-surface);
+  border: 1px solid var(--tw-border);
+  border-radius: var(--tw-radius-card);
+}
+.tw-brana__logo {
+  margin: 0;
+  display: flex;
+  font-family: "Bricolage Grotesque", var(--md-text-font-family, sans-serif);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.2;
+}
+.tw-brana__logo img { height: 30px; width: auto; display: block; }
+.tw-brana__text { margin: 0; font-size: 15px; line-height: 1.55; color: var(--tw-muted); }
+.tw-brana__pole { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; }
+.tw-brana__pole input {
+  height: 44px;
+  box-sizing: border-box;
+  padding: 0 14px;
+  border: 1px solid var(--tw-border);
+  border-radius: 12px;
+  background: var(--md-default-bg-color);
+  color: var(--tw-ink);
+  font: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+}
+.tw-brana__pole input:focus { border-color: var(--md-primary-fg-color); box-shadow: 0 0 0 3px var(--tw-primary-soft); }
+.tw-brana__karta--chyba .tw-brana__pole input { border-color: var(--tw-accent); }
+.tw-brana__tlacidlo {
+  height: 44px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--md-primary-fg-color);
+  color: #FFFFFF;
+  font: inherit;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+.tw-brana__tlacidlo:hover,
+.tw-brana__tlacidlo:focus-visible { background: var(--md-primary-fg-color--dark); outline: none; }
+[data-md-color-scheme="slate"] .tw-brana__tlacidlo { background: #FF6B47; color: #10191B; }
+[data-md-color-scheme="slate"] .tw-brana__tlacidlo:hover,
+[data-md-color-scheme="slate"] .tw-brana__tlacidlo:focus-visible { background: #FF8A66; }
+.tw-brana__chyba { margin: 0; min-height: 20px; font-size: 14px; color: var(--tw-accent); }
+.tw-brana__poznamka { margin: 0; font-size: 12px; line-height: 1.5; color: var(--tw-muted); }
+@media print { .tw-brana { display: none; } }
