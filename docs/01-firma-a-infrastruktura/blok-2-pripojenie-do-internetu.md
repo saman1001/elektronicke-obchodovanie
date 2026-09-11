@@ -98,3 +98,5 @@ Do dokumentu projektu (kapitola 2) potom napíš viac: **postup výberu** (krit�
 - [ ] Kapitola 2 dokumentu: kritériá, postup výberu, teória zvoleného typu pripojenia so zdrojmi.
 
 Kritérium hodnotenia: **Voľba pripojenia do internetu (2 b)**; uvedené zdroje sa počítajú do **Zdroje (2 b)**.
+
+[Stiahnuť šablónu Poskytovatelia internetu (Excel)](../sablony/EO-poskytovatelia-internetu.xlsx){ .md-button }
