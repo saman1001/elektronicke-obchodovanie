@@ -15,7 +15,7 @@ Zadanie redizajnu je v troch dokumentoch. Prečítaj ich pred akoukoľvek zmenou
 - Odpovedaj po slovensky. Obsah webu, komentáre v kóde a commit správy sú slovenské, identifikátory anglické alebo s prefixom `tw-`.
 - Nový text bez typických znakov písania AI: žiadne pomlčky ako oddeľovač viet, trojice prídavných mien, rečnícke otázky ani prázdne prívlastky. Zoznam s výnimkami je v `navrhy/redesign/AGENTS.md`, kapitola 7.
 - Nemeň text existujúcich stránok mimo miest uvedených v PRD. Nemeň `nav`, názvy súborov, tokeny a fonty.
-- Každá zmena končí `mkdocs build --strict` bez varovaní a vizuálnou kontrolou na desktope aj mobile v oboch režimoch.
+- Každá zmena končí `mkdocs build --strict` bez varovaní.
 - Nenasadzuj ručne. Nasadenie robí GitHub Actions po pushi do `main`, push len so súhlasom používateľa.
 - Priečinok `navrhy/` sa necommituje okrem `navrhy/redesign/*.md`. Videá a PNG z NotebookLM do repozitára nepatria.
 - Heslo brány sa v repozitári nikdy neobjaví v otvorenej podobe, len ako SHA-256 hash v `mkdocs.yml`.

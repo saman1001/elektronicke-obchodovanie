@@ -22,10 +22,9 @@ Platí pre každého agenta (Claude Code alebo iný), ktorý v tomto repozitári
 1. Pred zmenou si prečítaj `PRD.md` (čo), `VISION.md` (ako má vyzerať) a súbor, ktorý meníš. Pri stránkach blokov si prečítaj celý blok, nie len časť.
 2. Pracuj po etapách z PRD kapitoly 9. Každá etapa končí commitom a `mkdocs build --strict` bez varovaní.
 3. Lokálny náhľad: `python -m mkdocs serve` a otvor `http://127.0.0.1:8000`. Ak `mkdocs` nie je nainštalované: `pip install mkdocs-material mkdocs-print-site-plugin`.
-4. Vizuálne overenie je povinné pri každej zmene šablóny alebo CSS: screenshot desktop (1280 px) a mobil (375 px), svetlý aj tmavý režim, stránky `index.html`, `01-firma-a-infrastruktura/blok-2-pripojenie-do-internetu.html`, `04-zaver/blok-11-12-obhajoby.html` a nová stránka Znalostnej bázy. Screenshoty ukladaj do scratchpadu, nie do repozitára.
-5. Test brány po každej zmene `gate.js`: bez hesla, zlé heslo, správne heslo, obnovenie stránky, `gate_enabled: false`, stránka ochrany súkromia, `print_page.html`.
-6. Nič nenasadzuj ručne (`mkdocs gh-deploy`). Nasadenie robí GitHub Actions po pushi do `main`. Push do `main` len po tom, čo používateľ videl výsledok lokálne a súhlasil.
-7. Pri neistote ohľadom faktu v obsahu (rýchlosti, ceny, dátumy) fakt over alebo vynechaj. Nevymýšľaj čísla. Existujúci obsah Znalostnej bázy má prednosť pred podkladmi z NotebookLM.
+4. Test brány po každej zmene `gate.js`: bez hesla, zlé heslo, správne heslo, obnovenie stránky, `gate_enabled: false`, stránka ochrany súkromia, `print_page.html`.
+5. Nič nenasadzuj ručne (`mkdocs gh-deploy`). Nasadenie robí GitHub Actions po pushi do `main`. Push do `main` len po tom, čo používateľ videl výsledok lokálne a súhlasil.
+6. Pri neistote ohľadom faktu v obsahu (rýchlosti, ceny, dátumy) fakt over alebo vynechaj. Nevymýšľaj čísla. Existujúci obsah Znalostnej bázy má prednosť pred podkladmi z NotebookLM.
 
 ## 4. Konvencie súborov
 
