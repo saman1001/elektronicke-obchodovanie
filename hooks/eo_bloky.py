@@ -1,6 +1,6 @@
 """Hook MkDocs pre redizajn webu: dráha blokov a vizuál sekcií bloku.
 
-on_page_context: zostaví zoznam 12 blokov z metadát stránok (blok, blok_do, cast)
+on_page_context: zostaví zoznam 12 blokov z metadát stránok (blok, blok_do, cast, nadplan)
 a štyri časti z extra.casti v mkdocs.yml. Šablóny v overrides/ z toho kreslia dráhu
 na dashboarde, hlavičku bloku a karty častí. Nový blok stačí pridať do nav
 s front matter blok a cast.
@@ -55,7 +55,7 @@ def on_page_context(context, page, config, nav):
         nazov = NAZOV_BLOKU.sub("", p.title or "")
         for n in range(od, do + 1):
             bloky.append(
-                {"n": n, "od": od, "do": do, "nazov": nazov, "url": p.url, "cast": int(meta.get("cast", 0))}
+                {"n": n, "od": od, "do": do, "nazov": nazov, "url": p.url, "cast": int(meta.get("cast", 0)), "nadplan": bool(meta.get("nadplan"))}
             )
     bloky.sort(key=lambda b: b["n"])
 

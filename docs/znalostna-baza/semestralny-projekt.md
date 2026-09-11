@@ -17,7 +17,7 @@ Cvičenia predmetu tvoria jeden **semestrálny projekt: e-shop pre fiktívnu ale
 | 2. Pripojenie do internetu | 2 | tabuľka 10 poskytovateľov + výber |
 | 3. Umiestnenie e-shopu | 3 | tabuľka 10 hostingov + výber, registrovaná adresa |
 | 4. Tvorba WWW stránok e-shopu | 4–7 | e-shop s produktmi, funkčným košíkom, dopravou, platbami a povinnými stránkami |
-| 5. Internetová reklama | 8–9 | dva bannery, výmena reklamy, ďalšia forma reklamy a meranie |
+| 5. Internetová reklama | 8 | dva bannery, výmena reklamy (blok 9 je nadplán, nehodnotí sa) |
 | Odovzdanie a obhajoba | 10–12 | referát, prezentácia, offline kópia webu, obhajoba, hodnotenie spolužiakov |
 
 ## Čo sa odovzdáva

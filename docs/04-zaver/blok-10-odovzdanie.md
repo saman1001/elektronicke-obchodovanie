@@ -25,7 +25,7 @@ Dokument projektu z bloku 1 má už väčšinu kapitol. Teraz z neho urob refer�
 | Pripojenie do internetu | kritériá, tabuľka 10 poskytovateľov, výber, teória typu pripojenia | Pripojenie (2 b) |
 | Umiestnenie e-shopu | kritériá, tabuľka 10 hostingov, výber, teória hostingu a domény | Host server (2 b) |
 | Tvorba e-shopu | systém, postup, produkty, doprava a platby, protokol testu, povinné stránky, **adresa e-shopu** | WWW stránky (4 b) |
-| Internetová reklama | bannery, výmena, druhá forma, meranie a čísla | Reklama (4 b) |
+| Internetová reklama | bannery, výmena reklamy; ďalšia forma a meranie len ak si ich skúšal (nadplán) | Reklama (4 b) |
 | Záver | pozri nižšie | Záver (2 b) |
 | Zdroje | pozri nižšie | Zdroje (2 b) |
 | celý dokument | 5–10 strán, obsah, číslované kapitoly, čitateľné obrázky s popisom | Rozsah (2 b), Spracovanie (2 b) |

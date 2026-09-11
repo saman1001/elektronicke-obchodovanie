@@ -1,21 +1,27 @@
 ---
 blok: 9
 cast: 3
-ikony: [megafon, px-terc, px-nastroje, px-graf]
+nadplan: true
+ikony: [megafon]
 ---
 
 # Blok 9 — Reklama a meranie
 
-Banner je jedna forma. Skutočný e-shop kombinuje viaceré — a vyberá ich podľa toho, **kde je jeho zákazník**. V tomto bloku si vyberieš **ďalšiu formu internetovej reklamy**, ktorá sa hodí práve pre tvoju firmu, a vytvoríš ju. A naučíš sa to, bez čoho je každá reklama len pocit: **merať**, koľko ľudí prišlo, odkiaľ a čo urobili.
+!!! note "Nadplánový blok"
+    Tento blok je nad rámec kurzu. Povinnou úlohou v časti Reklama sú bannery a výmena reklamy z bloku 8, ďalšie formy reklamy ani jej meranie sa v projekte nehodnotia. Blok si prečítaj, ak ťa zaujíma, ako sa reklama e-shopu robí a meria v praxi, alebo ak si chceš niektorú formu vyskúšať navyše.
+
+Banner je jedna forma. Skutočný e-shop kombinuje viaceré a vyberá ich podľa toho, **kde je jeho zákazník**. Nižšie je prehľad foriem internetovej reklamy, čo stoja, ako sa forma vyberá a ako sa meria, koľko ľudí reklama priviedla a čo urobili.
 
 ## 🎯 Čo sa v tomto bloku naučíš
 
 - Prehľad foriem internetovej reklamy, čo stoja a kedy sa ktorá hodí.
-- Vybrať formu podľa zákazníka z bloku 1, nie podľa toho, čo je populárne.
-- Vytvoriť jednu formu reklamy zadarmo: sociálne siete, základy SEO alebo newsletter.
-- Zapnúť meranie a čítať tri základné čísla: návštevy, zdroj, konverzia.
+- Ako firma vyberá formu podľa zákazníka, nie podľa toho, čo je populárne.
+- Čo obnáša rozbehnutie sociálnych sietí, základov SEO alebo newslettera zadarmo.
+- Ako sa reklama meria: návštevy, zdroj, konverzia a UTM parametre.
 
-## Krok 1 — Formy reklamy a čo stoja 🗺️
+## Teória z praxe 🗺️
+
+### Formy reklamy a čo stoja
 
 | Forma | Čo to je | Čo stojí v praxi | Kedy sa hodí | Čo z toho vieš zadarmo |
 |---|---|---|---|---|
@@ -27,18 +33,18 @@ Banner je jedna forma. Skutočný e-shop kombinuje viaceré — a vyberá ich po
 | **Influenceri, affiliate** | platba za odporúčanie alebo podiel z predaja | od produktu zadarmo po tisíce eur | značka, životný štýl | len teória |
 | **Firemný profil na mape** (Google Business Profile) | zápis firmy vo vyhľadávaní a mapách | zadarmo | firma s predajňou alebo odberným miestom | vyžaduje overenie reálnej firmy — len ak je reálna |
 
-## Krok 2 — Vyber jednu formu a zdôvodni ✍️
+### Ako sa vyberá forma
 
-Vráť sa k zákazníkovi z bloku 1: kde trávi čas, ako hľadá, kupuje raz alebo opakovane? Vyber **jednu** formu, ktorú vieš urobiť zadarmo (SEO, sociálne siete alebo newsletter), a napíš zdôvodnenie na 3–5 viet. Zvyšné formy len porovnaj v tabuľke v dokumente — vrátane toho, čo by stáli.
+Firma sa vráti k svojmu zákazníkovi (u teba je to zákazník z bloku 1): kde trávi čas, ako hľadá, kupuje raz alebo opakovane? Podľa toho vyberie **jednu** formu, ktorú vie rozbehnúť zadarmo (SEO, sociálne siete alebo newsletter), a zdôvodní ju na 3–5 viet. Zvyšné formy porovná v tabuľke vrátane toho, čo by stáli. Rovnaký postup môžeš použiť, ak si chceš niektorú formu vyskúšať k svojmu e-shopu.
 
-## Krok 3 — Vytvor ju 🛠️
+### Ako sa forma vytvára
 
 === "Sociálne siete"
 
     1. Založ **firemný profil** (Instagram alebo Facebook stránka; pri fiktívnej firme použi názov firmy a jej e-mail, do popisu „študentský projekt").
     2. Profil: logo, krátky popis, **odkaz na e-shop**.
     3. Priprav **3 príspevky**: produkt (fotka z bloku 5 + jedna veta pre koho a prečo), príbeh firmy (z bloku 1), ponuka s výzvou (odkaz na produkt). Publikuj aspoň jeden, ostatné môžeš naplánovať.
-    4. Do odkazov pridaj **UTM parametre** (krok 4), aby si videl, koľko ľudí zo siete prišlo.
+    4. Do odkazov pridaj **UTM parametre** (časť Meranie nižšie), aby si videl, koľko ľudí zo siete prišlo.
 
 === "Základy SEO"
 
@@ -56,25 +62,25 @@ Vráť sa k zákazníkovi z bloku 1: kde trávi čas, ako hľadá, kupuje raz al
     1. **Nástroj zadarmo:** WooCommerce: plugin *MailPoet* (bezplatný do stoviek kontaktov); Webnode: vstavaný formulár + externý nástroj (napr. Mailchimp free) alebo blok newsletter, ak ho plán ponúka.
     2. **Prihlasovací formulár** na úvodnú stránku a do pätičky: čo za prihlásenie dostane („nové produkty raz mesačne, žiadny spam") a **súhlas** so spracovaním e-mailu (GDPR — odkaz na stránku z bloku 7).
     3. Napíš **prvý newsletter**: uvítanie, 1 produkt, 1 odkaz s UTM parametrom. Pošli ho testovacím kontaktom (ty, spolužiak).
-    4. V dokumente opíš, ako často by firma posielala a čo by v ňom bolo.
+    4. Opíš, ako často by firma posielala a čo by v ňom bolo.
 
-## Krok 4 — Meranie 📈
+### Meranie
 
-Reklama bez merania je pocit. Tri čísla, ktoré potrebuješ: **koľko ľudí prišlo**, **odkiaľ** a **koľko z nich nakúpilo** (konverzný pomer = objednávky / návštevy).
+Reklama bez merania je pocit. Tri čísla, ktoré firma potrebuje: **koľko ľudí prišlo**, **odkiaľ** a **koľko z nich nakúpilo** (konverzný pomer = objednávky / návštevy).
 
-**1. Štatistiky, ktoré už máš.** WooCommerce → Analytika ukazuje objednávky a tržby; návštevnosť pridá bezplatný plugin (napr. *Jetpack Stats* alebo jednoduchý *Koko Analytics*, ktorý nepotrebuje súhlas s cookies). Webnode má základné štatistiky návštevnosti v administrácii (rozsah podľa plánu).
+**1. Štatistiky, ktoré e-shop už má.** WooCommerce → Analytika ukazuje objednávky a tržby; návštevnosť pridá bezplatný plugin (napr. *Jetpack Stats* alebo jednoduchý *Koko Analytics*, ktorý nepotrebuje súhlas s cookies). Webnode má základné štatistiky návštevnosti v administrácii (rozsah podľa plánu).
 
-**2. UTM parametre — meranie zdrojov zadarmo.** Ku každému odkazu, ktorý dáš mimo e-shopu (banner, príspevok, newsletter), pripoj značku:
+**2. UTM parametre — meranie zdrojov zadarmo.** Ku každému odkazu, ktorý ide mimo e-shopu (banner, príspevok, newsletter), sa pripojí značka:
 
 ```text
 https://tvoj-eshop.xy/produkt/kava-etiopia?utm_source=instagram&utm_medium=social&utm_campaign=jesen
 ```
 
-Štatistiky potom ukážu, koľko návštev prišlo z `instagram`. Odkaz na banner spolužiaka označ `utm_source=partner`. Na skrátenie použi skracovač (napr. Bitly, zadarmo) — ten navyše počíta kliky sám.
+Štatistiky potom ukážu, koľko návštev prišlo z `instagram`. Odkaz na banner spolužiaka sa dá označiť `utm_source=partner`. Na skrátenie sa používa skracovač (napr. Bitly, zadarmo), ktorý navyše počíta kliky sám.
 
-**3. Google Analytics 4** je zadarmo a najpoužívanejší, ale používa cookies — potreboval by si súhlasovú lištu (blok 7). Pre projekt nie je povinný; ak ho zapneš, lištu pridaj a do dokumentu napíš prečo.
+**3. Google Analytics 4** je zadarmo a najpoužívanejší, ale používa cookies, takže potrebuje súhlasovú lištu (blok 7). Pre projekt nie je potrebný; ak ho zapneš, lištu pridaj.
 
-Po týždni zapíš do dokumentu: návštevy, tri najväčšie zdroje, kliky na banner partnera, počet (testovacích) objednávok. Malé čísla sú v poriadku — ide o to, že ich **vieš zistiť a interpretovať**.
+Firma potom pravidelne číta: návštevy, tri najväčšie zdroje, kliky z partnerských bannerov, počet objednávok. Malé čísla sú v poriadku, podstatné je vedieť ich **zistiť a interpretovať**.
 
 !!! tip "AI v tomto bloku"
     **Čo jej zveriť:** návrhy príspevkov, titulkov a popisov pre SEO alebo text newslettera — z tvojich faktov.
@@ -90,8 +96,6 @@ Po týždni zapíš do dokumentu: návštevy, tri najväčšie zdroje, kliky na 
 
 ## ✅ Výstup bloku
 
-- [ ] Vybraná a vytvorená druhá forma reklamy (profil s príspevkami, SEO nastavenia alebo newsletter s formulárom) s odkazmi na e-shop s UTM parametrami.
-- [ ] Zapnuté meranie a prvé čísla zapísané v dokumente.
-- [ ] Kapitola 5 dokumentu: porovnanie foriem s cenami v praxi, zdôvodnenie výberu, snímky obrazovky, namerané čísla a ich interpretácia.
+Tento blok nemá povinný výstup a nehodnotí sa. Ak si niektorú formu reklamy alebo meranie vyskúšaš, opíš to v kapitole 5 dokumentu ako doplnok k bannerom: čo si urobil, snímka obrazovky a prípadné čísla.
 
-Kritérium hodnotenia: druhá polovica **Využitie foriem internetovej reklamy (4 b)**.
+Kritérium hodnotenia: **Využitie foriem internetovej reklamy (4 b)** sa hodnotí podľa bloku 8.

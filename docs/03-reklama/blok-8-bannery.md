@@ -85,4 +85,4 @@ Presne takto funguje **výmenná (bartrová) reklama** medzi malými firmami: ka
 - [ ] Banner spolužiaka umiestnený na tvojom e-shope s funkčným odkazom; tvoj banner na jeho.
 - [ ] Kapitola 5 dokumentu: bannery, zdôvodnenie rozmerov a správy, snímka obrazovky s cudzím bannerom, meno partnera výmeny.
 
-Kritérium hodnotenia: prvá polovica **Využitie foriem internetovej reklamy (4 b)**.
+Kritérium hodnotenia: **Využitie foriem internetovej reklamy (4 b)**. Blok 9 je nadplán a nehodnotí sa.

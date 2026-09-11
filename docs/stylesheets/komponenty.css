@@ -635,3 +635,7 @@ html.eo-brana body > :not(.tw-brana) { visibility: hidden; }
 
 /* ikona schránky pri výslednom prompte v karte infografiky, rovnaká ako pri blokoch kódu */
 .md-typeset .md-clipboard.tw-kopirovat { position: absolute; top: 0; right: 0; margin: 0; }
+
+/* nadplánový blok v dráhe: bodkovaný okraj, na dashboarde svetlejší bod */
+.md-typeset .tw-draha--mini .tw-draha__bod--nadplan { border-style: dashed; }
+.md-typeset .tw-draha--velka .tw-draha__bod--nadplan { opacity: 0.7; }

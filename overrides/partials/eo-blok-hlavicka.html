@@ -4,17 +4,17 @@
 <div class="tw-blok-hlavicka tw-cast-{{ cast.cislo }}">
   <div class="tw-blok-hlavicka__riadok">
     <p class="tw-blok-hlavicka__cast">Časť {{ cast.cislo }} · {{ cast.nazov }}</p>
-    <p class="tw-blok-hlavicka__pozicia">{% if eo_do > eo_od %}Bloky {{ eo_od }}–{{ eo_do }}{% else %}Blok {{ eo_od }}{% endif %} z {{ eo_bloky | length }}</p>
+    <p class="tw-blok-hlavicka__pozicia">{% if eo_do > eo_od %}Bloky {{ eo_od }}–{{ eo_do }}{% else %}Blok {{ eo_od }}{% endif %} z {{ eo_bloky | length }}{% if page.meta.nadplan %} · nadplán{% endif %}</p>
   </div>
   {% with velkost = "mini", aktualny_od = eo_od, aktualny_do = eo_do %}
     {% include "partials/eo-draha.html" %}
   {% endwith %}
   <div class="tw-blok-hlavicka__susedia">
     {% if eo_pred %}
-      <a class="tw-blok-hlavicka__pred" href="{{ eo_pred.url | url }}" rel="prev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"></path></svg>Blok {{ eo_pred.n }}: {{ eo_pred.nazov }}</a>
+      <a class="tw-blok-hlavicka__pred" href="{{ eo_pred.url | url }}" rel="prev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"></path></svg>Blok {{ eo_pred.n }}: {{ eo_pred.nazov }}{% if eo_pred.nadplan %} (nadplán){% endif %}</a>
     {% endif %}
     {% if eo_dalsi %}
-      <a class="tw-blok-hlavicka__dalsi" href="{{ eo_dalsi.url | url }}" rel="next">{% if eo_dalsi.do > eo_dalsi.od %}Bloky {{ eo_dalsi.od }}–{{ eo_dalsi.do }}{% else %}Blok {{ eo_dalsi.n }}{% endif %}: {{ eo_dalsi.nazov }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></a>
+      <a class="tw-blok-hlavicka__dalsi" href="{{ eo_dalsi.url | url }}" rel="next">{% if eo_dalsi.do > eo_dalsi.od %}Bloky {{ eo_dalsi.od }}–{{ eo_dalsi.do }}{% else %}Blok {{ eo_dalsi.n }}{% endif %}: {{ eo_dalsi.nazov }}{% if eo_dalsi.nadplan %} (nadplán){% endif %}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></a>
     {% endif %}
   </div>
 </div>
