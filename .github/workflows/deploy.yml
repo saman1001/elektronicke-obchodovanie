@@ -32,8 +32,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Verzie pripnuté na tie, ktoré sú overené lokálnym buildom. Aktualizovať vedome, nie automaticky
+      # (Material varuje, že MkDocs 2.0 rozbije pluginy aj theme overrides).
       - name: Nainštaluj MkDocs a pluginy
-        run: pip install mkdocs-material mkdocs-print-site-plugin
+        run: pip install mkdocs==1.6.1 mkdocs-material==9.7.7 mkdocs-print-site-plugin==2.8
 
       - name: Zostav web a nasaď do vetvy gh-pages
         run: |

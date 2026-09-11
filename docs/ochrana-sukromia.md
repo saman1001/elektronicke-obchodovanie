@@ -24,7 +24,7 @@ zariadenia, kliknutia na tlačidlo „kopírovať", prepnutie záložky WooComme
   odošle Googlu svoju IP adresu ([zásady ochrany súkromia Google](https://policies.google.com/privacy)).
 
 Okrem toho web nemá registráciu, nezbiera mená ani e-maily a návštevnícke dáta
-neposiela žiadnym ďalším stranám. Heslo do webu sa overuje len v tvojom prehliadači a na server sa neposiela; jeho hash si prehliadač zapamätá v lokálnom úložisku, aby sa nepýtal pri každej stránke.
+neposiela žiadnym ďalším stranám. Ak je web za heslom, heslo sa overuje len v tvojom prehliadači a na server sa neposiela. Jeho hash si prehliadač zapamätá v lokálnom úložisku, aby sa nepýtal pri každej stránke.
 
 ## Kontakt
 
