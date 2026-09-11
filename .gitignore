@@ -18,3 +18,14 @@ _archiv/
 __pycache__/
 .venv/
 .vscode/
+
+# Návrhy a podklady redizajnu — v gite ostáva len navrhy/redesign/*.md
+navrhy/*
+!navrhy/redesign/
+navrhy/redesign/*
+!navrhy/redesign/*.md
+navrhy 2/
+
+# Systémové a dočasné súbory (macOS, zámky Wordu)
+.DS_Store
+~$*
