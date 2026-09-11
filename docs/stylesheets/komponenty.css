@@ -77,7 +77,7 @@ html.js .tw-fade.tw-viditelne { opacity: 1; transform: none; }
   line-height: 1.12;
   letter-spacing: -0.5px;
 }
-.tw-hero-komiks { display: block; width: 100%; height: auto; }
+.tw-hero-komiks { display: block; width: 90%; height: auto; margin: 0 auto; }
 .tw-hero-text { display: none; }
 .tw-hero .tw-accent { color: var(--tw-accent); }
 .md-typeset .tw-hero-lead {
