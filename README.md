@@ -12,7 +12,7 @@ Predmet je jedna dráha cez 12 blokov (číslo cvičenia = číslo bloku) podľa
 
 - **Časť 1 — Firma a infraštruktúra** (`docs/01-firma-a-infrastruktura/`) — bloky 1–3: firma a sortiment, tabuľka 10 poskytovateľov pripojenia, tabuľka 10 free hostingov.
 - **Časť 2 — Stavba e-shopu** (`docs/02-stavba-eshopu/`) — bloky 4–7: základ e-shopu, produkty, košík s dopravou a platbami, povinné stránky.
-- **Časť 3 — Reklama** (`docs/03-reklama/`) — bloky 8–9: bannery a výmena reklamy, ďalšia forma reklamy a meranie.
+- **Časť 3 — Reklama** (`docs/03-reklama/`) — bloky 8–9: bannery a výmena reklamy. Blok 9 je nadplán s prehľadom ďalších foriem reklamy a merania, bez povinného výstupu.
 - **Záver** (`docs/04-zaver/`) — bloky 10–12: odovzdanie projektu, obhajoby a hodnotenie spolužiakov.
 - **Znalostná báza** (`docs/znalostna-baza/`) — návody, na ktoré bloky odkazujú: semestrálny projekt a hodnotenie, metóda tabuľky 10 poskytovateľov, internet a DNS, AI v predmete, logo a produktové foto pomocou AI, WordPress a WooCommerce, Webnode, offline kópia webu, šablóny na stiahnutie.
 - **Vizuálna vrstva** — šablóny `overrides/` (dashboard, hlavička bloku, dráha 12 blokov), hook `hooks/eo_bloky.py` (zostaví dráhu z front matter blokov a pri builde obalí sekcie blokov do kariet), štýly `docs/stylesheets/` a karty infografík `snippets/infografiky/` (vkladajú sa do blokov cez `--8<-- "infografiky/blok-2.html"`).
@@ -21,16 +21,18 @@ Predmet je jedna dráha cez 12 blokov (číslo cvičenia = číslo bloku) podľa
 - **Stav projektu** (`CURRENT.md`) — interný snapshot stavu pre vývoj; spolu so zadaním (`SPEC.md`) je mimo repozitára.
 - **Podklady** (`podklady/`) — pôvodné materiály vyučujúceho, z ktorých vznikol obsah; nejdú do webu ani do repozitára.
 
-Každý blok má rovnakú kostru: čo sa naučíš, kroky, box **„AI v tomto bloku"** (čo zveriť AI, prompt, čo overiť), box **„Ako je to v praxi"** (koľko to stojí firmy a čo za to dostanú) a výstup bloku s odkazom na kritérium hodnotenia. Všetky nástroje pre študentov sú zadarmo.
+Každý blok má rovnakú kostru: čo sa naučíš, v blokoch 1–5 karty **„Pozri si teóriu"**, kroky, box **„AI v tomto bloku"** (čo zveriť AI, prompt, čo overiť), box **„Ako je to v praxi"** (koľko to stojí firmy a čo za to dostanú) a výstup bloku s odkazom na kritérium hodnotenia. Všetky nástroje pre študentov sú zadarmo.
 
 ## Ako si materiál pozrieť lokálne
 
 Potrebuješ Python. V priečinku `elektronicke_obchodovanie`:
 
 ```bash
-pip install mkdocs-material mkdocs-print-site-plugin
+pip install mkdocs==1.6.1 mkdocs-material==9.7.7 mkdocs-print-site-plugin==2.8
 mkdocs serve
 ```
+
+Verzie sú rovnaké ako v deploy workflow, aby lokálny náhľad zodpovedal webu online.
 
 Potom otvor `http://127.0.0.1:8000` v prehliadači. Pri každej zmene `.md` súboru sa web sám obnoví.
 (Ak príkaz `mkdocs` nie je v PATH, použi `python -m mkdocs serve` / `python -m mkdocs build`.)
@@ -72,17 +74,19 @@ Kde čo je:
 
 ## Brána s heslom
 
-Web je za spoločným heslom pre skupinu študentov. Heslo sa overuje len v prehliadači (SHA-256 cez
-`crypto.subtle`), v repozitári je iba jeho hash v `mkdocs.yml` (`extra.gate_hash`). Brána odradí
-náhodného návštevníka a vyhľadávače, obsah nechráni: HTML je vo verejnom repozitári.
+Web je verejný, brána je pripravená a vypnutá (`extra.gate_enabled: false`). Ak by mal byť web len
+pre študentov, heslo sa overuje len v prehliadači (SHA-256 cez `crypto.subtle`) a v repozitári je iba
+jeho hash v `mkdocs.yml` (`extra.gate_hash`). Brána odradí náhodného návštevníka a vyhľadávače,
+obsah nechráni: HTML je vo verejnom repozitári.
 
-Zmena hesla na začiatku semestra:
+Zapnutie alebo zmena hesla:
 
 ```bash
 printf '%s' 'nove-heslo' | shasum -a 256      # vypíše hash, ten skopíruj do extra.gate_hash
 ```
 
-`extra.gate_enabled: false` bránu vypne bez mazania kódu. Stránka ochrany súkromia (front matter
+Hash zapíš do `extra.gate_hash` a prepni `extra.gate_enabled: true`. Hodnota `false` bránu vypne bez
+mazania kódu. Stránka ochrany súkromia (front matter
 `gate: false`) a `print_page.html` bránu nemajú. Po správnom hesle si prehliadač zapamätá hash
 v `localStorage` (kľúč `eo-gate`), takže sa pýta znova až po zmene hesla.
 
