@@ -117,3 +117,5 @@ Do kapitoly 3 dokumentu projektu patrí: kritériá, tabuľka, výber so zdôvod
 - [ ] Kapitola 3 dokumentu: kritériá, tabuľka, výber, teória (hosting, doména, DNS, HTTPS) so zdrojmi.
 
 Kritérium hodnotenia: **Voľba host serveru (2 b)**.
+
+[Stiahnuť šablónu Poskytovatelia freehostingu (Excel)](../sablony/EO-poskytovatelia-freehostingu.xlsx){ .md-button }
