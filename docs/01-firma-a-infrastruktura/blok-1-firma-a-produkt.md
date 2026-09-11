@@ -105,3 +105,5 @@ Do prvej kapitoly prepíš krok 2 a krok 3. Čo sa hodnotí a za koľko bodov: [
 - [ ] Založený dokument projektu s kapitolami a vyplnenou prvou kapitolou.
 
 Kritérium hodnotenia, ktoré tým plníš: **Úvod do problematiky (2 b)**.
+
+[Stiahnuť šablónu Identifikácia firmy (Word)](../sablony/EO-identifikacia-firmy.docx){ .md-button }
