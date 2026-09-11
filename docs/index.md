@@ -7,7 +7,7 @@ hide:
 ---
 
 <div class="tw-hero">
-<h1 class="tw-hero-h1"><img class="tw-hero-komiks" src="img/hero-komiks.webp" alt="" width="1508" height="839"><span class="tw-hero-text">Od nápadu na predaj produktu alebo služby po <span class="tw-accent">funkčný e-shop</span> — za jeden semester.</span></h1>
+<h1 class="tw-hero-h1"><span class="tw-hero-text">Od nápadu na predaj produktu alebo služby po <span class="tw-accent">funkčný e-shop</span> — za jeden semester.</span><img class="tw-hero-komiks" src="img/hero-komiks.webp" alt="Komiks s piatimi krokmi predmetu od firmy a produktu cez pripojenie a hosting, e-shop s košíkom a reklamu po odovzdanie a obhajobu." width="1508" height="839"></h1>
 <p class="tw-hero-lead">Vyberieš si firmu, nájdeš jej pripojenie a hosting, postavíš e-shop s košíkom, spravíš mu reklamu a celý projekt obhájiš. Všetko na nástrojoch, ktoré sú zadarmo — a pri každom kroku uvidíš, ako a za koľko sa to robí v praxi.</p>
 <div class="tw-hero-cta">
   <a class="tw-btn-arkada" href="01-firma-a-infrastruktura/blok-1-firma-a-produkt.html">Začni blokom 1</a>

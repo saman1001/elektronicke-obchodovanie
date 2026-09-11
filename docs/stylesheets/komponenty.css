@@ -78,7 +78,18 @@ html.js .tw-fade.tw-viditelne { opacity: 1; transform: none; }
   letter-spacing: -0.5px;
 }
 .tw-hero-komiks { display: block; width: 90%; height: auto; margin: 0 auto; }
-.tw-hero-text { display: none; }
+/* nadpis ostáva pre čítačky a vyhľadávače, vizuálne ho na desktope nahrádza komiks */
+.tw-hero-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 .tw-hero .tw-accent { color: var(--tw-accent); }
 .md-typeset .tw-hero-lead {
   display: none;
@@ -457,7 +468,15 @@ html.js .tw-fade.tw-viditelne { opacity: 1; transform: none; }
 /* ---------- mobil ---------- */
 @media screen and (max-width: 44em) {
   .tw-hero-komiks { display: none; }
-  .tw-hero-text { display: inline; }
+  .tw-hero-text {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
   .md-typeset .tw-hero-h1 { font-size: 34px; max-width: none; }
   .md-typeset .tw-hero-lead { display: block; font-size: 16px; }
   .tw-hero-cta { flex-direction: column; gap: 10px; }
