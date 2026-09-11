@@ -632,3 +632,19 @@ html.eo-brana body > :not(.tw-brana) { visibility: hidden; }
 .tw-brana__chyba { margin: 0; min-height: 20px; font-size: 14px; color: var(--tw-accent); }
 .tw-brana__poznamka { margin: 0; font-size: 12px; line-height: 1.5; color: var(--tw-muted); }
 @media print { .tw-brana { display: none; } }
+
+/* tlačidlo Kopírovať prompt v karte infografiky */
+.tw-kopirovat {
+  border: 1px solid var(--tw-border);
+  background: var(--tw-surface);
+  color: var(--tw-ink);
+  border-radius: var(--tw-radius-pill);
+  padding: 4px 12px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.tw-kopirovat:hover,
+.tw-kopirovat:focus-visible { border-color: var(--md-primary-fg-color); background: var(--tw-primary-soft); color: var(--md-typeset-a-color); outline: none; }
+.tw-kopirovat--hotovo { border-color: var(--tw-check); color: var(--tw-check); }

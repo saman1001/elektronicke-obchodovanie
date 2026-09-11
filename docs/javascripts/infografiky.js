@@ -41,9 +41,35 @@
     });
   }
 
+  // tlačidlo „Kopírovať prompt" v karte (data-kopirovat nesie text); pri file:// nie je Clipboard API
+  function skopirujZalozne(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); } catch (err) { /* bez schránky */ }
+    document.body.removeChild(ta);
+  }
+  function skopiruj(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text).catch(function () { skopirujZalozne(text); });
+    }
+    skopirujZalozne(text);
+    return Promise.resolve();
+  }
+
   document.addEventListener("click", function (e) {
+    var tlacidlo = e.target.closest && e.target.closest("[data-kopirovat]");
+    if (tlacidlo) {
+      var povodny = tlacidlo.textContent;
+      skopiruj(tlacidlo.getAttribute("data-kopirovat")).then(function () {
+        tlacidlo.textContent = "Skopírované";
+        tlacidlo.classList.add("tw-kopirovat--hotovo");
+        setTimeout(function () { tlacidlo.textContent = povodny; tlacidlo.classList.remove("tw-kopirovat--hotovo"); }, 1600);
+      });
+      return;
+    }
     var karta = e.target.closest && e.target.closest("[data-zoom-card]");
-    if (!karta || e.target.closest("a")) { return; }
+    if (!karta || e.target.closest("a, button")) { return; }
     otvor(karta);
   });
   document.addEventListener("keydown", function (e) {
