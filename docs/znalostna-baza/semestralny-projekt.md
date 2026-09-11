@@ -38,7 +38,7 @@ Referát prechádza **kontrolou plagiátov**. Text od AI, ktorý vydáš za vlas
 | Voľba pripojenia do internetu | 2 | blok 2 |
 | Voľba host serveru | 2 | blok 3 |
 | Vytvorenie WWW stránok e-shopu | 4 | bloky 4–7 |
-| Využitie foriem internetovej reklamy | 4 | bloky 8–9 |
+| Využitie foriem internetovej reklamy | 4 | blok 8 (blok 9 je nadplán) |
 | Záver | 2 | blok 10 |
 | Rozsah (5–10 strán) | 2 | blok 10 |
 | Zdroje literatúry | 2 | priebežne, každá kapitola |

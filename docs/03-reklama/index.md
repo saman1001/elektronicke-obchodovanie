@@ -14,4 +14,4 @@ Tretia časť predmetu. E-shop stojí — teraz sa o ňom musia dozvedieť záka
 | [9](blok-9-reklama-a-meranie.md) | Reklama a meranie (nadplán) | prehľad ďalších foriem reklamy a merania z praxe, bez povinného výstupu |
 
 !!! note "Kritérium hodnotenia"
-    Obe úlohy tejto časti spolu plnia kritérium **Využitie foriem internetovej reklamy (4 b)** — najvyššie bodované spolu s tvorbou e-shopu. Hodnotí sa, či reklama sedí na tvoju firmu a zákazníka z bloku 1, nie či je „pekná".
+    Bannery a výmena reklamy z bloku 8 plnia kritérium **Využitie foriem internetovej reklamy (4 b)** — najvyššie bodované spolu s tvorbou e-shopu. Hodnotí sa, či reklama sedí na tvoju firmu a zákazníka z bloku 1, nie či je „pekná".
