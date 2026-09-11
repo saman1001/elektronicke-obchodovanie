@@ -41,7 +41,7 @@
     });
   }
 
-  // tlačidlo „Kopírovať prompt" v karte (data-kopirovat nesie text); pri file:// nie je Clipboard API
+  // ikona schránky v karte (data-kopirovat nesie text promptu); pri file:// nie je Clipboard API
   function skopirujZalozne(text) {
     var ta = document.createElement("textarea");
     ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
@@ -60,11 +60,10 @@
   document.addEventListener("click", function (e) {
     var tlacidlo = e.target.closest && e.target.closest("[data-kopirovat]");
     if (tlacidlo) {
-      var povodny = tlacidlo.textContent;
       skopiruj(tlacidlo.getAttribute("data-kopirovat")).then(function () {
-        tlacidlo.textContent = "Skopírované";
-        tlacidlo.classList.add("tw-kopirovat--hotovo");
-        setTimeout(function () { tlacidlo.textContent = povodny; tlacidlo.classList.remove("tw-kopirovat--hotovo"); }, 1600);
+        tlacidlo.classList.add("tw-copied");
+        tlacidlo.title = "Skopírované";
+        setTimeout(function () { tlacidlo.classList.remove("tw-copied"); tlacidlo.title = "Kopírovať do schránky"; }, 1600);
       });
       return;
     }
