@@ -61,11 +61,16 @@ html.js .tw-fade {
 html.js .tw-fade.tw-viditelne { opacity: 1; transform: none; }
 
 /* ---------- horná lišta: logo predmetu ---------- */
-.md-header__button.md-logo { padding-top: 0.5rem; padding-bottom: 0.5rem; }
-.md-header__button.md-logo img { height: 26px; width: auto; }
-@media screen and (min-width: 76.25em) {
-  /* logo je wordmark s názvom predmetu, textový názov by ho zdvojil */
-  .md-header__title { visibility: hidden; }
+/* Material pod 76.25em logo v lište skrýva; tu ostáva na každej šírke a hamburger ide pred neho */
+.md-header__button.md-logo { display: block; padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.md-header__button[for="__drawer"] { order: -1; }
+/* výška klesá so šírkou okna: 9.4rem je miesto pre tlačidlá lišty, 10.85 je pomer strán loga */
+.md-header__button.md-logo img { height: clamp(12px, calc((100vw - 9.4rem) / 10.85), 26px); width: auto; }
+/* logo je wordmark s názvom predmetu, textový názov by ho zdvojil; prázdny prvok ďalej tlačí tlačidlá doprava */
+.md-header__title { visibility: hidden; margin-left: 0; margin-right: 0; }
+@media screen and (max-width: 76.234375em) {
+  /* vysúvacie menu: názov pod logom je holý text v labeli, skryje ho nulová veľkosť písma; výška pásu sadne na logo */
+  .md-nav--primary .md-nav__title[for="__drawer"] { font-size: 0; height: 4rem; padding-top: 0; padding-bottom: 0; }
 }
 
 /* ---------- dashboard: hero ---------- */
