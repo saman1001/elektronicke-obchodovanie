@@ -1,0 +1,2055 @@
+
+<!doctype html>
+<html lang="sk" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Predmet Elektronické obchodovanie pre študentov programu Elektronický obchod a manažment (FPEDAS UNIZA).">
+      
+      
+        <meta name="author" content="Juraj Fabuš">
+      
+      
+        <link rel="canonical" href="https://eo.fabus.eu/02-stavba-eshopu/blok-4-zaklad-eshopu.html">
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="blok-5-produkty.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Blok 4 — Základ e-shopu - Elektronické obchodovanie</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,700,700i%7CIBM+Plex+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"IBM Plex Sans";--md-code-font:"IBM Plex Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/komponenty.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#blok-4-zaklad-e-shopu" class="md-skip">
+          Preskočiť na obsah
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Hlavička">
+    <a href="../index.html" title="Elektronické obchodovanie" class="md-header__button md-logo" aria-label="Elektronické obchodovanie" data-md-component="logo">
+      
+  <img src="../img/logo-eo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Elektronické obchodovanie
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Blok 4 — Základ e-shopu
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Prepnúť na tmavý režim"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Prepnúť na tmavý režim" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Prepnúť na svetlý režim"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Prepnúť na svetlý režim" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Hľadať" placeholder="Hľadať" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Vyhľadávanie">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Vyčistiť" aria-label="Vyčistiť" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Spúšťam hľadanie
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/saman1001/elektronicke-obchodovanie" title="Zobraziť repozitár" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    elektronicke-obchodovanie
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigácia" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Elektronické obchodovanie" class="md-nav__button md-logo" aria-label="Elektronické obchodovanie" data-md-component="logo">
+      
+  <img src="../img/logo-eo.png" alt="logo">
+
+    </a>
+    Elektronické obchodovanie
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/saman1001/elektronicke-obchodovanie" title="Zobraziť repozitár" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    elektronicke-obchodovanie
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Úvod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Časť 1 — Firma a infraštruktúra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Časť 1 — Firma a infraštruktúra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-firma-a-infrastruktura/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prehľad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-firma-a-infrastruktura/blok-1-firma-a-produkt.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 1 — Firma a produkt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-firma-a-infrastruktura/blok-2-pripojenie-do-internetu.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 2 — Pripojenie do internetu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-firma-a-infrastruktura/blok-3-hosting-a-platforma.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 3 — Hosting a platforma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Časť 2 — Stavba e-shopu
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Časť 2 — Stavba e-shopu
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prehľad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 4 — Základ e-shopu
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="blok-4-zaklad-eshopu.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 4 — Základ e-shopu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#co-sa-v-tomto-bloku-naucis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Čo sa v tomto bloku naučíš
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-1-rozbehni-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 1 — Rozbehni systém
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-2-identita-nazov-logo-farby-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 2 — Identita: názov, logo, farby, menu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pozri-si-teoriu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pozri si teóriu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-3-https-dph-a-zakladne-nastavenia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 3 — HTTPS, DPH a základné nastavenia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-4-kontrola" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 4 — Kontrola
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vystup-bloku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Výstup bloku
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blok-5-produkty.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 5 — Produkty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blok-6-kosik-doprava-platby.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 6 — Košík, doprava a platby
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blok-7-povinne-stranky.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 7 — Povinné stránky e-shopu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Časť 3 — Reklama
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Časť 3 — Reklama
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-reklama/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prehľad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-reklama/blok-8-bannery.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 8 — Bannery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-reklama/blok-9-reklama-a-meranie.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 9 — Reklama a meranie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Záver
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Záver
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-zaver/blok-10-odovzdanie.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 10 — Odovzdanie projektu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-zaver/blok-11-12-obhajoby.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloky 11–12 — Obhajoby
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Znalostná báza
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Znalostná báza
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prehľad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/semestralny-projekt.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semestrálny projekt a hodnotenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/tabulka-10-poskytovatelov.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabuľka 10 poskytovateľov
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/internet-domena-dns.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Internet, doména a DNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/ai-v-predmete.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI v predmete
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/ai-logo-a-foto.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logo a produktové foto pomocou AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/wordpress-woocommerce.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WordPress a WooCommerce
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/webnode.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webnode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/httrack-offline-kopia.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Offline kópia webu (HTTrack)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/sablony.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Šablóny na stiahnutie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#co-sa-v-tomto-bloku-naucis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Čo sa v tomto bloku naučíš
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-1-rozbehni-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 1 — Rozbehni systém
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-2-identita-nazov-logo-farby-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 2 — Identita: názov, logo, farby, menu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pozri-si-teoriu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pozri si teóriu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-3-https-dph-a-zakladne-nastavenia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 3 — HTTPS, DPH a základné nastavenia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-4-kontrola" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 4 — Kontrola
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vystup-bloku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Výstup bloku
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+    
+<div class="tw-blok-hlavicka tw-cast-2">
+  <div class="tw-blok-hlavicka__riadok">
+    <p class="tw-blok-hlavicka__cast">Časť 2 · Stavba e-shopu</p>
+    <p class="tw-blok-hlavicka__pozicia">Blok 4 z 12</p>
+  </div>
+  
+    
+
+<nav class="tw-draha tw-draha--mini" aria-label="Dráha predmetu">
+  
+    <div class="tw-draha__cast tw-cast-1">
+      <div class="tw-draha__body">
+        
+          
+          <a class="tw-draha__bod tw-draha__bod--hotovy" href="../01-firma-a-infrastruktura/blok-1-firma-a-produkt.html" title="Blok 1: Firma a produkt"><span class="tw-sr">Blok 1</span></a><span class="tw-draha__spoj"></span>
+        
+          
+          <a class="tw-draha__bod tw-draha__bod--hotovy" href="../01-firma-a-infrastruktura/blok-2-pripojenie-do-internetu.html" title="Blok 2: Pripojenie do internetu"><span class="tw-sr">Blok 2</span></a><span class="tw-draha__spoj"></span>
+        
+          
+          <a class="tw-draha__bod tw-draha__bod--hotovy" href="../01-firma-a-infrastruktura/blok-3-hosting-a-platforma.html" title="Blok 3: Hosting a platforma"><span class="tw-sr">Blok 3</span></a>
+        
+      </div>
+      
+    </div>
+  
+    <div class="tw-draha__cast tw-cast-2">
+      <div class="tw-draha__body">
+        
+          
+          <a class="tw-draha__bod tw-draha__bod--aktualny" href="blok-4-zaklad-eshopu.html" title="Blok 4: Základ e-shopu" aria-current="page"><span class="tw-sr">Blok 4</span></a><span class="tw-draha__spoj"></span>
+        
+          
+          <a class="tw-draha__bod tw-draha__bod--buduci" href="blok-5-produkty.html" title="Blok 5: Produkty"><span class="tw-sr">Blok 5</span></a><span class="tw-draha__spoj"></span>
+        
+          
+          <a class="tw-draha__bod tw-draha__bod--buduci" href="blok-6-kosik-doprava-platby.html" title="Blok 6: Košík, doprava a platby"><span class="tw-sr">Blok 6</span></a><span class="tw-draha__spoj"></span>
+        
+          
+          <a class="tw-draha__bod tw-draha__bod--buduci" href="blok-7-povinne-stranky.html" title="Blok 7: Povinné stránky e-shopu"><span class="tw-sr">Blok 7</span></a>
+        
+      </div>
+      
+    </div>
+  
+    <div class="tw-draha__cast tw-cast-3">
+      <div class="tw-draha__body">
+        
+          
+          <a class="tw-draha__bod tw-draha__bod--buduci" href="../03-reklama/blok-8-bannery.html" title="Blok 8: Bannery"><span class="tw-sr">Blok 8</span></a><span class="tw-draha__spoj"></span>
+        
+          
+          <a class="tw-draha__bod tw-draha__bod--buduci tw-draha__bod--nadplan" href="../03-reklama/blok-9-reklama-a-meranie.html" title="Blok 9: Reklama a meranie (nadplán)"><span class="tw-sr">Blok 9</span></a>
+        
+      </div>
+      
+    </div>
+  
+    <div class="tw-draha__cast tw-cast-4">
+      <div class="tw-draha__body">
+        
+          
+          <a class="tw-draha__bod tw-draha__bod--buduci" href="../04-zaver/blok-10-odovzdanie.html" title="Blok 10: Odovzdanie projektu"><span class="tw-sr">Blok 10</span></a><span class="tw-draha__spoj"></span>
+        
+          
+          <a class="tw-draha__bod tw-draha__bod--buduci" href="../04-zaver/blok-11-12-obhajoby.html" title="Blok 11: Obhajoby"><span class="tw-sr">Blok 11</span></a><span class="tw-draha__spoj"></span>
+        
+          
+          <a class="tw-draha__bod tw-draha__bod--buduci" href="../04-zaver/blok-11-12-obhajoby.html" title="Blok 12: Obhajoby"><span class="tw-sr">Blok 12</span></a>
+        
+      </div>
+      
+    </div>
+  
+</nav>
+  
+  <div class="tw-blok-hlavicka__susedia">
+    
+      <a class="tw-blok-hlavicka__pred" href="../01-firma-a-infrastruktura/blok-3-hosting-a-platforma.html" rel="prev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"></path></svg>Blok 3: Hosting a platforma</a>
+    
+    
+      <a class="tw-blok-hlavicka__dalsi" href="blok-5-produkty.html" rel="next">Blok 5: Produkty<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></a>
+    
+  </div>
+</div>
+  
+  
+                  
+
+
+  
+  
+
+
+<h1 id="blok-4-zaklad-e-shopu">Blok 4 — Základ e-shopu<a class="headerlink" href="#blok-4-zaklad-e-shopu" title="Permanent link">&para;</a></h1>
+<p>Máš hosting a adresu. Dnes na nej <strong>rozbehneš e-shop</strong> — zatiaľ prázdny, ale živý: so šablónou, názvom, logom, menu a zámkom HTTPS. Znie to ako maličkosť, no práve tu sa rozhoduje, či zvyšok semestra stráviš stavaním obchodu, alebo bojom so systémom. Poriadne založený základ ti ušetrí hodiny.</p>
+<p>Od tohto bloku sa postup delí podľa skupiny: skupina <strong>WooCommerce</strong> inštaluje WordPress a plugin WooCommerce na svoj hosting, skupina <strong>Webnode</strong> zakladá e-shop na platforme. Ciele a kontrola na konci sú pre obe rovnaké.</p>
+<section class="tw-nauc">
+<h2 id="co-sa-v-tomto-bloku-naucis"><img class="tw-h2-ikona" src="../img/ikony/info.png" alt="" aria-hidden="true">Čo sa v tomto bloku naučíš<a class="headerlink" href="#co-sa-v-tomto-bloku-naucis" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Nainštalovať alebo založiť e-shopový systém a prihlásiť sa do jeho administrácie.</li>
+<li>Nastaviť základy: jazyk, menu, krajinu, DPH, názov, logo.</li>
+<li>Zapnúť HTTPS a overiť, že e-shop je verejne dostupný.</li>
+<li>Označiť projekt ako študentský, aby nikoho nezmiatol.</li>
+</ul>
+</section>
+<h2 id="krok-1-rozbehni-system" class="tw-krok"><img class="tw-krok__ikona" src="../img/ikony/px-raketa.png" alt="" aria-hidden="true">Krok 1 — Rozbehni systém<a class="headerlink" href="#krok-1-rozbehni-system" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">WooCommerce</label><label for="__tabbed_1_2">Webnode</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ol>
+<li><strong>Nájdi inštalátor.</strong> V administrácii hostingu (cPanel, DirectAdmin alebo vlastný panel) hľadaj <em>Softaculous</em>, <em>Installatron</em>, <em>WordPress</em> alebo „1-click install". Vyber WordPress a cieľ inštalácie: tvoja subdoména z bloku 3.</li>
+<li><strong>Vyplň údaje:</strong> názov e-shopu, <strong>prihlasovacie meno správcu iné než „admin"</strong>, silné heslo (správca hesiel), e-mail. Jazyk <strong>slovenčina</strong>.</li>
+<li><strong>Prihlás sa</strong> na <code>tvoja-adresa/wp-admin</code>. Vidíš Nástenku — administráciu WordPressu. Orientácia: <a href="../znalostna-baza/wordpress-woocommerce.html">WordPress a WooCommerce</a>.</li>
+<li><strong>Nainštaluj WooCommerce:</strong> Pluginy → Pridať nový → hľadaj „WooCommerce" → Inštalovať → Aktivovať. Spustí sa sprievodca: krajina <strong>Slovensko</strong>, mena <strong>EUR</strong>, typ produktov (fyzické, digitálne). Všetko, čo ponúka „vyskúšať zadarmo", platené rozšírenia alebo marketingové doplnky, <strong>preskoč</strong> — základný WooCommerce stačí na celý predmet.</li>
+<li><strong>Bez inštalátora?</strong> Stiahni WordPress z wordpress.org, v paneli hostingu vytvor databázu (zapíš si názov, používateľa, heslo), nahraj súbory cez FTP alebo správcu súborov a otvor svoju adresu — spustí sa inštalácia, do ktorej zadáš údaje databázy. Je to dlhšia cesta, ale naučí ťa, čo inštalátor robí za teba.</li>
+</ol>
+<p>Po inštalácii sa v menu vľavo objavia položky <strong>WooCommerce</strong> a <strong>Produkty</strong>. Skontroluj Nastavenia → Všeobecné: adresa webu s <code>https://</code>, časová zóna Bratislava, formát dátumu.</p>
+</div>
+<div class="tabbed-block">
+<ol>
+<li><strong>Registruj sa</strong> na webnode.sk e-mailom z bloku 3 (alias <code>meno+webnode@…</code>), bez karty.</li>
+<li><strong>Vytvor web a hneď zvoľ typ „E-shop".</strong> Toto je najdôležitejší klik dňa — obyčajný web sa na e-shop neskôr mení ťažko alebo vôbec.</li>
+<li><strong>Názov e-shopu</strong> určí subdoménu (<code>nazoveshopu.webnode.sk</code> alebo podobnú). Vyber si názov, ktorý znesie aj tlač na banner.</li>
+<li><strong>Šablóna:</strong> vyber jednoduchú, s dobre viditeľným produktovým výpisom. Vzhľad doladíš v kroku 2, štruktúra šablóny sa neskôr mení ťažko.</li>
+<li><strong>Nastavenia e-shopu:</strong> jazyk slovenčina, mena EUR, krajina Slovensko. Prejdi si sekciu E-shop → Nastavenia, aby si vedel, kde sú doprava, platby a e-maily — nastavíš ich v bloku 6. Orientácia: <a href="../znalostna-baza/webnode.html">Webnode</a>.</li>
+</ol>
+<p>Bezplatný plán ti dá <strong>10 produktov</strong>, subdoménu a reklamný prúžok Webnode na stránke. Všetko ostatné, čo budeš potrebovať, v ňom je.</p>
+</div>
+</div>
+</div>
+<h2 id="krok-2-identita-nazov-logo-farby-menu" class="tw-krok"><img class="tw-krok__ikona" src="../img/ikony/px-paleta.png" alt="" aria-hidden="true">Krok 2 — Identita: názov, logo, farby, menu<a class="headerlink" href="#krok-2-identita-nazov-logo-farby-menu" title="Permanent link">&para;</a></h2>
+<p>E-shop musí na prvý pohľad vyzerať ako obchod <strong>tvojej</strong> firmy, nie ako šablóna. Stačí málo, ale dôsledne:</p>
+<ul>
+<li><strong>Názov</strong> v hlavičke a v titulku prehliadača (vo WordPresse Nastavenia → Všeobecné, vo Webnode nastavenia webu).</li>
+<li><strong>Logo:</strong> ak firma nemá, vyrob jednoduché textové logo v Canve (zadarmo) — názov, jeden symbol, jedna farba. Druhá možnosť: vygeneruj si logo pomocou AI podľa návodu <a href="../znalostna-baza/ai-logo-a-foto.html">Logo a produktové foto pomocou AI</a>. Žiadne stiahnuté logo z internetu.</li>
+<li><strong>Farby:</strong> jedna hlavná, jedna na tlačidlá (akcent), zvyšok neutrálny. Vo WordPresse Vzhľad → Prispôsobiť (alebo Editor pri blokových témach), vo Webnode v nastaveniach šablóny.</li>
+<li><strong>Menu:</strong> Domov · Obchod (alebo Produkty) · O nás · Kontakt. Stránky Doprava a platba a Obchodné podmienky pribudnú v blokoch 6 a 7.</li>
+<li><strong>Šablóna (WooCommerce):</strong> predvolená téma alebo <em>Storefront</em> stačia. <strong>Nekupuj tému</strong> a neinštaluj tému stiahnutú mimo oficiálneho katalógu WordPressu — býva zavírená.</li>
+</ul>
+<p>Vytvor tri stránky s aspoň jedným odsekom textu: <strong>O nás</strong> (kto ste, prečo predávate práve toto — použi text z bloku 1), <strong>Kontakt</strong> (kontaktné údaje firmy, pri fiktívnej fiktívne) a <strong>Domov</strong> s uvítaním a odkazom na obchod.</p>
+<section class="tw-teoria">
+<h2 id="pozri-si-teoriu"><img class="tw-h2-ikona" src="../img/ikony/kniha.png" alt="" aria-hidden="true">Pozri si teóriu<a class="headerlink" href="#pozri-si-teoriu" title="Permanent link">&para;</a></h2>
+<div data-zoom-card="1" title="Klikni pre zväčšený detail" style="background:var(--md-default-bg-color);border:1px solid var(--tw-border);border-radius:16px;padding:20px 18px;box-sizing:border-box;display:flex;flex-direction:column;gap:14px;cursor:zoom-in;overflow:hidden">
+<h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;line-height:1.2;letter-spacing:-0.01em;text-wrap:pretty">Značka a vizuálna identita: čo zákazník vidí a čo cíti</h3>
+<div style="border:1px solid var(--tw-border);border-radius:14px;overflow:hidden;display:flex;flex-direction:column">
+<div style="background:#EAF4F8;padding:18px 20px;display:flex;flex-direction:column;gap:10px">
+<b style="font-size:15px;color:#0E3A4A">Vizuálna identita: tvár e-shopu</b>
+<span style="font-size:13px;line-height:1.55;color:#255B6B;text-wrap:pretty">Všetko, čo zákazník vidí: logo, farby, písmo a celkový grafický štýl.</span>
+<div style="display:flex;flex-wrap:wrap;gap:8px"><span style="display:inline-flex;align-items:center;background:#fff;color:#0E3A4A;border-radius:999px;padding:6px 14px;font-size:12.5px;font-weight:700">logo</span><span style="display:inline-flex;align-items:center;background:#fff;color:#0E3A4A;border-radius:999px;padding:6px 14px;font-size:12.5px;font-weight:700">farby</span><span style="display:inline-flex;align-items:center;background:#fff;color:#0E3A4A;border-radius:999px;padding:6px 14px;font-size:12.5px;font-weight:700">písmo</span><span style="display:inline-flex;align-items:center;background:#fff;color:#0E3A4A;border-radius:999px;padding:6px 14px;font-size:12.5px;font-weight:700">grafický štýl</span></div>
+<span style="align-self:flex-start;background:#0E3A4A;color:#fff;border-radius:999px;padding:6px 14px;font-size:12px;font-weight:700">Viditeľné: okamžitá rozpoznateľnosť</span>
+</div>
+<div style="height:3px;background:repeating-linear-gradient(90deg,#0E3A4A 0 12px,transparent 12px 20px)"></div>
+<div style="background:#0E3A4A;padding:18px 20px;display:flex;flex-direction:column;gap:10px">
+<b style="font-size:15px;color:#fff">Branding: duša značky</b>
+<span style="font-size:13px;line-height:1.55;color:rgba(255,255,255,.85);text-wrap:pretty">To, čo o tebe hovoria ľudia, keď nie si v miestnosti - pocity a sľuby, ktoré si so značkou spájajú.</span>
+<div style="display:flex;flex-direction:column;gap:7px">
+<span style="display:flex;gap:9px;align-items:flex-start;font-size:12.5px;line-height:1.5;color:rgba(255,255,255,.92)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BFE3EC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;flex:none"><path d="M12 19.5S4.5 14.8 4.5 9.9A3.9 3.9 0 0 1 12 8a3.9 3.9 0 0 1 7.5 1.9c0 4.9-7.5 9.6-7.5 9.6z"></path></svg>emócia, ktorú zákazník cíti</span>
+<span style="display:flex;gap:9px;align-items:flex-start;font-size:12.5px;line-height:1.5;color:rgba(255,255,255,.92)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BFE3EC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;flex:none"><path d="M3.5 12.5 7 9l3 2.5 3-2.5 3.5 3.5"></path><path d="M6 14.5 9.5 18l3-2.5 3 2.5 2.5-3.5"></path></svg>sľub, ktorý značka drží</span>
+</div>
+<span style="align-self:flex-start;background:rgba(255,255,255,.16);color:#fff;border-radius:999px;padding:6px 14px;font-size:12px;font-weight:700">Neviditeľné: vzťah a emócia</span>
+</div>
+</div>
+<p style="margin:0;font-size:12.5px;line-height:1.5;color:var(--tw-muted);text-wrap:pretty">Vizuál je len špička ľadovca. Pod hladinou je to, čo si zákazník o značke myslí - a to buduješ tým, čo naozaj robíš.</p>
+<b style="font-size:14px">Styleguide - kľúčové prvky grafickej identity</b>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:12px;align-items:stretch">
+<div style="background:var(--tw-surface);border:1px solid var(--tw-border);border-radius:14px;padding:16px 18px;min-width:0;display:flex;flex-direction:column;gap:9px">
+<div style="display:flex;gap:10px;align-items:center">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--tw-primary)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;flex:none"><path d="M4 17.5 9.5 6l5.5 11.5"></path><path d="M6.4 13.6h6.2"></path><path d="M17 6v11.5"></path></svg>
+<b style="font-size:14px;line-height:1.25">Logo a typografia</b>
+</div>
+<span style="font-size:12.5px;line-height:1.55;color:var(--tw-muted);text-wrap:pretty">Logo je tvárou značky, písmo musí byť jasné a čitateľné. Obe používaj v celom e-shope rovnako - v hlavičke, na faktúrach aj v e-mailoch.</span>
+</div>
+<div style="background:var(--tw-surface);border:1px solid var(--tw-border);border-radius:14px;padding:16px 18px;min-width:0;display:flex;flex-direction:column;gap:9px">
+<div style="display:flex;gap:10px;align-items:center">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--tw-primary)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;flex:none"><path d="M9.5 4.5A3 3 0 0 0 6.6 8 3 3 0 0 0 5 10.8a3 3 0 0 0 1.6 2.7A3 3 0 0 0 9.5 19h.6V4.5z"></path><path d="M14.5 4.5A3 3 0 0 1 17.4 8 3 3 0 0 1 19 10.8a3 3 0 0 1-1.6 2.7A3 3 0 0 1 14.5 19h-.6V4.5z"></path></svg>
+<b style="font-size:14px;line-height:1.25">Psychológia farieb</b>
+</div>
+<span style="font-size:12.5px;line-height:1.55;color:var(--tw-muted);text-wrap:pretty">Farby vyvolávajú emócie a musia byť konzistentné naprieč celým e-shopom. Vyber si dve hlavné a jednu doplnkovú, viac nepotrebuješ.</span>
+</div>
+<div style="background:var(--tw-surface);border:1px solid var(--tw-border);border-radius:14px;padding:16px 18px;min-width:0;display:flex;flex-direction:column;gap:9px">
+<div style="display:flex;gap:10px;align-items:center">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--tw-primary)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;flex:none"><rect x="5" y="10.5" width="14" height="9.5" rx="2"></rect><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"></path></svg>
+<b style="font-size:14px;line-height:1.25">Sila prvého dojmu</b>
+</div>
+<span style="font-size:12.5px;line-height:1.55;color:var(--tw-muted);text-wrap:pretty">Profesionálna grafika buduje dôveru a priamo ovplyvňuje ochotu zákazníka nakúpiť. Zákazník sa rozhodne za pár sekúnd, ešte kým si prečíta prvý produkt.</span>
+</div>
+<div style="background:var(--tw-surface);border:1px solid var(--tw-border);border-radius:14px;padding:16px 18px;min-width:0;display:flex;flex-direction:column;gap:9px">
+<div style="display:flex;gap:10px;align-items:center">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--tw-primary)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;flex:none"><path d="M4 10v4h3l5 3.5V6.5L7 10z"></path><path d="M16.5 9.2a4 4 0 0 1 0 5.6"></path><path d="M19 6.8a7.5 7.5 0 0 1 0 10.4"></path></svg>
+<b style="font-size:14px;line-height:1.25">Tone of voice</b>
+</div>
+<span style="font-size:12.5px;line-height:1.55;color:var(--tw-muted);text-wrap:pretty">Spôsob, akým značka komunikuje - odráža to jej charakter a hodnoty. Drž ho rovnaký v popisoch produktov, v e-mailoch aj v odpovediach zákazníkom.</span>
+</div>
+</div>
+</div>
+<div data-zoom-card="1" title="Klikni pre zväčšený detail" style="background:var(--md-default-bg-color);border:1px solid var(--tw-border);border-radius:16px;padding:20px 18px;box-sizing:border-box;display:flex;flex-direction:column;gap:14px;cursor:zoom-in;overflow:hidden">
+<h3 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;line-height:1.2;letter-spacing:-0.01em;text-wrap:pretty">Logo pomocou AI: prompt, druhy loga a kontrola</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(290px,100%),1fr));gap:12px;align-items:stretch">
+<div style="grid-column:1/-1;background:var(--tw-surface);border:1px solid var(--tw-border);border-radius:14px;padding:16px 18px;min-width:0;display:flex;flex-direction:column;gap:11px">
+<div style="display:flex;gap:10px;align-items:center">
+<span style="width:24px;height:24px;border-radius:7px;background:var(--tw-primary-soft);color:var(--tw-primary);font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none">1</span>
+<h4 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:15px;line-height:1.25;color:var(--tw-primary);text-wrap:pretty">Univerzálna šablóna promptu</h4>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:10px;align-items:start">
+<div style="min-width:0;display:flex;flex-direction:column;gap:5px">
+<span style="height:6px;border-radius:3px;background:var(--tw-primary)"></span>
+<b style="font-size:12.5px;line-height:1.25">1. Subjekt</b>
+<span style="font-size:11.5px;line-height:1.4;color:var(--tw-muted);text-wrap:pretty">druh loga a čo zobrazuje</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;line-height:1.45;color:var(--tw-ink);background:var(--md-default-bg-color);border-radius:8px;padding:8px 10px;text-wrap:pretty">„emblem logo pre kávovú pražiareň &quot;ZRNKO&quot;"</span>
+</div>
+<div style="min-width:0;display:flex;flex-direction:column;gap:5px">
+<span style="height:6px;border-radius:3px;background:var(--tw-cast-2)"></span>
+<b style="font-size:12.5px;line-height:1.25">2. Štýl a médium</b>
+<span style="font-size:11.5px;line-height:1.4;color:var(--tw-muted);text-wrap:pretty">ako to má vyzerať</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;line-height:1.45;color:var(--tw-ink);background:var(--md-default-bg-color);border-radius:8px;padding:8px 10px;text-wrap:pretty">„minimalistické, plochý vektor"</span>
+</div>
+<div style="min-width:0;display:flex;flex-direction:column;gap:5px">
+<span style="height:6px;border-radius:3px;background:#D93025"></span>
+<b style="font-size:12.5px;line-height:1.25">3. Farby</b>
+<span style="font-size:11.5px;line-height:1.4;color:var(--tw-muted);text-wrap:pretty">dve, najviac tri</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;line-height:1.45;color:var(--tw-ink);background:var(--md-default-bg-color);border-radius:8px;padding:8px 10px;text-wrap:pretty">„tmavohnedá a krémová"</span>
+</div>
+<div style="min-width:0;display:flex;flex-direction:column;gap:5px">
+<span style="height:6px;border-radius:3px;background:var(--tw-cast-4)"></span>
+<b style="font-size:12.5px;line-height:1.25">4. Technické parametre</b>
+<span style="font-size:11.5px;line-height:1.4;color:var(--tw-muted);text-wrap:pretty">doladenie na konci</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;line-height:1.45;color:var(--tw-ink);background:var(--md-default-bg-color);border-radius:8px;padding:8px 10px;text-wrap:pretty">„biele pozadie, štvorec, vysoké rozlíšenie"</span>
+</div>
+<div style="min-width:0;display:flex;flex-direction:column;gap:5px">
+<span style="height:6px;border-radius:3px;background:#1E88E5"></span>
+<b style="font-size:12.5px;line-height:1.25">5. Negatívny prompt</b>
+<span style="font-size:11.5px;line-height:1.4;color:var(--tw-muted);text-wrap:pretty">čo v obrázku nechceš</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;line-height:1.45;color:var(--tw-ink);background:var(--md-default-bg-color);border-radius:8px;padding:8px 10px;text-wrap:pretty">„no 3D effect, no shadows"</span>
+</div>
+</div>
+<div style="background:var(--md-default-bg-color);border:1px solid var(--tw-border);border-radius:14px;padding:16px 18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:16px;align-items:center">
+<div style="position:relative;min-width:0;display:flex;flex-direction:column;gap:8px;padding-right:34px">
+<b style="font-size:13px">Výsledný prompt</b>
+<button type="button" class="md-clipboard md-icon tw-kopirovat" title="Kopírovať do schránky" data-kopirovat="emblem logo pre kávovú pražiareň &quot;ZRNKO&quot;, minimalistické, plochý vektor, tmavohnedá a krémová, biele pozadie, štvorec, vysoké rozlíšenie, no 3D effect, no shadows"></button>
+<p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.9;color:var(--tw-ink);text-wrap:pretty">„<span style="border-bottom:2px solid var(--tw-primary);padding-bottom:1px">emblem logo pre kávovú pražiareň &quot;ZRNKO&quot;</span>, <span style="border-bottom:2px solid var(--tw-cast-2);padding-bottom:1px">minimalistické, plochý vektor</span>, <span style="border-bottom:2px solid #D93025;padding-bottom:1px">tmavohnedá a krémová</span>, <span style="border-bottom:2px solid var(--tw-cast-4);padding-bottom:1px">biele pozadie, štvorec, vysoké rozlíšenie</span>, <span style="border-bottom:2px solid #1E88E5;padding-bottom:1px">no 3D effect, no shadows</span>“</p>
+<span style="font-size:11.5px;line-height:1.45;color:var(--tw-muted);text-wrap:pretty">Farba podčiarknutia zodpovedá časti promptu vyššie.</span>
+</div>
+<figure style="margin:0;min-width:0;display:flex;flex-direction:column;gap:7px">
+<img src="../img/infografiky/logo-prompt-vystup.webp" alt="Výstup z promptu: kruhový emblém s kávovým zrnkom, parou a nápisom ZRNKO v tmavohnedej a krémovej farbe." style="width:100%;height:auto;border:1px solid var(--tw-border);border-radius:12px;display:block;background:#FFFFFF">
+<figcaption style="font-size:11.5px;color:var(--tw-muted);text-wrap:pretty">Výstup z uvedeného promptu.</figcaption>
+</figure>
+</div>
+</div>
+<div style="grid-column:1/-1;background:var(--tw-surface);border:1px solid var(--tw-border);border-radius:14px;padding:16px 18px;min-width:0;display:flex;flex-direction:column;gap:11px">
+<div style="display:flex;gap:10px;align-items:center">
+<span style="width:24px;height:24px;border-radius:7px;background:var(--tw-primary-soft);color:var(--tw-primary);font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none">2</span>
+<h4 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:15px;line-height:1.25;color:var(--tw-primary);text-wrap:pretty">Druhy loga</h4>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:12px">
+<div style="min-width:0;display:flex;flex-direction:column;gap:7px">
+<img src="../img/infografiky/logo-typ-wordmark.png" alt="Príklady loga typu Wordmark" style="width:100%;height:auto;border:1px solid var(--tw-border);border-radius:9px;background:#fff;display:block">
+<b style="font-size:13px">Wordmark</b>
+<span style="font-size:12px;line-height:1.45;color:var(--tw-muted);text-wrap:pretty">Celý názov firmy vo výraznom písme. Funguje, keď je názov krátky a zapamätateľný.</span>
+</div>
+<div style="min-width:0;display:flex;flex-direction:column;gap:7px">
+<img src="../img/infografiky/logo-typ-lettermark.png" alt="Príklady loga typu Lettermark" style="width:100%;height:auto;border:1px solid var(--tw-border);border-radius:9px;background:#fff;display:block">
+<b style="font-size:13px">Lettermark</b>
+<span style="font-size:12px;line-height:1.45;color:var(--tw-muted);text-wrap:pretty">Iniciály namiesto celého názvu. Pre dlhé názvy, ktoré sa do malého priestoru nezmestia.</span>
+</div>
+<div style="min-width:0;display:flex;flex-direction:column;gap:7px">
+<img src="../img/infografiky/logo-typ-emblem.png" alt="Príklady loga typu Emblém" style="width:100%;height:auto;border:1px solid var(--tw-border);border-radius:9px;background:#fff;display:block">
+<b style="font-size:13px">Emblém</b>
+<span style="font-size:12px;line-height:1.45;color:var(--tw-muted);text-wrap:pretty">Názov vnútri tvaru, štítu alebo kruhu. Pôsobí tradične, v malých veľkostiach sa zle číta.</span>
+</div>
+<div style="min-width:0;display:flex;flex-direction:column;gap:7px">
+<img src="../img/infografiky/logo-typ-kombinacia.png" alt="Príklady loga typu Kombinácia" style="width:100%;height:auto;border:1px solid var(--tw-border);border-radius:9px;background:#fff;display:block">
+<b style="font-size:13px">Kombinácia</b>
+<span style="font-size:12px;line-height:1.45;color:var(--tw-muted);text-wrap:pretty">Symbol a názov, ktoré fungujú spolu aj samostatne. Pre e-shop najpraktickejšie.</span>
+</div>
+</div>
+</div>
+<div style="background:var(--tw-surface);border:1px solid var(--tw-border);border-radius:14px;padding:16px 18px;min-width:0;display:flex;flex-direction:column;gap:11px">
+<div style="display:flex;gap:10px;align-items:center">
+<span style="width:24px;height:24px;border-radius:7px;background:var(--tw-primary-soft);color:var(--tw-primary);font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none">3</span>
+<h4 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:15px;line-height:1.25;color:var(--tw-primary);text-wrap:pretty">Váha slov zľava doprava</h4>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;align-items:flex-end;gap:5px;height:52px">
+<span style="flex:1;background:var(--tw-primary);height:100%;border-radius:4px 4px 0 0"></span>
+<span style="flex:1;background:var(--tw-primary);opacity:.75;height:78%;border-radius:4px 4px 0 0"></span>
+<span style="flex:1;background:var(--tw-primary);opacity:.5;height:56%;border-radius:4px 4px 0 0"></span>
+<span style="flex:1;background:var(--tw-primary);opacity:.3;height:36%;border-radius:4px 4px 0 0"></span>
+<span style="flex:1;background:var(--tw-primary);opacity:.18;height:22%;border-radius:4px 4px 0 0"></span>
+</div>
+<div style="display:flex;justify-content:space-between;font-size:11.5px;font-weight:700;color:var(--tw-muted)"><span>začiatok promptu</span><span>koniec</span></div>
+<p style="margin:0;width:100%;font-size:12.5px;line-height:1.5;color:var(--tw-muted);text-align:left;text-wrap:pretty">Model dáva najväčší význam prvým slovám. <b style="color:var(--tw-accent)">Najdôležitejšie slovo píš prvé</b>, doladenie a zákazy nechaj na koniec.</p>
+</div>
+</div>
+<div style="background:var(--tw-surface);border:1px solid var(--tw-border);border-radius:14px;padding:16px 18px;min-width:0;display:flex;flex-direction:column;gap:11px">
+<div style="display:flex;gap:10px;align-items:center">
+<span style="width:24px;height:24px;border-radius:7px;background:var(--tw-primary-soft);color:var(--tw-primary);font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none">4</span>
+<h4 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:15px;line-height:1.25;color:var(--tw-primary);text-wrap:pretty">Negatívny prompt a kedy ho použiť</h4>
+</div>
+<p style="margin:0;font-size:12.5px;line-height:1.5;color:var(--tw-muted);text-wrap:pretty">Nepíš ho hneď. Vygeneruj prvú sadu a až podľa toho, čo ti v nej prekáža, doplň zákazy - inak modelu zbytočne zaberáš pozornosť.</p>
+<div style="display:flex;flex-direction:column;gap:6px">
+<span style="font-size:12px;line-height:1.5;color:var(--tw-muted)">Prišlo 3D a tiene → <code style="font-family:'IBM Plex Mono',monospace;background:var(--tw-inline-code-bg);border-radius:5px;padding:1px 5px;font-size:.92em">no 3D effect, no shadows</code></span>
+<span style="font-size:12px;line-height:1.5;color:var(--tw-muted)">Prišiel skomolený text → <code style="font-family:'IBM Plex Mono',monospace;background:var(--tw-inline-code-bg);border-radius:5px;padding:1px 5px;font-size:.92em">no text, no letters</code></span>
+<span style="font-size:12px;line-height:1.5;color:var(--tw-muted)">Prišla fotorealistická scéna → <code style="font-family:'IBM Plex Mono',monospace;background:var(--tw-inline-code-bg);border-radius:5px;padding:1px 5px;font-size:.92em">no photo, no background</code></span>
+</div>
+</div>
+<div style="grid-column:1/-1;background:var(--tw-surface);border:1px solid var(--tw-border);border-radius:14px;padding:16px 18px;min-width:0;display:flex;flex-direction:column;gap:11px">
+<div style="display:flex;gap:10px;align-items:center">
+<span style="width:24px;height:24px;border-radius:7px;background:var(--tw-primary-soft);color:var(--tw-primary);font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none">5</span>
+<h4 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:15px;line-height:1.25;color:var(--tw-primary);text-wrap:pretty">Limit dĺžky promptu: odkedy je neefektívny</h4>
+</div>
+<p style="margin:0;font-size:12.5px;line-height:1.5;color:var(--tw-muted);text-wrap:pretty">Prompt sa stáva neefektívnym vo chvíli, keď prejde z konkrétnosti do preťaženia informáciami. Pridávanie slov od istej hranice už výsledok nezlepšuje, iba ho zhoršuje.</p>
+<div style="display:flex;flex-direction:column;gap:7px">
+<div style="display:flex;align-items:center;gap:9px">
+<span style="flex:0 0 74px;font-size:11.5px;font-weight:700;color:var(--tw-ink)">30-40 slov</span>
+<span style="flex:1 1 0;min-width:0;height:12px;border-radius:6px;background:var(--md-default-bg-color);overflow:hidden"><span style="display:block;width:35%;height:100%;border-radius:6px;background:var(--tw-check)"></span></span>
+<span style="flex:0 0 auto;font-size:11.5px;color:var(--tw-muted)">funguje</span>
+</div>
+<div style="display:flex;align-items:center;gap:9px">
+<span style="flex:0 0 74px;font-size:11.5px;font-weight:700;color:var(--tw-ink)">200 slov</span>
+<span style="flex:1 1 0;min-width:0;height:12px;border-radius:6px;background:var(--md-default-bg-color);overflow:hidden"><span style="display:block;width:70%;height:100%;border-radius:6px;background:var(--tw-cast-3)"></span></span>
+<span style="flex:0 0 auto;font-size:11.5px;color:var(--tw-muted)">model začína orezávať</span>
+</div>
+<div style="display:flex;align-items:center;gap:9px">
+<span style="flex:0 0 74px;font-size:11.5px;font-weight:700;color:var(--tw-ink)">250 slov a viac</span>
+<span style="flex:1 1 0;min-width:0;height:12px;border-radius:6px;background:var(--md-default-bg-color);overflow:hidden"><span style="display:block;width:100%;height:100%;border-radius:6px;background:#A8362A"></span></span>
+<span style="flex:0 0 auto;font-size:11.5px;color:var(--tw-muted)">degradácia diverzity</span>
+</div>
+</div>
+<ul style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(210px,100%),1fr));gap:10px 16px">
+<li style="display:flex;flex-direction:column;gap:2px">
+<b style="font-size:12.5px">Degradácia diverzity (200-250 slov)</b>
+<span style="font-size:12px;line-height:1.5;color:var(--tw-muted);text-wrap:pretty">Výskum PromptMoG ukázal, že prompty nad 250 slov vedú k tzv. diversity degradation: model generuje takmer identické výstupy naprieč rôznymi seedmi a ďalšie slová už neprinášajú žiadne zlepšenie.</span>
+</li>
+<li style="display:flex;flex-direction:column;gap:2px">
+<b style="font-size:12.5px">Orezanie tokenov (truncation)</b>
+<span style="font-size:12px;line-height:1.5;color:var(--tw-muted);text-wrap:pretty">Pri promptoch nad 200 slov model slová za svojím tokenovým limitom jednoducho ignoruje a odstrihne.</span>
+</li>
+<li style="display:flex;flex-direction:column;gap:2px">
+<b style="font-size:12.5px">Preťaženie obmedzeniami (over-specifying)</b>
+<span style="font-size:12px;line-height:1.5;color:var(--tw-muted);text-wrap:pretty">Priveľa detailov a pravidiel naraz vytvára zmätočné, preplnené alebo navzájom si odporujúce výsledky.</span>
+</li>
+<li style="display:flex;flex-direction:column;gap:2px">
+<b style="font-size:12.5px">Hromadenie kľúčových slov (keyword stuffing)</b>
+<span style="font-size:12px;line-height:1.5;color:var(--tw-muted);text-wrap:pretty">Vrstvenie generických adjektív (beautiful, amazing, 8k, detailed) plytvá tokenmi a mätie model. Šesť dobre zvolených kľúčových slov má vyšší efekt ako tridsať generických výrazov.</span>
+</li>
+<li style="display:flex;flex-direction:column;gap:2px">
+<b style="font-size:12.5px">Sémantické presakovanie a vynechanie subjektu</b>
+<span style="font-size:12px;line-height:1.5;color:var(--tw-muted);text-wrap:pretty">Pri neúmerne dlhom a zložitom prompte hrozí, že AI hlavný subjekt úplne vynechá (catastrophic neglect) alebo jeho vlastnosti prisúdi inému objektu.</span>
+</li>
+</ul>
+</div>
+<div style="background:var(--tw-surface);border:1px solid var(--tw-border);border-radius:14px;padding:16px 18px;min-width:0;display:flex;flex-direction:column;gap:11px">
+<div style="display:flex;gap:10px;align-items:center">
+<span style="width:24px;height:24px;border-radius:7px;background:var(--tw-primary-soft);color:var(--tw-primary);font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none">6</span>
+<h4 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:15px;line-height:1.25;color:var(--tw-primary);text-wrap:pretty">Reverzné inžinierstvo pomocou /describe</h4>
+</div>
+<div style="display:flex;flex-direction:column;gap:7px">
+<span style="display:flex;gap:8px;align-items:flex-start;font-size:12.5px;line-height:1.5;color:var(--tw-muted)"><b style="color:var(--tw-ink);flex:none">1.</b>Nahraj logo, ktoré sa ti páči, a napíš <code style="font-family:'IBM Plex Mono',monospace;background:var(--tw-inline-code-bg);border-radius:5px;padding:1px 5px;font-size:.92em">/describe</code>.</span>
+<span style="display:flex;gap:8px;align-items:flex-start;font-size:12.5px;line-height:1.5;color:var(--tw-muted)"><b style="color:var(--tw-ink);flex:none">2.</b>Model ti vráti prompt, ktorým by taký obrázok vyrobil.</span>
+<span style="display:flex;gap:8px;align-items:flex-start;font-size:12.5px;line-height:1.5;color:var(--tw-muted)"><b style="color:var(--tw-ink);flex:none">3.</b>Vyber z neho slová pre štýl a farby, subjekt vymeň za svoj.</span>
+</div>
+<p style="margin:0;width:100%;font-size:12.5px;line-height:1.5;color:var(--tw-muted);font-style:italic;text-align:justify;text-wrap:pretty">Slúži na pochopenie štýlu, nie na kopírovanie cudzieho loga.</p>
+</div>
+<div style="background:var(--tw-surface);border:1px solid var(--tw-border);border-radius:14px;padding:16px 18px;min-width:0;display:flex;flex-direction:column;gap:11px">
+<div style="display:flex;gap:10px;align-items:center">
+<span style="width:24px;height:24px;border-radius:7px;background:var(--tw-primary-soft);color:var(--tw-primary);font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none">7</span>
+<h4 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:15px;line-height:1.25;color:var(--tw-primary);text-wrap:pretty">Škálovateľnosť: favicon test</h4>
+</div>
+<div style="display:flex;align-items:flex-end;gap:14px">
+<span style="display:flex;flex-direction:column;align-items:center;gap:5px;flex:none">
+<img src="../img/infografiky/logo-favicon-test.png" alt="Logo Apple v šírke 64 px" style="width:64px;height:64px;display:block;border:1px solid var(--tw-border);border-radius:11px;background:#fff">
+<span style="font-size:10.5px;color:var(--tw-muted)">64 px</span>
+</span>
+<span style="display:flex;flex-direction:column;align-items:center;gap:5px;flex:none">
+<img src="../img/infografiky/logo-favicon-test.png" alt="Logo Apple v šírke 32 px" style="width:32px;height:32px;display:block;border:1px solid var(--tw-border);border-radius:5px;background:#fff">
+<span style="font-size:10.5px;color:var(--tw-muted)">32 px</span>
+</span>
+<span style="display:flex;flex-direction:column;align-items:center;gap:5px;flex:none">
+<img src="../img/infografiky/logo-favicon-test.png" alt="Logo Apple v šírke 16 px" style="width:16px;height:16px;display:block;border:1px solid var(--tw-border);border-radius:3px;background:#fff">
+<span style="font-size:10.5px;color:var(--tw-muted)">16 px - favicon</span>
+</span>
+</div>
+<p style="margin:0;font-size:12.5px;line-height:1.5;color:var(--tw-muted);text-wrap:pretty">Zmenši logo na 16 × 16 px, teda na veľkosť ikony v záložke prehliadača. Logo Apple test prejde: aj v 16 px je tvar rozpoznateľný, pretože je to jeden plný obrys bez detailov. Ak sa tvoje logo v tejto veľkosti rozpadne, vyhoď detaily a tenké linky.</p>
+</div>
+</div>
+</div>
+
+</section>
+<h2 id="krok-3-https-dph-a-zakladne-nastavenia" class="tw-krok"><img class="tw-krok__ikona" src="../img/ikony/px-zamok.png" alt="" aria-hidden="true">Krok 3 — HTTPS, DPH a základné nastavenia<a class="headerlink" href="#krok-3-https-dph-a-zakladne-nastavenia" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>HTTPS.</strong> Vo Webnode je zapnuté automaticky. Na webhostingu ho zapni v paneli (položka SSL, Let's Encrypt), potom vo WordPresse Nastavenia → Všeobecné zmeň obe adresy na <code>https://</code>. Kontrola: otvor e-shop v novom okne, v adresnom riadku musí byť zámok bez varovania.</li>
+<li><strong>DPH.</strong> Malá firma pod obratovým limitom nebýva platiteľom DPH — vtedy dane vôbec nezapínaj a ceny sú konečné. Ak je tvoja firma platiteľ, zapni dane (WooCommerce → Nastavenia → Všeobecné → Povoliť dane; vo Webnode v nastaveniach e-shopu) a nastav aktuálnu základnú sadzbu DPH na Slovensku — over si ju, sadzby sa menili. Rozhodnutie napíš do dokumentu.</li>
+<li><strong>Ceny s DPH pre zákazníka.</strong> Spotrebiteľ musí vidieť konečnú cenu. Skontroluj, že e-shop zobrazuje ceny vrátane DPH.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Označ projekt ako študentský</p>
+<p>Tvoj e-shop je verejný a nájde ho aj vyhľadávač. Aby skutočný návštevník nečakal tovar, daj do pätičky alebo hlavičky viditeľnú vetu: <strong>„Študentský projekt predmetu Elektronické obchodovanie — objednávky nie sú záväzné a nevybavujú sa."</strong> Vo WordPresse ako textový blok v pätičke (Vzhľad → Prispôsobiť alebo Editor), vo Webnode ako text v pätičke šablóny.</p>
+</div>
+<h2 id="krok-4-kontrola" class="tw-krok"><img class="tw-krok__ikona" src="../img/ikony/px-kontrola.png" alt="" aria-hidden="true">Krok 4 — Kontrola<a class="headerlink" href="#krok-4-kontrola" title="Permanent link">&para;</a></h2>
+<p>Otvor e-shop v <strong>anonymnom okne</strong> prehliadača (nie prihlásený) a <strong>na mobile</strong>:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> adresa funguje, zámok HTTPS bez varovania,</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> názov a logo firmy v hlavičke, titulok okna nie je „Just another WordPress site" ani názov šablóny,</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> menu má Domov, Obchod, O nás, Kontakt a všetky odkazy vedú niekam,</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> stránka Obchod existuje (zatiaľ prázdna alebo s ukážkovým produktom),</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> veta o študentskom projekte je viditeľná,</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> na mobile sa nič neprekrýva a menu sa dá otvoriť.</li>
+</ul>
+<div class="admonition tip ai">
+<p class="admonition-title">AI v tomto bloku</p>
+<p><strong>Čo jej zveriť:</strong> ladenie. Keď sa niečo nedá nájsť alebo vyskočí chyba, opíš AI presne, čo vidíš.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Staviam e-shop v [WooCommerce na WordPresse / Webnode]. V administrácii chcem [čo chceš urobiť], ale [čo sa deje — presná chybová hláška alebo popis]. Používam [názov témy/šablóny]. Poraď mi postup krok za krokom, ako to nájsť alebo opraviť, a povedz, čo si mám skontrolovať, ak to nepomôže.
+</code></pre></div>
+<p><strong>Čo si overiť:</strong> názvy položiek menu sa v každej verzii systému líšia — AI opisuje verziu, ktorú „pozná". Ak položku nenájdeš, hľadaj podobný názov, nie presný. Pluginy, ktoré AI odporučí, over v oficiálnom katalógu WordPressu (počet inštalácií, posledná aktualizácia). A <strong>nikdy</strong> do AI nevkladaj heslá ani prístupové údaje k hostingu.</p>
+</div>
+<div class="admonition note prax">
+<p class="admonition-title">Ako je to v praxi</p>
+<p>Firma, ktorá zakladá e-shop, si tento blok buď zaplatí, alebo prenajme. <strong>Agentúra alebo freelancer</strong> postaví WooCommerce e-shop na mieru za stovky až tisíce eur, k tomu platená téma (desiatky eur) a hosting. <strong>Platforma</strong> (Shoptet, Shopify, Webnode Business) to isté ponúka za mesačný paušál rádovo v desiatkach eur — bez inštalácie, s aktualizáciami a podporou v cene. Za čo firmy platia: nie za kliknutie „Inštalovať", ale za to, že to niekto <strong>udržiava</strong> — WordPress bez aktualizácií je do roka deravý a e-shop s výpadkom v sezóne stojí viac než rok hostingu.</p>
+</div>
+<section class="tw-vystup">
+<h2 id="vystup-bloku"><img class="tw-h2-ikona" src="../img/ikony/vlajka.png" alt="" aria-hidden="true">Výstup bloku<a class="headerlink" href="#vystup-bloku" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Živý e-shop na adrese z bloku 3: HTTPS, názov, logo, menu, stránky Domov, O nás, Kontakt a veta o študentskom projekte.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Prístupové údaje uložené v správcovi hesiel (nie v dokumente projektu).</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kapitola 4 dokumentu: použitý systém, postup založenia v 5–8 vetách, snímka obrazovky úvodnej stránky.</li>
+</ul>
+<p>Kritérium hodnotenia: začínaš plniť <strong>Vytvorenie WWW stránok e-shopu (4 b)</strong> — hodnotí sa až hotový e-shop po bloku 7.</p></section>
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Na začiatok
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pätka" >
+        
+          
+          <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Späť: Prehľad">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Späť
+              </span>
+              <div class="md-ellipsis">
+                Prehľad
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="blok-5-produkty.html" class="md-footer__link md-footer__link--next" aria-label="Ďalej: Blok 5 — Produkty">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Ďalej
+              </span>
+              <div class="md-ellipsis">
+                Blok 5 — Produkty
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 Elektronické obchodovanie · Žilinská univerzita v Žiline · <a href='https://eo.fabus.eu/ochrana-sukromia.html'>Ochrana súkromia</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skop\u00edrovan\u00e9 do schr\u00e1nky", "clipboard.copy": "Kop\u00edrova\u0165 do schr\u00e1nky", "search.result.more.one": "1 \u010fal\u0161\u00ed na tejto str\u00e1nke", "search.result.more.other": "# \u010fal\u0161\u00edch na tejto str\u00e1nke", "search.result.none": "\u017diadne vyhovuj\u00face dokumenty", "search.result.one": "Vyhovuj\u00faci dokument: 1", "search.result.other": "Vyhovuj\u00face dokumenty: #", "search.result.placeholder": "Pre vyh\u013ead\u00e1vanie za\u010dni p\u00edsa\u0165", "search.result.term.missing": "Ch\u00fdbaj\u00faci", "select.version": "Vyberte verziu"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../javascripts/copy-lokalne.js"></script>
+      
+        <script src="../javascripts/animacie.js"></script>
+      
+        <script src="../javascripts/infografiky.js"></script>
+      
+        <script src="../javascripts/umami.js"></script>
+      
+    
+  </body>
+</html>
