@@ -46,13 +46,10 @@ Do 30 až 40 slov. Dlhý prompt model rozptýli a dôležité slová stratia vá
 
 ### 8. Bezplatné nástroje
 
-Stav k septembru 2026, limity a licencie sa menia. Vyberaj podľa troch kritérií: **bezplatný limit** (koľko obrázkov denne alebo mesačne), **komerčné použitie výstupu** (či smieš logo použiť pre firmu) a **možnosť negatívneho promptu**.
-
 | Nástroj | Free limit | Obnova | Poznámka |
 |---|---|---|---|
 | ChatGPT Images 2.5 | bez verejne stanoveného počtu kreditov | dynamicky | OpenAI používa samostatný rate limit pre obrázky, presný počet obrázkov za deň momentálne nezverejňuje. (OpenAI Help Center) |
 | Gemini (Nano Banana 2) | do 20 obrázkov/deň | denne | Google upozorňuje, že limit sa môže podľa kapacity meniť. (Google Help) |
-| Claude | 0 kreditov na obrázky | bez obnovy | Claude podľa Anthropicu nemá natívny generátor obrázkov z textu. Obrázky vie analyzovať, bitmapové obrázky negeneruje. (Claude Help Center) |
 | Leonardo AI | 150 Fast Tokens/deň | denne | Cena jednej generácie závisí od vybraného modelu a nastavení. (Leonardo.ai) |
 | Recraft V4 | 30 kreditov/deň | každých 24 h | Rastrový obrázok stojí typicky 1 kredit, vektorový 2 kredity, teda teoreticky až približne 30 rastrových obrázkov denne. (Recraft) |
 | Krea 2 | 100 Compute Units/deň | denne | Krea 2 je dostupná vo Free pláne, jednotky sa míňajú podľa konkrétnej operácie a modelu. (Krea) |
